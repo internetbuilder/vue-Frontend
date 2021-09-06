@@ -39,7 +39,7 @@
                         What are the risks of mining WebDollar in my browser?
                     </div>
                     <div slot="collapse-body">
-                        There is no risk involved in using WebDollar, but you can expect some latency on your browser, especially if you increase the number of threads used. We recommend using the level 1 thread while you are working on your PC, and increase it when you are away. Likewise, the battery of your device will drain faster and on POW rounds your electricity consumption will slightly increase according to the number of threads that you are using.
+                        There is no risk involved in using WebDollar, We recommend using the level 1 of power bar since WebDollar migrated to 100 PoS on 22 July 2021. 
                     </div>
                 </collapse-faq>
 
@@ -48,7 +48,7 @@
                         How is WebDollar different, when compared to other cryptocurrencies?
                     </div>
                     <div slot="collapse-body">
-                        WebDollar is the easiest and fastest way to use cryptocurrencies. You don’t need technical knowledge or dedicated hardware resources. WebDollar aims to make mining available for every laptop and smartphone, which is why we migrated to a hybrid POS 90% (Proof Of Stake) and POW 10% (Proof Of Work) system where is more important the amount you keep at stake, instead of the power your hardware has. POW is then using the Argon2d algorithm which makes mining with special hardware unprofitable because it is ASIC resistant and GPU unfriendly. We want to give everyone the opportunity to mine and take part in the new world of cryptocurrency.                    </div>
+                        WebDollar is the easiest and fastest way to use cryptocurrencies. You don’t need technical knowledge or dedicated hardware resources. WebDollar aims to make its usage available for every laptop and smartphone, which is why we migrated to POS 100% (Proof Of Stake). We want to give everyone the opportunity to mine and take part in the new world of cryptocurrency.</div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhereAreTheWalletsStored">
@@ -94,21 +94,12 @@
                     </div>
                 </collapse-faq>
 
-                <collapse-faq :selected="false" ref="WhatIsPercentageForHybridMiningPoSAndPoW">
-                    <div slot="collapse-header">
-                        What's the percentage for hybrid mining PoS + PoW ?
-                    </div>
-                    <div slot="collapse-body">
-                        WebDollar's mining percentage is split between 90% PoS rounds and 10% PoW rounds.
-                    </div>
-                </collapse-faq>
-
                 <collapse-faq :selected="false" ref="WhatIsPoW">
                     <div slot="collapse-header">
                         What is PoW ?
                     </div>
                     <div slot="collapse-body">
-                        Proof of Work is the way to mine new coins using your computer's CPU power. The more powerful and numerous your mining computers are, the more WebDollars you earn.
+                        Proof of Work is the way to mine new coins using your computer's CPU power. WebDollar migrated to 100% PoS on 22 July 2021.
                     </div>
                 </collapse-faq>
 
@@ -167,7 +158,7 @@
                         How are WEBD's created?
                     </div>
                     <div slot="collapse-body">
-                        The coins are created by mathematical algorithms using a hybrid mining process. The mining program is using your computer's CPU resources in POW (Proof Of Work) rounds and staking your already mined coins in POS (Proof Of Stake) hybrid rounds.
+                        The coins are created by a mathematical algorithm basing on your already mined coins in POS (Proof Of Stake) rounds.
                     </div>
                 </collapse-faq>
 
@@ -193,7 +184,7 @@
                         How much WebDollars (WEBD) can I earn in 24 hours of mining?
                     </div>
                     <div slot="collapse-body">
-                        The amount of WEBD's that you can mine in 24 hours is solely based on the computational power of your devices & your mined coins stake and it is directly proportional to the power of the entire network.
+                        The amount of WEBD's that you can mine in 24 hours is solely based on your mined coins stake and it is directly proportional to the stake of the entire network.
                     </div>
                 </collapse-faq>
 
