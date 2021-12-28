@@ -9,12 +9,8 @@
     </router-link>
 
     <router-link to="/#papers" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Paper</div>
+      <div v-on:click="this.collapseMenuBack">Papers</div>
     </router-link>
-
-    <a href="https://webdollarforum.com" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' " rel="noopener" target="_blank">
-      <div v-on:click="this.collapseMenuBack">Forum</div>
-    </a>
 
     <router-link to="/#knowUsSection" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
       <div v-on:click="this.collapseMenuBack">Media</div>
