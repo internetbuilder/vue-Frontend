@@ -6,7 +6,7 @@
             <div>
 
                 <h1 class="alignCenter">Peer-to-Peer Network</h1>
-                <h3 >See your Mining Group Connections in Real-Time </h3>
+                <h3 >See your Staking Group Connections in Real-Time </h3>
 
                 <div class="networkConnection">
                     <div class="connectionType">

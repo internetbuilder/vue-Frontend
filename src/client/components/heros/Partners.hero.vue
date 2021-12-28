@@ -89,6 +89,23 @@
 
             <div>
               <div class="team-pic">
+                <a href="https://bankcex.com/" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/BankCEX.png" alt="BankCEX" title="BankCEX"></a>
+                <div class="partners-box">
+                  <ul class="partner-list">
+                    <li><a href="https://bankcex.com/exchange-base.html?symbol=WEBD_BTC" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
+                    <li><a href="https://twitter.com/BankCoin2018" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <span class="teamName">BankCEX</span>
+              <span class="teamRole">Crypto Exchange</span>
+              <p class="description">
+                 BankCEX is built and run as robust and reliable exchange platform from the ground up with security, efficiency, speed and scalability.
+              </p>
+            </div>
+
+            <div>
+              <div class="team-pic">
                 <a href="https://t.me/webdollar_tip_bot" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/Tipbot.png" alt="WebDollarTipBot" title="WebDollar Tip Bot"></a>
                 <div class="partners-box">
                   <ul class="partner-list">
@@ -103,7 +120,6 @@
                  Buy WEBD with your card or PayPal directly from your Telegram account. The amount you purchase is going to be credited instantly to your bot balance after you complete the payment.
               </p>
             </div>
-
 
             <!--                            <div>
                                 <div class="team-pic">

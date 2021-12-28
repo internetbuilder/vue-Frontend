@@ -9,8 +9,8 @@
                 <div id="whatContainer">
                     <div>
                         <img class="lazy" data-src="/public/assets/images/WebDollar-ming.png" alt="Browser Hybrid Mining" title="Browser Hybrid Mining">
-                        <h4>Start Mining in seconds</h4>
-                        <p>You can start mining WEBD immediately with the first blockchain running directly in your Browser, on any device</p>
+                        <h4>Start Staking in seconds</h4>
+                        <p>You can start staking WEBD immediately with the first blockchain running directly in your Browser, on any device</p>
                     </div>
                     <div>
                         <img class="lazy" data-src="/public/assets/images/WebDollar-Security.png" alt="Secure Blockchain" title="Secure Blockchain">

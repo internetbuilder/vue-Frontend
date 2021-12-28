@@ -32,7 +32,7 @@
         <a :href="this.poolWebsite">
             <div class='stat-box-link'>
 
-                <p class="stat-box-small">Mining in:</p>
+                <p class="stat-box-small">Staking in:</p>
                 <p class="normalSpan yellowColor"> {{this.poolName}}</p>
 
             </div>
@@ -47,7 +47,7 @@
 
         <div class='stat-box'>
 
-            <p class="stat-box-small">Miners in Pool: </p>
+            <p class="stat-box-small">Validators in Pool: </p>
             <p class="normalSpan" :class="this.isNotNullColor"> {{ this.poolMinersOnline}} </p>
 
         </div>
