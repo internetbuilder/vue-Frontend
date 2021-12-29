@@ -34,14 +34,6 @@
       <!--</router-link>-->
     </a>
 
-    <router-link to="/bounties" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Bounties</div>
-    </router-link>
-
-<!--    <a href="https://academy.webdollar.io" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' " rel="noopener" target="_blank">-->
-<!--      <div v-on:click="this.collapseMenuBack">Academy</div>-->
-<!--    </a>-->
-
     <router-link to="/partners/businesses" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
       <div v-on:click="this.collapseMenuBack">Partners</div>
     </router-link>
