@@ -9,12 +9,12 @@
     </router-link>
 
     <router-link to="/#papers" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Paper</div>
+      <div v-on:click="this.collapseMenuBack">Papers</div>
     </router-link>
 
-    <a href="https://webdollarforum.com" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' " rel="noopener" target="_blank">
-      <div v-on:click="this.collapseMenuBack">Forum</div>
-    </a>
+    <router-link to="/#knowUsSection" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div v-on:click="this.collapseMenuBack">Media</div>
+    </router-link>
 
     <router-link to="/faq" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
       <div v-on:click="this.collapseMenuBack">FAQ</div>
@@ -34,24 +34,12 @@
       <!--</router-link>-->
     </a>
 
-    <router-link to="/bounties" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Bounties</div>
-    </router-link>
-
-    <router-link to="/pool" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Referral</div>
-    </router-link>
-
-<!--    <a href="https://academy.webdollar.io" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' " rel="noopener" target="_blank">-->
-<!--      <div v-on:click="this.collapseMenuBack">Academy</div>-->
-<!--    </a>-->
-
     <router-link to="/partners/businesses" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
       <div v-on:click="this.collapseMenuBack">Partners</div>
     </router-link>
 
     <router-link to="/partners/exchanges" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Exchange</div>
+      <div v-on:click="this.collapseMenuBack">Exchanges</div>
     </router-link>
 
     <a href="javascript:void(0);" style="font-size:15px;" :style="{display: (mobileMenuOpened || isMobile==false) ? 'none':'block'}" class="icon showMenu" @click="this.showMobileMenu" :class="mobileMenuOpened ? 'openedMenuLink' : '' ">&#9776;</a>

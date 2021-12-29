@@ -5,7 +5,7 @@
 
         <div id="" class="createPoolSection">
 
-            <h1 class="alignCenter bigMarginBottom">POOL Mining</h1>
+            <h1 class="alignCenter bigMarginBottom">POOL Staking</h1>
 
             <div class="distributionContainer">
 

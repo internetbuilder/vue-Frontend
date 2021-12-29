@@ -99,10 +99,9 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-gift"></i></div>
-                        <span class="year">ONGOING</span>
+                        <span class="year">Q1 2019</span>
                         <div class="timeline-content">
                             <h5 class="title">EXCHANGE LISTING</h5>
                             <p class="description">
@@ -110,6 +109,27 @@
                             </p>
                         </div>
                     </div>
+                    <div class="timeline">
+                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                        <span class="year">Q3 2020</span>
+                        <div class="timeline-content">
+                            <h5 class="title">Hybrid Mining</h5>
+                            <p class="description">
+                                Move to hybrid mining in browser using Proof of Stake 90% and Proof of Work 10%
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+                        <span class="year">Q3 2021</span>
+                        <div class="timeline-content">
+                            <h5 class="title">100% PoS Mining</h5>
+                            <p class="description">
+                                Releasing the first 100% Proof of Stake mining in browser
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="timeline timelineUnfinishedMilestones">
                         <div class="timeline-icon"><i class="fa fa-gift"></i></div>
                         <span class="year">ONGOING</span>

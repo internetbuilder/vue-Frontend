@@ -56,7 +56,7 @@
 
         </div>
       </div>
-      <div class="newCryptoText">Copyright © 2020 WebDollar.io - All rights reserved.</div>
+      <div class="newCryptoText">Copyright © 2021 WebDollar.io - All rights reserved.</div>
     </div>
   </div>
 </div>
