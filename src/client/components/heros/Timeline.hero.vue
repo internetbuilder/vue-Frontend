@@ -123,9 +123,9 @@
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
                         <span class="year">Q3 2021</span>
                         <div class="timeline-content">
-                            <h5 class="title">100% PoS Mining</h5>
+                            <h5 class="title">100% Proof of Stake (PoS)</h5>
                             <p class="description">
-                                Releasing the first 100% Proof of Stake mining in browser
+                                Releasing the first 100% Proof of Stake browser cryptocurrency
                             </p>
                         </div>
                     </div>
@@ -137,6 +137,16 @@
                             <h5 class="title">EVANGELISM & MARKETING</h5>
                             <p class="description">
                                 Growing the community, running bounties programs & attend to cryptocurrency conferences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline timelineUnfinishedMilestones">
+                        <div class="timeline-icon"><i class="fa fa-hammer"></i></div>
+                        <span class="year">ONGOING</span>
+                        <div class="timeline-content">
+                            <h5 class="title">WEBDOLLAR 2.0</h5>
+                            <p class="description">
+                                Source code rewrite along with other features.
                             </p>
                         </div>
                     </div>
