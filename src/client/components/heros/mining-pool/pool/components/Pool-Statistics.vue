@@ -67,13 +67,6 @@
 
         </div>
 
-        <div class='stat-box'>
-            <div v-if="this.statsType === 'miner'">
-                <p class="stat-box-small">Your Ref. Potential Reward: </p>
-                <p class="normalSpan" :class="this.isNotNullColor"> {{this.referralPotential}} WEBD</p>
-            </div>
-        </div>
-
         <!--<network ref="minerPool" :poolWebsite="poolWebsite"> </network>-->
 
     </div>

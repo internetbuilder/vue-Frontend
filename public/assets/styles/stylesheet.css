@@ -1174,7 +1174,7 @@ background-color:#ff2200}
 }
 
 #createPoolSection .distributionContainer{
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .spinCoin {
@@ -1306,7 +1306,7 @@ background-color:#ff2200}
 }
 
 .createPoolSection .distributionContainer{
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .collapse{

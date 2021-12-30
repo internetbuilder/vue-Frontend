@@ -3,56 +3,6 @@
         <div id="createPoolSection" cl>
             <h1 style="text-align:center" class="alignCenter bigMarginBottom">POOL Mining</h1>
             <div class="distributionContainer sectionCenteredWidth stat-columns">
-
-                <div class="verticalAlignMiddle">
-                    <div class="distributionGrid poolDescription">
-                        <div class="distributionGrid borderBottom ">
-                            <h2 class="subtitle">{{ this.minerPoolStatus === 'miner' ? 'REFERRAL QUICK ACTIONS' : 'POOL QUICK ACTIONS'}}</h2>
-                        </div>
-
-                        <!--<router-link class="copyPoolLink" to="/pool">-->
-                        <!--Referrals Dashboard-->
-                        <!--</router-link>-->
-
-                        <div class='stat-box-link'>
-                            <p style="text-align:center" v-show="this.poolURL !== ''" @click="copyToClipboard">
-                                <span class="yellowColor">Copy Invite link</span><span class="stat-box-small">and send it to your friends</span>
-                            </p>
-                        </div>
-
-                        <div class='stat-box-link'>
-                            <p style="text-align:center">
-                                <router-link class="" to="/pool">
-                                    <span class="yellowColor">See Your Referrals</span>
-                                    <span class="stat-box-small">and monitor your earnings</span>
-                                </router-link>
-                            </p>
-                        </div>
-
-                        <div class='stat-box'>
-                            <span style="text-align:center">
-                                <p class="stat-box-small">Referral Reward:</p><br>
-                                <p :class="this.isNotNullColor"> {{this.poolReferralFee}}% WEBD</p>
-                                <p class="stat-box-small">from each friend you invite</p>
-                                <!--Being confirmed: <span class="normalSpan" :class="this.isNotNullColor"> {{this.poolBlocksBeingConfirmed}} </span> Unconfirmed <span class="normalSpan" :class="this.isNotNullColor"> {{this.poolBlocksUnconfirmed}} </span>-->
-                            </span>
-                        </div>
-
-                        <!-- <a :href="this.poolWebsite">
-                          <div class='stat-box-link'>
-                            <span class="oneLineText">
-                              Mining in: <span class="normalSpan yellowColor"> {{this.poolName}}</span>
-                            </span>
-                          </div>
-                        </a> -->
-                        <!--<div v-if="this.poolReferralFee===0" class="poolQuickActions">-->
-                        <!--<span class="noMarginTop">Your current pools doesn't has referral system.</span>-->
-                        <!--<router-link class="copyPoolLink" to="/pool">-->
-                        <!--Create Your Own Pool-->
-                        <!--</router-link>-->
-                        <!--</div>-->
-                    </div>
-                </div>
                 <div class="verticalAlignMiddle">
                     <pool-statistics ref="poolStatistics" statsType="miner" :poolName="poolName" :poolWebsite="poolWebsite" :poolURL="poolURL" :poolFee="poolFee" :poolReferralFee="poolReferralFee"
                                      :poolServers="poolServers" :poolStatus="minerPoolStatus"
