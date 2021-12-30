@@ -140,6 +140,16 @@
                             </p>
                         </div>
                     </div>
+                    <div class="timeline timelineUnfinishedMilestones">
+                        <div class="timeline-icon"><i class="fa fa-hammer"></i></div>
+                        <span class="year">ONGOING</span>
+                        <div class="timeline-content">
+                            <h5 class="title">WEBDOLLAR 2.0</h5>
+                            <p class="description">
+                                Source code rewrite along with other features.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
