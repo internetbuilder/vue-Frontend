@@ -123,9 +123,9 @@
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
                         <span class="year">Q3 2021</span>
                         <div class="timeline-content">
-                            <h5 class="title">100% PoS Mining</h5>
+                            <h5 class="title">100% Proof of Stake (PoS)</h5>
                             <p class="description">
-                                Releasing the first 100% Proof of Stake mining in browser
+                                Releasing the first 100% Proof of Stake browser cryptocurrency
                             </p>
                         </div>
                     </div>
