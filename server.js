@@ -123,14 +123,14 @@ function render (req, res) {
 
     const context = {
         SEOMixinTitle: {
-            title:'CryptoCurrency of the future',
-            facebook: 'WebDollar - CryptoCurrency of the internet',
-            twitter: 'WebDollar - CryptoCurrency of the internet',
+            title:'WebDollar - CryptoCurrency of the Internet',
+            facebook: 'WebDollar - CryptoCurrency of the Internet',
+            twitter: 'WebDollar - CryptoCurrency of the Internet',
         }, // default title
         SEOMixinDescription: {
-            description:'WebDollar is easy to use Cryptocurrency, Wallet in the Browser with modern hybrid Mining Proof of Work and Proof of Stake. Own blockchain. No installs, no downloads.',
-            facebook:'WebDollar is a cryptocurrency native to the browser. No installs or downloads. Mining and Wallets are incorporated in your browser. WebDollar is aiming for mass adoption',
-            twitter: 'WebDollar is a cryptocurrency native to the browser. No installs or downloads. Mining and Wallets are incorporated in your browser. WebDollar is aiming for mass adoption', // default title
+            description:'WebDollar is an easy to use Cryptocurrency, Wallet in the Browser, 100% Proof of Stake, own blockchain, fast, private and secure. No installs, no downloads.',
+            facebook:'WebDollar is a cryptocurrency native to the browser. No installs or downloads. Staking and Wallets are incorporated in your browser. WebDollar is aiming for mass adoption',
+            twitter: 'WebDollar is a cryptocurrency native to the browser. No installs or downloads. Staking and Wallets are incorporated in your browser. WebDollar is aiming for mass adoption', // default title
         },
         SEOMixinKeywords: 'cryptocurrency, blockchain, browser mining, bitcoin alternative, future of cryptocurrency, cryptocoin',
         SEOMixinImages:
@@ -221,9 +221,3 @@ try{
     });
 
 }
-
-
-
-
-
-
