@@ -66,7 +66,7 @@
 
         <div class="">
 
-            <span class="pageTitle alignCenter bigMarginTop" >Developers</span>
+            <span class="pageTitle alignCenter bigMarginTop" >Former developers</span>
 
             <div class="teamWrapper threeTeamColums">
 

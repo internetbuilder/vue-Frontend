@@ -17,7 +17,7 @@ RUN npm run build
 # Build User Interface
 RUN git clone https://github.com/WebDollar/Node-WebDollar && \
     cd Node-WebDollar && \
-    git checkout MiningPools && \
+    git checkout master && \
     npm install && \
     npm run build_browser && \
     npm run build_browser_user_interface && \
