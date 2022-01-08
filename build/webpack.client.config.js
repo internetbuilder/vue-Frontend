@@ -1,7 +1,7 @@
-const webpack = require('webpack')
-const merge = require('webpack-merge')
-const base = require('./webpack.base.config')
-const SWPrecachePlugin = require('sw-precache-webpack-plugin')
+const webpack            = require('webpack')
+const merge              = require('webpack-merge')
+const base               = require('./webpack.base.config')
+const {GenerateSW}       = require('workbox-webpack-plugin');
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 
 const config = merge(base, {
@@ -45,28 +45,27 @@ const config = merge(base, {
 if (process.env.NODE_ENV === 'production') {
     config.plugins.push(
         // auto generate service worker
-        new SWPrecachePlugin({
+        new GenerateSW({
             cacheId: 'WebDollar-PWA',
-            filename: 'service-worker.js',
-            minify: true,
-            dontCacheBustUrlsMatching: /./,
-            staticFileGlobsIgnorePatterns: [/\.map$/, /\.json$/],
+            swDest: 'service-worker.js',
+            dontCacheBustURLsMatching: /./,
+            ignoreURLParametersMatching: [/\.map$/, /\.json$/],
             runtimeCaching: [
                 {
                     urlPattern: '/',
-                    handler: 'networkFirst'
+                    handler: 'NetworkFirst'
                 },
                 {
                     urlPattern: /\/(top|new|show|ask|jobs)/,
-                    handler: 'networkFirst'
+                    handler: 'NetworkFirst'
                 },
                 {
                     urlPattern: '/item/:id',
-                    handler: 'networkFirst'
+                    handler: 'NetworkFirst'
                 },
                 {
                     urlPattern: '/user/:id',
-                    handler: 'networkFirst'
+                    handler: 'NetworkFirst'
                 }
             ]
         })
