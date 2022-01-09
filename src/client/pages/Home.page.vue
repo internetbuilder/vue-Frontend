@@ -9,13 +9,13 @@
 
                 <what-is-hero/>
 
-                <peer-to-peer-hero/>
-
                 <newsletter-hero/>
 
                 <new-crypto-generation-hero/>
 
                 <blockchain-distribution-hero/>
+
+                <peer-to-peer-hero/>
 
                 <miner-pool-hero v-show="!poolActivated"/>
 

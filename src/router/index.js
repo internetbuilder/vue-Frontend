@@ -32,19 +32,6 @@ export function createRouter() {
 
     },
     routes: [
-
-      {
-        path: '/explorer/:a?',
-        component: ExplorerBlocks
-      },
-      {
-        path: '/explorer',
-        component: ExplorerBlocks
-      },
-      {
-        path: '/bounties',
-        component: Bounty
-      },
       {
         path: '/faq/:qHash?',
         component: FaqPage,
