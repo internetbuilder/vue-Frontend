@@ -9,8 +9,6 @@
 
                 <what-is-hero/>
 
-                <newsletter-hero/>
-
                 <new-crypto-generation-hero/>
 
                 <blockchain-distribution-hero/>
@@ -42,7 +40,6 @@
     import Layout from "client/components/layout/Layout.vue";
     import PoolHero from "client/components/heros/mining-pool/pool/Pool.hero.vue";
     import MinerPoolHero from "client/components/heros/mining-pool/miner-pool/Miner-Pool.hero.vue";
-    import NewsletterHero from "client/components/heros/Newsletter.hero.vue";
     import TeamHero from "client/components/heros/Team.hero.vue";
     import WebDollarHero from "client/components/heros/WebDollar.hero.vue";
     import WhatIsHero from "client/components/heros/About.hero.vue";
@@ -76,7 +73,6 @@
             PoolHero,
             MinerPoolHero,
             MultipleTabs,
-            NewsletterHero,
             Paper
         },
 

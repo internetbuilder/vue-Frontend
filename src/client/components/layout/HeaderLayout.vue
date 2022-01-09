@@ -8,30 +8,8 @@
       <img v-on:click="this.collapseMenuBack" src="/public/assets/images/WebDollar-logo-white.png" alt="Cryptocurrency of the future" id="logo" title="Cryptocurrency of the future" />
     </router-link>
 
-    <router-link to="/#papers" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Papers</div>
-    </router-link>
-
-    <router-link to="/#knowUsSection" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Media</div>
-    </router-link>
-
-    <router-link to="/faq" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">FAQ</div>
-    </router-link>
-
-    <router-link to="/#team" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Team</div>
-    </router-link>
-
-    <router-link to="/#what-is-WebDollar" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">About</div>
-    </router-link>
-
     <a href="https://webdollar.network/" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' " rel="noopener" target="_blank">
-      <!--<router-link to="/explorer" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">-->
       <div v-on:click="this.collapseMenuBack">Explorer</div>
-      <!--</router-link>-->
     </a>
 
     <router-link to="/partners/businesses" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
@@ -40,6 +18,26 @@
 
     <router-link to="/partners/exchanges" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
       <div v-on:click="this.collapseMenuBack">Exchanges</div>
+    </router-link>
+
+    <router-link to="/faq" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div v-on:click="this.collapseMenuBack">FAQ</div>
+    </router-link>
+
+    <router-link to="/#knowUsSection" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div v-on:click="this.collapseMenuBack">Media</div>
+    </router-link>
+
+    <router-link to="/#community" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div v-on:click="this.collapseMenuBack">Community</div>
+    </router-link>
+
+    <router-link to="/#papers" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div v-on:click="this.collapseMenuBack">Papers</div>
+    </router-link>
+
+    <router-link to="/#what-is-WebDollar" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div v-on:click="this.collapseMenuBack">About</div>
     </router-link>
 
     <a href="javascript:void(0);" style="font-size:15px;" :style="{display: (mobileMenuOpened || isMobile==false) ? 'none':'block'}" class="icon showMenu" @click="this.showMobileMenu" :class="mobileMenuOpened ? 'openedMenuLink' : '' ">&#9776;</a>

@@ -6,8 +6,6 @@ Vue.use(Router)
 // route-level code splitting
 
 const HomePage = () => import('client/pages/Home.page.vue');
-const Bounty = () => import('client/pages/Bounty.page.vue');
-const ExplorerBlocks = () => import('client/pages/Explorer.page.vue');
 const AdminPage = () => import('client/pages/Admin.page.vue');
 const FaqPage = () => import('client/pages/Faq.page.vue');
 const PartnersPage = () => import('client/pages/Partners.page.vue');
