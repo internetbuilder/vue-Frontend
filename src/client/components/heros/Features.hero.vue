@@ -2,7 +2,7 @@
 
     <div id="newCryptoSection" class="backgroundSection">
 
-        <h1 class="alignCenter bigMarginTop">WebDollar Ecosystem</h1>
+        <h1 class="alignCenter">WebDollar Ecosystem</h1>
 
         <div class="textContainer sectionCenteredWidth">
             <h2>Already integrated</h2>
@@ -25,7 +25,7 @@
                                 <path style=" fill:#fec02c;" d="M 34.585938 14.585938 L 21.015625 28.171875 L 15.414063 22.585938 L 12.585938 25.414063 L 21.019531 33.828125 L 37.414063 17.414063 Z "/>
                             </g>
                         </svg>
-                        <span class="newCryptoText">Generating wallets directly in your Browser</span>
+                        <span class="newCryptoText">Generating wallets directly in your browser</span>
                     </div>
                     <div class="checkItem">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="30px" height="30px">
@@ -43,7 +43,7 @@
                                 <path style=" fill:#fec02c;" d="M 34.585938 14.585938 L 21.015625 28.171875 L 15.414063 22.585938 L 12.585938 25.414063 L 21.019531 33.828125 L 37.414063 17.414063 Z "/>
                             </g>
                         </svg>
-                        <span class="newCryptoText">Ecosystem exchange & Exchanges listings</span>
+                        <span class="newCryptoText">Ecosystem exchange & exchanges listings</span>
                     </div>
                 </div>
                 <div>
@@ -63,7 +63,7 @@
                                 <path style=" fill:#fec02c;" d="M 34.585938 14.585938 L 21.015625 28.171875 L 15.414063 22.585938 L 12.585938 25.414063 L 21.019531 33.828125 L 37.414063 17.414063 Z "/>
                             </g>
                         </svg>
-                        <span class="newCryptoText">Offline Transactions</span>
+                        <span class="newCryptoText">Offline transactions</span>
                     </div>
                     <div class="checkItem">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="30px" height="30px">
@@ -97,7 +97,7 @@
                                 <path style=" fill:rgb(124,124,124);" d="M 34.585938 14.585938 L 21.015625 28.171875 L 15.414063 22.585938 L 12.585938 25.414063 L 21.019531 33.828125 L 37.414063 17.414063 Z "/>
                             </g>
                         </svg>
-                        <span class="newCryptoText">Smart Contracts</span>
+                        <span class="newCryptoText">Smart contracts</span>
                     </div>
                     <div class="checkItem">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="30px" height="30px">
@@ -106,7 +106,7 @@
                                 <path style=" fill:rgb(124,124,124);" d="M 34.585938 14.585938 L 21.015625 28.171875 L 15.414063 22.585938 L 12.585938 25.414063 L 21.019531 33.828125 L 37.414063 17.414063 Z "/>
                             </g>
                         </svg>
-                        <span class="newCryptoText">Multi-Sig using Fingerprint and Facial Recognition ID</span>
+                        <span class="newCryptoText">Multi-sig using fingerprint and facial recognition ID</span>
                     </div>
                     <div class="checkItem">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="30px" height="30px">
@@ -115,7 +115,7 @@
                                 <path style=" fill:rgb(124,124,124);" d="M 34.585938 14.585938 L 21.015625 28.171875 L 15.414063 22.585938 L 12.585938 25.414063 L 21.019531 33.828125 L 37.414063 17.414063 Z "/>
                             </g>
                         </svg>
-                        <span class="newCryptoText">Real time roadmap (Updates Status)</span>
+                        <span class="newCryptoText">Real time roadmap (updates status)</span>
                     </div>
 
                 </div>
@@ -127,7 +127,7 @@
                                 <path style=" fill:rgb(124,124,124);" d="M 34.585938 14.585938 L 21.015625 28.171875 L 15.414063 22.585938 L 12.585938 25.414063 L 21.019531 33.828125 L 37.414063 17.414063 Z "/>
                             </g>
                         </svg>
-                        <span class="newCryptoText">Peer-to-Peer Market for WebDollar</span>
+                        <span class="newCryptoText">Peer-to-peer market for WebDollar</span>
                     </div>
                     <div class="checkItem">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1" width="30px" height="30px">
@@ -155,7 +155,7 @@
                                 <path style=" fill:rgb(124,124,124);" d="M 34.585938 14.585938 L 21.015625 28.171875 L 15.414063 22.585938 L 12.585938 25.414063 L 21.019531 33.828125 L 37.414063 17.414063 Z "/>
                             </g>
                         </svg>
-                        <span class="newCryptoText">Community Voting Center for updates</span>
+                        <span class="newCryptoText">Community voting center for updates</span>
                     </div>
 
                 </div>
