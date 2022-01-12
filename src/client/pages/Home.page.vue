@@ -15,6 +15,8 @@
 
                 <timeline-hero/>
 
+                <get-started-hero/>
+
                 <blockchain-distribution-hero/>
 
                 <peer-to-peer-hero/>
@@ -41,6 +43,7 @@
     import TeamHero from "client/components/heros/Team.hero.vue";
     import WebDollarHero from "client/components/heros/WebDollar.hero.vue";
     import WhatIsHero from "client/components/heros/About.hero.vue";
+    import GetStartedHero from "client/components/heros/GetStarted.hero.vue";
     import PeerToPeerHero from "client/components/heros/Peer-To-Peer.hero.vue";
     import TimelineHero from "client/components/heros/Timeline.hero.vue";
     import FaqHero from "client/components/heros/Faq.hero.vue";
@@ -62,6 +65,7 @@
             WhatIsHero,
             PeerToPeerHero,
             TimelineHero,
+            GetStartedHero,
             FaqHero,
             PartnersHero,
             NewCryptoGenerationHero,

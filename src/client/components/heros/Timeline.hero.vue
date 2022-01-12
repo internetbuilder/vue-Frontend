@@ -3,7 +3,7 @@
 
     <div id="timelineSection" >
 
-        <span class='alignCenter pageTitle'>ROAD MAP</span>
+        <span class='alignCenter pageTitle'>Roadmap</span>
         <h3>Fastest Development of a Browser-Based Cryptocurrency</h3>
 
         <div id="timeline" class="backgroundSection">

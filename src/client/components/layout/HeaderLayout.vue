@@ -36,6 +36,10 @@
       <div v-on:click="this.collapseMenuBack">Network</div>
     </router-link>
 
+    <router-link to="/#get-started" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div v-on:click="this.collapseMenuBack">Get Started</div>
+    </router-link>
+
     <router-link to="/#what-is-WebDollar" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
       <div v-on:click="this.collapseMenuBack">About</div>
     </router-link>
