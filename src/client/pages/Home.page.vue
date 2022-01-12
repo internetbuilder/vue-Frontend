@@ -11,6 +11,10 @@
 
                 <new-crypto-generation-hero/>
 
+                <paper/>
+
+                <timeline-hero/>
+
                 <blockchain-distribution-hero/>
 
                 <peer-to-peer-hero/>
@@ -18,10 +22,6 @@
                 <miner-pool-hero v-show="!poolActivated"/>
 
                 <pool-hero v-show="poolActivated"/>
-
-                <paper/>
-
-                <timeline-hero/>
 
                 <team-hero/>
 

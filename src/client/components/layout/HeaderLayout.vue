@@ -32,8 +32,8 @@
       <div v-on:click="this.collapseMenuBack">Community</div>
     </router-link>
 
-    <router-link to="/#papers" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Papers</div>
+    <router-link to="/#coinDistributionSection" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div v-on:click="this.collapseMenuBack">Network</div>
     </router-link>
 
     <router-link to="/#what-is-WebDollar" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
