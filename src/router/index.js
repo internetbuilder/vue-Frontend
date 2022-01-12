@@ -9,6 +9,7 @@ const HomePage = () => import('client/pages/Home.page.vue');
 const AdminPage = () => import('client/pages/Admin.page.vue');
 const FaqPage = () => import('client/pages/Faq.page.vue');
 const PartnersPage = () => import('client/pages/Partners.page.vue');
+const MediaPage = () => import('client/pages/Media.page.vue');
 const ClearIndexedDBPage = () => import('client/pages/ClearIndexedDB.page.vue');
 
 export function createRouter() {
@@ -39,6 +40,11 @@ export function createRouter() {
         path: '/partners/:qHash?',
         component: PartnersPage,
         name: 'partners'
+      },
+      {
+        path: '/media/:qHash?',
+        component: MediaPage,
+        name: 'media'
       },
       {
         path: '/payment/:toAddress/:toAmount?/:toFee?',

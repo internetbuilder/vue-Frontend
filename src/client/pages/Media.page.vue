@@ -4,7 +4,7 @@
 
         <div slot="content">
 
-            <faq-hero/>
+            <media-hero/>
 
         </div>
 
@@ -15,16 +15,16 @@
 <script>
 
     import Layout from "client/components/layout/SimpleLayout.vue"
-    import FaqHero from "client/components/heros/Faq.hero.vue"
+    import MediaHero from "client/components/heros/Media.hero.vue";
 
 
     export default {
 
-        name: "faq-page",
+        name: "partner-page",
 
         components:{
             "layout": Layout,
-            "faq-hero": FaqHero,
+            "media-hero": MediaHero,
 
         }
 

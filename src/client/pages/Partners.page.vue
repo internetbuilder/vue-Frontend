@@ -14,7 +14,7 @@
 
 <script>
 
-    import Layout from "client/components/layout/sampleLayout.vue"
+    import Layout from "client/components/layout/SimpleLayout.vue"
     import PartnerHero from "client/components/heros/Partners.hero.vue"
 
 

@@ -17,6 +17,8 @@
 
         </div>
 
+        <FooterLayout />
+
     </div>
 
 </template>
@@ -74,7 +76,7 @@
 
                     this.changeFullSectionHeight();
                 }
-                
+
             });
 
         },

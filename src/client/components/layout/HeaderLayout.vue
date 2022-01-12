@@ -24,7 +24,7 @@
       <div v-on:click="this.collapseMenuBack">FAQ</div>
     </router-link>
 
-    <router-link to="/#knowUsSection" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+    <router-link to="/media" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
       <div v-on:click="this.collapseMenuBack">Media</div>
     </router-link>
 
