@@ -123,21 +123,6 @@
 
           </div>
 
-          <div class="partnerWrapper threeTeamColums">
-
-            <div>
-              <div class="team-pic">
-                <a href="https://webdollar.exchange/" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/WEBDExchange.png" alt="WebDollar Exchange" title="WebDollar Exchange"></a>
-              </div>
-              <span class="teamName">WebDollar Exchange</span>
-              <span class="teamRole">Exchange</span>
-              <p class="description">
-                 WebDollar Exchange provides a way to to buy WebDollars using Metatask with Ethereum.
-              </p>
-            </div>
-
-          </div>
-
         </div>
       </collapse-faq>
 
