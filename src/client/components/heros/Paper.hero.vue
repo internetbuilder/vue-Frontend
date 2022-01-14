@@ -2,7 +2,7 @@
 
     <div id="papers" class="">
 
-        <span class="pageTitle alignCenter bigMarginBottom">Papers</span>
+        <span class="pageTitle alignCenter">Papers</span>
 
         <div class="twoColums specialMarginTop">
 
@@ -116,10 +116,6 @@
 
     .paperItemColor3{
         background-color: #262626;
-    }
-
-    #papers .specialMarginTop{
-        margin-top: 100px;
     }
 
     .blackPaper{

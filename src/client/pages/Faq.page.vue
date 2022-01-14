@@ -14,7 +14,7 @@
 
 <script>
 
-    import Layout from "client/components/layout/sampleLayout.vue"
+    import Layout from "client/components/layout/SimpleLayout.vue"
     import FaqHero from "client/components/heros/Faq.hero.vue"
 
 

@@ -6,11 +6,10 @@ Vue.use(Router)
 // route-level code splitting
 
 const HomePage = () => import('client/pages/Home.page.vue');
-const Bounty = () => import('client/pages/Bounty.page.vue');
-const ExplorerBlocks = () => import('client/pages/Explorer.page.vue');
 const AdminPage = () => import('client/pages/Admin.page.vue');
 const FaqPage = () => import('client/pages/Faq.page.vue');
 const PartnersPage = () => import('client/pages/Partners.page.vue');
+const MediaPage = () => import('client/pages/Media.page.vue');
 const ClearIndexedDBPage = () => import('client/pages/ClearIndexedDB.page.vue');
 
 export function createRouter() {
@@ -32,19 +31,6 @@ export function createRouter() {
 
     },
     routes: [
-
-      {
-        path: '/explorer/:a?',
-        component: ExplorerBlocks
-      },
-      {
-        path: '/explorer',
-        component: ExplorerBlocks
-      },
-      {
-        path: '/bounties',
-        component: Bounty
-      },
       {
         path: '/faq/:qHash?',
         component: FaqPage,
@@ -54,6 +40,11 @@ export function createRouter() {
         path: '/partners/:qHash?',
         component: PartnersPage,
         name: 'partners'
+      },
+      {
+        path: '/media/:qHash?',
+        component: MediaPage,
+        name: 'media'
       },
       {
         path: '/payment/:toAddress/:toAmount?/:toFee?',

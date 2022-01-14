@@ -15,7 +15,7 @@
                     <div>
                         <img class="lazy" data-src="/public/assets/images/WebDollar-Security.png" alt="Secure Blockchain" title="Secure Blockchain">
                         <h4>Secure and Private</h4>
-                        <p>Built on the most advanced blockchain technology using NIPoPoW consensus, your information will be secure and anonymous</p>
+                        <p>Built on the most advanced blockchain technology, your information will be secure and anonymous</p>
                     </div>
                     <div>
                         <img class="lazy" data-src="/public/assets/images/WebDollar-wallet.png" alt="Easy Integration" title="Easy Integration">
@@ -30,13 +30,3 @@
     </div>
 
 </template>
-
-<script>
-
-    export default{
-
-
-
-    }
-
-</script>

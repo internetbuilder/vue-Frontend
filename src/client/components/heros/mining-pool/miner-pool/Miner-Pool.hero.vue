@@ -1,7 +1,7 @@
 <template>
     <div id="" class="p2pNetwork">
         <div id="createPoolSection" cl>
-            <h1 style="text-align:center" class="alignCenter bigMarginBottom">POOL Mining</h1>
+            <h1 style="text-align:center" class="alignCenter">POOL Staking</h1>
             <div class="distributionContainer sectionCenteredWidth stat-columns">
                 <div class="verticalAlignMiddle">
                     <pool-statistics ref="poolStatistics" statsType="miner" :poolName="poolName" :poolWebsite="poolWebsite" :poolURL="poolURL" :poolFee="poolFee" :poolReferralFee="poolReferralFee"
@@ -233,7 +233,7 @@
 
     .stat-columns {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
 
     }
 </style>

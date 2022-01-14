@@ -9,25 +9,23 @@
 
                 <what-is-hero/>
 
-                <peer-to-peer-hero/>
-
-                <newsletter-hero/>
-
                 <new-crypto-generation-hero/>
-
-                <blockchain-distribution-hero/>
-
-                <miner-pool-hero v-show="!poolActivated"/>
-
-                <pool-hero v-show="poolActivated"/>
 
                 <paper/>
 
                 <timeline-hero/>
 
-                <team-hero/>
+                <get-started-hero/>
 
-                <know-us-hero/>
+                <blockchain-distribution-hero/>
+
+                <peer-to-peer-hero/>
+
+                <miner-pool-hero v-show="!poolActivated"/>
+
+                <pool-hero v-show="poolActivated"/>
+
+                <team-hero/>
 
             </div>
 
@@ -42,13 +40,12 @@
     import Layout from "client/components/layout/Layout.vue";
     import PoolHero from "client/components/heros/mining-pool/pool/Pool.hero.vue";
     import MinerPoolHero from "client/components/heros/mining-pool/miner-pool/Miner-Pool.hero.vue";
-    import NewsletterHero from "client/components/heros/Newsletter.hero.vue";
     import TeamHero from "client/components/heros/Team.hero.vue";
     import WebDollarHero from "client/components/heros/WebDollar.hero.vue";
     import WhatIsHero from "client/components/heros/About.hero.vue";
+    import GetStartedHero from "client/components/heros/GetStarted.hero.vue";
     import PeerToPeerHero from "client/components/heros/Peer-To-Peer.hero.vue";
     import TimelineHero from "client/components/heros/Timeline.hero.vue";
-    import KnowUsHero from "client/components/heros/Media.hero.vue";
     import FaqHero from "client/components/heros/Faq.hero.vue";
     import PartnersHero from "client/components/heros/Partners.hero.vue";
     import NewCryptoGenerationHero from "client/components/heros/Features.hero.vue";
@@ -68,7 +65,7 @@
             WhatIsHero,
             PeerToPeerHero,
             TimelineHero,
-            KnowUsHero,
+            GetStartedHero,
             FaqHero,
             PartnersHero,
             NewCryptoGenerationHero,
@@ -76,7 +73,6 @@
             PoolHero,
             MinerPoolHero,
             MultipleTabs,
-            NewsletterHero,
             Paper
         },
 

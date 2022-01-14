@@ -1,20 +1,59 @@
 <template>
 
-    <div id="team" class="sectionCenteredWidth">
+    <div id="community">
 
         <div id="teamSection">
 
             <div class="">
 
-                <h1 class="pageTitle bigMarginTop"> <center>NO OFFICIAL TEAM</center></h1>
+                <h1 class="pageTitle bigMarginTop"> <center>Community</center></h1>
 
                 <h4>
                     <center>
-                        Just like Bitcoin, there is <strong>NO OFFICIAL team</strong> and everybody is welcomed to contribute. <br/> The project is decentralized and maintained by a community
+                        There is <strong>NO OFFICIAL team</strong>. Just like Bitcoin, WebDollar was launched with no ICO (Initial Coin Offering)-FCO (Free Coin Offering).
+                    </center>
+                </h4>
+                <h4>
+                    <center>
+                        Thank you for considering contributing to WebDollar, a decentralized and open source project.
+                    </center>
+                </h4>
+                <h4>
+                    <center>
+                        Just follow instructions bellow to get started and contribute.
                     </center>
                 </h4>
 
-                <h1 class="pageTitle bigMarginTop"> <center>Creators</center></h1>
+                <div class="communityWrapper twoTeamColums">
+                    <div class="communityItem">
+                        <a href="https://t.me/WebDollar" rel="noopener" target="_blank">
+                            <img data-src="/public/assets/images/SocialMedia/telegram_yellow.png" alt="Telegram WebDollar" title="Telegram WebDollar" class="communityImg lazy">
+                        </a>
+                        <span>Join the WebDollar community on <a href="https://t.me/WebDollar" rel="noopener" target="_blank">Telegram</a>, ask for help, get involved in WebDollar discussions and help make WebDollar known to the World.</span>
+                    </div>
+                    <div class="communityItem">
+                        <a href="https://github.com/webdollar" rel="noopener" target="_blank">
+                            <img data-src="/public/assets/images/SocialMedia/github_yellow.png" alt="GitHub WebDollar" title="GitHub WebDollar" class="communityImg lazy">
+                        </a>
+                        <span>WebDollar is open source. If you want to report bugs, contribute to the development of WebDollar, check <a href="https://github.com/webdollar" rel="noopener" target="_blank">GitHub</a> repositories.</span>
+                    </div>
+                </div>
+                <div class="communityWrapper twoTeamColums">
+                    <div class="communityItem">
+                        <a href="https://twitter.com/webdollar_io" rel="noopener" target="_blank">
+                            <img data-src="/public/assets/images/SocialMedia/twitter_yellow.png" alt="Twitter WebDollar" title="Twitter WebDollar" class="communityImg lazy">
+                        </a>
+                        <span>Follow <a href="https://twitter.com/webdollar_io" rel="noopener" target="_blank">us</a> to keep updated, communicate and share about WebDollar on Twitter.</span>
+                    </div>
+                    <div class="communityItem">
+                        <a href="https://www.reddit.com/r/webdollar/" rel="noopener" target="_blank">
+                            <img data-src="/public/assets/images/SocialMedia/reddit_yellow.png" alt="Reddit WebDollar" title="Reddit WebDollar" class="communityImg lazy">
+                        </a>
+                        <span>Share and get involved with the discussions about WebDollar on <a href="https://www.reddit.com/r/webdollar/" rel="noopener" target="_blank">Reddit</a> forum.</span>
+                    </div>
+                </div>
+
+                <h1 class="pageTitle bigMarginTopOnly"> <center>Creators</center></h1>
 
                 <div class="teamWrapper twoTeamColums">
 
@@ -63,115 +102,15 @@
             </div>
         </div>
 
+        <div class="contributorsSection">
 
-        <div class="">
+            <span class="pageTitle alignCenter bigMarginTopOnly" >Contributors</span>
 
-            <span class="pageTitle alignCenter bigMarginTop" >Former developers</span>
+            <span class="contributorsItem"><a href="https://github.com/WebDollar/Node-WebDollar/graphs/contributors" rel="noopener" target="_blank">WebDollar protocol/blockchain</a> contributors</span>
 
-            <div class="teamWrapper threeTeamColums">
+            <span class="contributorsItem"><a href="https://github.com/WebDollar/vue-Frontend/graphs/contributors" rel="noopener" target="_blank">WebDollar.io website</a> contributors</span>
 
-                <div class="our-team ">
-                    <div class="team-pic">
-                        <img class="lazy" data-src="/public/assets/images/team/RazvanCeana.jpg" alt="Razvan Ceana" title="Razvan Ceana">
-                        <div class="over-layer">
-                            <ul class="social-link">
-                                <li><a href="https://twitter.com/razvanceana" rel="noopener" target="_blank" class="fa fa-twitter" aria-label="twitter"/></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <span class="teamName">Razvan Ceana</span>
-                    <span class="teamRole">Senior Technical Manager</span>
-                    <p class="description">
-                        Răzvan is a software engineer with extensive experience in developing high scalability and high availability applications. He is part of a team that develops software for public procurement involving real time data processing and Blockchain research integrations.
-                    </p>
-                </div>
-
-                <div class="our-team ">
-                    <div class="team-pic">
-                        <img class="lazy" data-src="/public/assets/images/team/IonutMoraru.jpeg" alt="Ionut Moraru" title="Ionut Moraru">
-                        <div class="over-layer">
-                            <ul class="social-link">
-                                <li><a href="https://twitter.com/morion4000" rel="noopener" target="_blank" class="fa fa-twitter" aria-label="twitter"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <span class="teamName">Ionut Moraru</span>
-                    <span class="teamRole">Automation Specialist</span>
-                    <p class="description">
-                        Ionut is a software developer with over 10 years of experience working with web and mobile technologies. He is a Consensys certified developer and founder of <a href="https://www.hostero.eu" target="_blank">Hostero.eu</a>, a mining software for cryptocurrencies.
-                    </p>
-                </div>
-
-                <div class="our-team ">
-                    <div class="team-pic">
-                        <img class="lazy" data-src="/public/assets/images/team/AdrianVladu.jpeg" alt="Adrian Vladu" title="Adrian Vladu">
-                        <div class="over-layer">
-                            <ul class="social-link">
-                                <li><a href="https://github.com/ader1990" rel="noopener" target="_blank" class="fa fa-github" aria-label="github"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <span class="teamName">Adrian Vladu</span>
-                    <span class="teamRole">Blockchain Developer</span>
-                    <p class="description">
-                        With more than 6 years of open source activity, Adrian Vladu is a seasoned full stack developer with multiple contributions for projects under the OpenStack umbrella. He manages webdollar.network, an open source blockchain explorer for WebDollar.
-                    </p>
-                </div>
-    </div>
-    <div class="teamWrapper threeTeamColums">
-
-                <div class="our-team ">
-                    <div class="team-pic">
-                        <img class="lazy" data-src="/public/assets/images/team/dani.jpg" alt="Dani WebDollar" title="Dani WebDollar">
-                        <div class="over-layer">
-                            <ul class="social-link">
-                            </ul>
-                        </div>
-                    </div>
-                    <span class="teamName">Daniel</span>
-                    <span class="teamRole">Network Engineer</span>
-                    <p class="description">
-                        Daniel is a network engineer with over 20 years of experience in networking, servers, routing and firewall, he is highly passionate about technologies, cryptocurrency/blockchain, system monitoring.
-                    </p>
-                </div>
-
-
-                <div class="our-team ">
-                    <div class="team-pic">
-                        <img class="lazy" data-src="/public/assets/images/team/ConstantinBusuioceanu.jpeg" alt="Constantin Busuioceanu" title="Constantin Busuioceanu">
-                            <div class="over-layer">
-                                <ul class="social-link">
-                                    <li><a href="https://www.linkedin.com/in/busuioceanu-constantin/" class="fa fa-linkedin2" rel="noopener" target="_blank" aria-label="linkedin"></a></li>
-                                    <li><a href="https://www.facebook.com/cbusuioceanu" class="fa fa-facebook" rel="noopener" target="_blank" aria-label="facebook"></a></li>
-                                    <li><a href="https://github.com/cbusuioceanu" class="fa fa-github" rel="noopener" target="_blank" aria-label="github"></a></li>
-                                </ul>
-                            </div>
-                    </div>
-                    <span class="teamName">Constantin Busuioceanu</span>
-                    <span class="teamRole">System Engineer</span>
-                    <p class="description">
-                        Constantin has 20 years experience in Information Technology and Communications. He brought 8192bit data encryption over the Internet in Romania and it's the president of an NGO that stands for the Freedom of the Internet.
-                    </p>
-                </div>
-
-                <div class="our-team ">
-                    <div class="team-pic">
-                        <img class="lazy" data-src="/public/assets/images/team/CristianAntal.jpg" alt="Cristian Antal" title="Cristian Antal">
-                        <div class="over-layer">
-                            <ul class="social-link">
-                                <li><a href="https://github.com/xkidro" rel="noopener" target="_blank"  class="fa fa-github" aria-label="github"></a></li>
-                                <li><a href="https://twitter.com/xkidu" rel="noopener" target="_blank" class="fa fa-twitter" aria-label="twitter"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <span class="teamName">Cristian Antal</span>
-                    <span class="teamRole">DevOps</span>
-                    <p class="description">
-                        Cristian is a web developer turned crypto enthusiast, with over 10 years of development skills and working on mining platforms he aims to bring crypto closer to mass use.
-                    </p>
-                </div>
-
-            </div>
+            <span class="contributorsItem">And more contributors...</span>
 
         </div>
 
@@ -181,10 +120,74 @@
 
 <script>
 
-    export default{
-
-        name: "Team",
-
-    }
-
 </script>
+
+<style>
+  .bigMarginTopOnly {
+    margin-top: 100px;
+    margin-bottom : 0px;
+  }
+
+  .communityWrapper {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+  }
+
+  .communityWrapper span {
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  .communityImg {
+      width: 60px;
+      margin: 20px 0 10px 0;
+  }
+
+  .contributorsSection {
+      text-align: center;
+  }
+
+  .contributorWrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      text-align: center;
+      margin-top: 20px;
+      grid-gap: 30px;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 20px;
+  }
+  @media only screen and (max-width: 800px) {
+      .contributorWrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          text-align: center;
+          margin-top: 20px;
+          grid-gap: 30px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 30px;
+      }
+  }
+  @media only screen and (max-width: 600px) {
+      .contributorWrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          text-align: center;
+          margin-top: 20px;
+          grid-gap: 30px;
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 30px;
+      }
+  }
+
+  .contributorsItem {
+      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+
+</style>
