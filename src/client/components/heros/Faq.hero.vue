@@ -39,7 +39,7 @@
                         What are the risks of mining WebDollar in my browser?
                     </div>
                     <div slot="collapse-body">
-                        There is no risk involved in using WebDollar, We recommend using the level 1 of power bar since WebDollar migrated to 100 PoS on 22 July 2021. 
+                        There is no risk involved in using WebDollar, We recommend using the level 1 of power bar since WebDollar migrated to 100 PoS on 22 July 2021.
                     </div>
                 </collapse-faq>
 
@@ -87,7 +87,7 @@
 
                 <collapse-faq :selected="false" ref="PoolMiningLinkChangeForTerminalMiners">
                     <div slot="collapse-header">
-                        Will the link to pool mining change for terminal miners ?
+                        Will the link to pool mining change for terminal miners?
                     </div>
                     <div slot="collapse-body">
                         It depends from one pool to another. However, it is not profitable for a pool to change their link.
@@ -96,7 +96,7 @@
 
                 <collapse-faq :selected="false" ref="WhatIsPoW">
                     <div slot="collapse-header">
-                        What is PoW ?
+                        What is PoW?
                     </div>
                     <div slot="collapse-body">
                         Proof of Work is the way to mine new coins using your computer's CPU power. WebDollar migrated to 100% PoS on 22 July 2021.
@@ -105,7 +105,7 @@
 
                 <collapse-faq :selected="false" ref="HowWillPoSWorkOnConsensus">
                     <div slot="collapse-header">
-                        How will PoS work on consensus ?
+                        How will PoS work on consensus?
                     </div>
                     <div slot="collapse-body">
                         Proof of Stake rounds will work both for pool mining and consensus in browser and terminals.
@@ -127,7 +127,6 @@
                     </div>
                     <div slot="collapse-body">
                         WebDollar is not a token. WebDollar is working on its proprietary technology. EDUCATIONAL MOMENT: Unfortunately, cryptocurrency investors do tend to invest in tokens that have absolutely no backing other than a conceptual description. Over time, cryptocurrency investors unaware of this fact, have been investing huge amounts of money into these type of projects that have proven nothing else but good marketing skills. And therefore, the lack of technical developing skills of the teams behind those projects has lead to a dramatic price drop of the said coins or tokens which, in turn has left the investors high and dry, aka without their hard earned investment money.
-
                     </div>
                 </collapse-faq>
 
@@ -175,13 +174,13 @@
                         How can I get WebDollars?
                     </div>
                     <div slot="collapse-body">
-                        1. You can mine them directly in your browser. 2. You can invite others to mine and refer you to get some rewards. 3. You can buy from the exchanges. 4. You can become a part of our bounty hunt program on https://webdollar.io/bounties.
+                        1. You can stake them directly in your browser (with at least 100 WEBD). 2. You can stake using <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> (with at least 1 WEBD). 3. You can buy from the exchanges. 4. You can get rewards from community members by contributing (Join the <a href="https://t.me/WebDollar" target="_blank">Telegram WebDollar group</a>).
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="HowMuchWebdEarnIn24HoursMining">
                     <div slot="collapse-header">
-                        How much WebDollars (WEBD) can I earn in 24 hours of mining?
+                        How much WebDollars (WEBD) can I earn in 24 hours of staking?
                     </div>
                     <div slot="collapse-body">
                         The amount of WEBD's that you can mine in 24 hours is solely based on your mined coins stake and it is directly proportional to the stake of the entire network.
@@ -224,25 +223,16 @@
 
                 <collapse-faq :selected="false" ref="PotentialBalanceUpAndDown">
                     <div slot="collapse-header">
-                        Why does the potential balance keep going up and down ?
+                        Why does the potential balance keep going up and down?
                     </div>
                     <div slot="collapse-body">
                         Because the potential balance is just an estimate given by the pool that you are mining into.
                     </div>
                 </collapse-faq>
 
-                <collapse-faq :selected="false" ref="HowDoWebDollarBountiesWork">
-                    <div slot="collapse-header">
-                        How do WebDollar's bounties work?
-                    </div>
-                    <div slot="collapse-body">
-                        The WebDollar's built-in automated bounty program is scraping the available social media channels and it is giving you a score, according to the impact of your posts about WebDollar. This score will be used to split each section of the reward to all attendees. When providing your wallet for reward payments, you should post your wallet address in one of your posts from the social media account.
-                    </div>
-                </collapse-faq>
-
                 <collapse-faq :selected="false" ref="WhatIsPoS">
                     <div slot="collapse-header">
-                        What is PoS ?
+                        What is PoS?
                     </div>
                     <div slot="collapse-body">
                         Proof of Stake is the way to mine new coins using your already mined coin stack, instead of your CPU power, like you would do when mining with PoW.
@@ -251,7 +241,7 @@
 
                 <collapse-faq :selected="false" ref="WhenMiningInPoSKeepAllOfStakeInOneWallet">
                     <div slot="collapse-header">
-                        When mining in PoS rounds, do i have to keep all of my stake in one wallet ?
+                        When mining in PoS rounds, do I have to keep all of my stake in one wallet?
                     </div>
                     <div slot="collapse-body">
                         The chances are equal, even when you have many small wallets instead of a single, big one.
@@ -282,7 +272,7 @@
                         I have a business and would like to implement WEBD as a payment option. Is this possible? If so, whom should I contact?
                     </div>
                     <div slot="collapse-body">
-                        Yes, it is possible. You have to get in touch with a member of our team. See the links in the team section.
+                        Yes, it is possible. You have to get in touch with a member of our community. See the links in the <a href="/#community">community</a> section.
                     </div>
                 </collapse-faq>
 
