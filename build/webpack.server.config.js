@@ -8,7 +8,7 @@ const path = require('path')
 
 module.exports = merge(base, {
   target: 'node',
-  devtool: '#source-map',
+  devtool: 'source-map',
   entry: './src/entry-server.js',
   output: {
     filename: 'server-bundle.js',

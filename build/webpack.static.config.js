@@ -7,12 +7,12 @@ const webpack                 = require('webpack');
 const MiniCssExtractPlugin    = require("mini-css-extract-plugin");
 const PreloadWebpackPlugin    = require('@vue/preload-webpack-plugin');
 const VueSSRClientPlugin      = require('vue-server-renderer/client-plugin');
-const SWPrecachePlugin        = require('sw-precache-webpack-plugin');
+const { GenerateSW }          = require('workbox-webpack-plugin');
 const HtmlWebpackPlugin       = require('html-webpack-plugin');
-const CopyWebpackPlugin       = require('copy-webpack-plugin');
+const CopyPlugin              = require('copy-webpack-plugin');
 const VueLoaderPlugin         = require('vue-loader/lib/plugin');
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const CleanWebpackPlugin      = require('clean-webpack-plugin');
+const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 const TerserPlugin            = require('terser-webpack-plugin');
 
 const webpackConfig = {
@@ -20,7 +20,7 @@ const webpackConfig = {
     entry: {
         app: './src/entry-client.js'
     },
-    devtool: isProd ? false : '#cheap-module-source-map',
+    devtool: isProd ? false : 'cheap-module-source-map',
     output: {
         path      : path.resolve(__dirname, '..', 'dist'),
         publicPath: '/',
@@ -54,7 +54,6 @@ const webpackConfig = {
         minimizer: [
             new TerserPlugin({
                 parallel: true,
-                sourceMap: devMode,
             }),
             new OptimizeCSSAssetsPlugin({})
         ]
@@ -76,10 +75,11 @@ const webpackConfig = {
         }),
         new PreloadWebpackPlugin(),
         new webpack.ProvidePlugin({}),
-        new CopyWebpackPlugin([
+        new CopyPlugin({
+          patterns: [
             { from: 'public', to: 'public'},
             { from: 'manifest.json'}
-        ]),
+        ]}),
         new VueLoaderPlugin()
     ],
     module: {
@@ -128,28 +128,27 @@ const webpackConfig = {
 
 if (isProd)
 {
-    webpackConfig.plugins.push(new SWPrecachePlugin({
+    webpackConfig.plugins.push(new GenerateSW({
         cacheId: 'WebDollar-PWA',
-        filename: 'service-worker.js',
-        minify: true,
-        dontCacheBustUrlsMatching: /./,
-        staticFileGlobsIgnorePatterns: [/\.map$/, /\.json$/],
+        swDest: 'service-worker.js',
+        dontCacheBustURLsMatching: /./,
+        ignoreURLParametersMatching: [/\.map$/, /\.json$/],
         runtimeCaching: [
             {
                 urlPattern: '/',
-                handler: 'networkFirst'
+                handler: 'NetworkFirst'
             },
             {
                 urlPattern: /\/(top|new|show|ask|jobs)/,
-                handler: 'networkFirst'
+                handler: 'NetworkFirst'
             },
             {
                 urlPattern: '/item/:id',
-                handler: 'networkFirst'
+                handler: 'NetworkFirst'
             },
             {
                 urlPattern: '/user/:id',
-                handler: 'networkFirst'
+                handler: 'NetworkFirst'
             }
         ]
     }));
