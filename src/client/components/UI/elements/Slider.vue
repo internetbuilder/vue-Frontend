@@ -7,7 +7,7 @@
 
 <script>
 
-    import vueSlider from './../../../../../node_modules/vue-slider-component/src/vue2-slider.vue';
+    import VueSlider from 'vue-slider-component';
 
     export default {
         name: 'slider',
@@ -19,7 +19,7 @@
         },
 
         components: {
-            "vueSlider":vueSlider,
+            "vueSlider":VueSlider,
         },
 
         //@changed
