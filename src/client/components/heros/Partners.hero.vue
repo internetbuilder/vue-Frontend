@@ -689,13 +689,11 @@ export default {
   font-size: 18px;
   line-height: 22px;
   font-weight: 100 !important;
-  color: #fff;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 
 .teamRole {
-  color: #fcd26c;
   font-size: 12px;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -715,7 +713,6 @@ export default {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   letter-spacing: 2px;
-  color: #ababab;
   line-height: 40px;
   border: 2px solid;
   border-color: #1b1b1b;

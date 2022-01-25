@@ -6,6 +6,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import GlobalModule from './modules/Global/Global-module'
+import PageSettings from "./modules/settings/settings-store"
 
 Vue.use(Vuex);
 
@@ -14,8 +15,8 @@ export function createStore () {
         modules: {
 
             global: GlobalModule,
+            settings: PageSettings,
 
         }
     });
 }
-

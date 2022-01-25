@@ -7,43 +7,25 @@
         <div class="twoColums specialMarginTop">
 
             <div class="paperItem paperItemColor1 blackPaper">
-
                 <a href="/public/doc/WebDollar-Black-Paper.pdf" rel="noopener" target="_blank" class="paperItem paperItemColor1 whitePaper">
-
                     <div class="paperItem2 paperItemColor2">
-
                         <div class="paperItem2 paperItemColor3">
-
                             <img class="paperImg lazy" alt="Black Paper" data-src="/public/assets/images/black_paper.png">
-
                             <h2>Black Paper</h2>
-
                         </div>
-
                     </div>
-
                 </a>
-
                 <span>Short overview of the project</span>
-
             </div>
 
             <a href="/public/doc/WebDollar-White-Paper.pdf" rel="noopener" target="_blank" class="paperItem paperItemColor1 whitePaper">
-
                 <div class="paperItem2 paperItemColor2">
-
                     <div class="paperItem2 paperItemColor3">
-
                         <img class="paperImg lazy" alt="White Paper" data-src="/public/assets/images/white_paper.png">
-
                         <h2>White Paper</h2>
-
                     </div>
-
                 </div>
-
                 <span>Technical presentation of the project</span>
-
             </a>
 
         </div>
@@ -81,7 +63,6 @@
     }
 
     #papers h2{
-        color: #fff;
         font-weight: bolder!important;
     }
 
@@ -109,13 +90,21 @@
     .paperItemColor1{
         background-color: #262626;
     }
-
     .paperItemColor2{
         background-color: #414141;
     }
-
     .paperItemColor3{
         background-color: #262626;
+    }
+
+    .light .paperItemColor1{
+        background-color: #d5d9e0;
+    }
+    .light .paperItemColor2{
+        background-color: #bdc1c7;
+    }
+    .light .paperItemColor3{
+        background-color: #d5d9e0;
     }
 
     .blackPaper{

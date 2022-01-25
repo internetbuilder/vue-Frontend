@@ -46,11 +46,13 @@
 
     export default {
         mounted() {
+            this.$store.commit('readLocalStorage')
             this.$nextTick(function () {
                 fLoadLazyImages();
             });
         },
         updated() {
+            this.$store.commit('readLocalStorage')
             this.$nextTick(function () {
                 fLoadLazyImages();
             });

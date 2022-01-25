@@ -1,7 +1,7 @@
 <template>
 <div id="footer">
 
-  <div id="footerSection" class="backgroundSection">
+  <div id="footerSection">
     <div class="textContainer sectionCenteredWidth">
 
       <div class="footerContainer">

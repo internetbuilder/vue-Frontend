@@ -67,14 +67,12 @@
     }
 
     #getStartedContainer h4 {
-        color: #fff;
         font-size: 24px;
         margin-bottom: 30px;
         height: 55px;
     }
 
     #getStartedContainer p {
-        color: #8e8e8e;
         font-size: 18px;
         line-height: 28px;
     }
