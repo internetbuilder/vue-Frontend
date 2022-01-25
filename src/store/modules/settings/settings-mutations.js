@@ -14,7 +14,11 @@ export default {
     },
 
     readLocalStorage(state){
-        state.dark = ( localStorage.getItem('dark') || 'false' ) === 'true'
+        if (localStorage.getItem('dark') === null) {
+          state.dark = true
+        } else {
+          state.dark = localStorage.getItem('dark') === 'true'
+        }
         if (state.dark) {
             document.getElementsByTagName("html")[0].classList.remove('light');
         } else {
