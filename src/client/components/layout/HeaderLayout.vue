@@ -1,12 +1,14 @@
 <template>
 <div id="header" :style="{marginTop: this.alertsHeight}" :ref="'header'">
-  <!--<img src="public/WebDollar-logo-black.png" id="logo"/>-->
 
   <div class="topnav" id="menu">
 
-    <router-link to="/#mainSection" id="logoBox" class="active logoMenu" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <img v-on:click="this.collapseMenuBack" src="/public/assets/images/WebDollar-logo-white.png" alt="Cryptocurrency of the future" id="logo" title="Cryptocurrency of the future" />
+    <router-link to="/#mainSection" id="logoBox" class="logoMenu" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <img v-on:click="this.collapseMenuBack" src="/public/assets/images/WebDollar-logo-white.png" class="darkTheme" alt="Cryptocurrency of the future" id="logo" title="Cryptocurrency of the future" />
+      <img v-on:click="this.collapseMenuBack" src="/public/assets/images/WebDollar-logo-black.png" class="lightTheme" alt="Cryptocurrency of the future" id="logo" title="Cryptocurrency of the future" />
     </router-link>
+
+    <a v-on:click="this.handleToggleDark" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' "><div><span :class="`fas fa-${$store.state.settings.dark ?'sun':'moon'} nav-item-icon `" title="Switch theme" /></div></a>
 
     <a href="https://webdollar.network/" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' " rel="noopener" target="_blank">
       <div v-on:click="this.collapseMenuBack">Explorer</div>
@@ -77,6 +79,10 @@ export default {
     collapseMenuBack() {
       this.$refs['header'].style.zIndex = 10;
       this.mobileMenuOpened = false;
+    },
+
+    handleToggleDark(){
+       this.$store.commit('setDark', !this.$store.state.settings.dark)
     },
 
     showMobileMenu() {

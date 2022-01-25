@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <div class="timeline timelineUnfinishedMilestones">
-                        <div class="timeline-icon"><i class="fa fa-hammer"></i></div>
+                        <div class="timeline-icon"><i class="fa fa-code"></i></div>
                         <span class="year">ONGOING</span>
                         <div class="timeline-content">
                             <h5 class="title">WEBDOLLAR 2.0</h5>

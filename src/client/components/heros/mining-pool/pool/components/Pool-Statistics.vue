@@ -336,7 +336,6 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         letter-spacing: 2px;
-        color: #ffffff;
         line-height: 40px;
         border: 5px solid;
         border-color: #1b1b1b;
