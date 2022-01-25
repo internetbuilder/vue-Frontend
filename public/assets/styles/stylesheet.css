@@ -1,12 +1,13 @@
 :root {
-  --body-bg-color: #000;
-  --text-color: #989898;
+  --body-bg-color: #091423;
+  --websitebody-background: #ffffff0f;
+  --text-color: #c1c1c1;
   --label-color: #fff;
   --less-bright-label-color: #ccc;
   --link-color: #f6cd69;
   --link-color-hover: #fff;
   --header1-color: #ffc12c;
-  --header-color: #989898;
+  --header-color: #c1c1c1;
   --h1-background: #9a9a9a24;
   --pagetitle-color: #ffc12c;
   --pagetitle-background: #9a9a9a24;
@@ -14,26 +15,26 @@
   --yellow-color: #fcd26c;
   --green-color: #76d631;
 
-  --header-bg-color: #1f1f1f;
+  --header-bg-color: #091423;
   --menu-text-color: #D5D5D5;
   --menu-text-color-hover: #fcd26c;
-  --topnav-bg-color: #1b1b1b;
+  --topnav-bg-color: #091423;
   --topnav-bg-opacity: 1.0;
   --topnav-a-color: #f2f2f2;
   --topnav-a-color-hover: #ffc12c;
   --topnav-a-bg-color-hover: #232323;
 
-  --section-bg-color: #1b1b1b;
-  --knowus-bg-section: #1b1b1b;
+  --section-bg-color: #0b1727;
+  --knowus-bg-section: #0b1727;
   --teamwrapper-p-bg-color: #020102ad;
   --team-pic-overlay-bg: rgba(35, 35, 35, 0.88);
-  --team-social-background: #1b1b1b;
+  --team-social-background: #0b1727;
   --team-social-background-hover: #4f4f4f;
   --timeline-year-color: #ffc12c;
-  --timeline-section-bg-color: #1f1f1f;
-  --footer-bg-color: #1b1b1b;
+  --timeline-section-bg-color: #091423;
+  --footer-bg-color: #0b1727;
 
-  --collapse-bg-color: #1b1b1b;
+  --collapse-bg-color: #0b1727;
   --collapse-header-text-color: #9d9d9d;
   --collapse-content-box-bg-color: #292929e0!important;
   --collapse-content-box-text-color: #e8e8e8;
@@ -41,6 +42,7 @@
 
 .light {
   --body-bg-color: #eee;
+  --websitebody-background: #ffffffcc;
   --text-color: #1e1e1e;
   --label-color: #000;
   --less-bright-label-color: #3d3d3d;
@@ -276,6 +278,7 @@ a:hover{
   overflow: hidden;
   min-height: 1000px;
   transition: all .5s linear;
+  background: var(--websitebody-background)
 }
 
 .verticalAlignMiddle{
@@ -2394,11 +2397,4 @@ background-color:#ff2200}
 }
 .light .lightTheme{
   display: inline;
-}
-
-/* Sections with semi-transparent background in light theme */
-
-.light #websiteBody
- {
-  background-color: #ffffffcc;
 }
