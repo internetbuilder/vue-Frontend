@@ -76,7 +76,7 @@
                         <span class="teamName">Alexandru Ionut Budisteanu</span>
                         <span class="teamRole">Founder & Protocol Dev.</span>
                         <p class="description">
-                            Alexandru is a Forbes Europe 30 under 30 nominee in industry category. In 2013, he was nominated by Time Magazine as one of the most influential teens of the world. MIT named an asteroid with his name.</a>
+                            Alexandru is a Forbes Europe 30 under 30 nominee in industry category. In 2013, he was nominated by Time Magazine as one of the most influential teens of the world. MIT named an asteroid with his name.
                         </p>
                     </div>
 

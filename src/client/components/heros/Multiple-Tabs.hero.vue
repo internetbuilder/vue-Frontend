@@ -12,22 +12,6 @@
 
 </template>
 
-<script>
-
-    export default{
-
-        name: 'multiTabs',
-
-        data: () => {
-            return {
-
-            }
-        }
-
-    }
-
-</script>
-
 <style>
 
     #browserError h3{

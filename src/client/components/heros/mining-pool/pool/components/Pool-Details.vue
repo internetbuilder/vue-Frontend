@@ -49,7 +49,7 @@
                     <span class="titlePool">Started</span>
                     <span class="minerData">{{this.started ? 'activated' : 'deactivated'}} </span>
                 </div>
-                <div class="dataStatisticsItem" v-for="(poolServer, index) in this.poolServers">
+                <div class="dataStatisticsItem" v-for="(poolServer, index) in this.poolServers" :key="index">
                     <span class="titlePool">{{poolServer.name}}</span>
                     <span class="minerData">{{poolServer.connected ? 'established' : 'not established'}} </span>
                 </div>

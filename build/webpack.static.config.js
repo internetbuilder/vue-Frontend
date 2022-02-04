@@ -77,8 +77,7 @@ const webpackConfig = {
         new webpack.ProvidePlugin({}),
         new CopyPlugin({
           patterns: [
-            { from: 'public', to: 'public'},
-            { from: 'manifest.json'}
+            { from: 'public', to: 'public'}
         ]}),
         new VueLoaderPlugin()
     ],

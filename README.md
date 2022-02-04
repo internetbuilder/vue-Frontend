@@ -2,7 +2,7 @@
 
 WebDollar VueJS 2 Front-end Integration
 
-DEMO: http://webdollar.io
+DEMO: https://webdollar.io
 
 # Instructions to install
 

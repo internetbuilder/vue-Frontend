@@ -157,22 +157,3 @@
     </div>
 
 </template>
-
-
-<script>
-
-
-    export default{
-
-        name: 'CommunityHero',
-
-        components: {
-
-        },
-
-        params:{
-
-        }
-
-    }
-</script>

@@ -16,9 +16,6 @@ import SchemaMarkupMixin from './modules/utils/SEO/SchemaMarkupMixin';
 import BreadcrumbsSchemaMarkupMixin from './modules/utils/SEO/BreadcrumbsSchemaMarkupMixin';
 import WebPageTypeMixin from './modules/utils/SEO/WebPageTypeMixin';
 
-
-import * as UtilitiesFunctions from './modules/utils/global-utilities/UtilitiesFunctions';
-
 // mixin for handling title, description, etc...
 // DOCUMENTATION, it is based on Vue.js Hackernews v2 https://github.com/vuejs/vue-hackernews-2.0/blob/master/src/util/title.js
 Vue.mixin(TitleMixin);
@@ -28,11 +25,6 @@ Vue.mixin(ImagesMixin);
 Vue.mixin(SchemaMarkupMixin);
 Vue.mixin(BreadcrumbsSchemaMarkupMixin);
 Vue.mixin(WebPageTypeMixin);
-
-// register global utility helpers.
-Object.keys(UtilitiesFunctions).forEach(key => {
-  Vue.filter(key, UtilitiesFunctions[key])
-});
 
 // Expose a factory function that creates a fresh set of store, router,
 // app instances on each call (which is called for each SSR request)

@@ -33,16 +33,6 @@
     </div>
 </template>
 
-<script>
-
-    export default{
-
-        name: "BlockchainDistribution",
-
-    }
-
-</script>
-
 <style>
 
     .specialMarginTop{
