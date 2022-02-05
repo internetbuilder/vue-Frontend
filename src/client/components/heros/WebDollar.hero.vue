@@ -30,16 +30,11 @@
 
 <script>
 
-    import LoadingSpinner   from '../UI/elements/Loading-Spinner.vue';
     import WebDollarEmitter from '../../../utils/WebDollarEmitter';
 
     export default {
 
         name: "WebDollarHero",
-
-        components: {
-            LoadingSpinner,
-        },
 
         data: () => {
             return {

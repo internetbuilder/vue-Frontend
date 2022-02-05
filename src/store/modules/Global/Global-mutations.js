@@ -12,10 +12,5 @@ export default {
         state.statusMessage = statusMessage;
     },
 
-    SET_BOUNTY_COUNT_DOWN_FETCHING_NEW_LIST: (state, {bountyCountDownDate}) => {
-        state.bountyCountDownDateFetchingNewList = bountyCountDownDate;
-    },
-
-
 
 }

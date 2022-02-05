@@ -6,7 +6,6 @@ Vue.use(Router)
 // route-level code splitting
 
 const HomePage = () => import('client/pages/Home.page.vue');
-const AdminPage = () => import('client/pages/Admin.page.vue');
 const FaqPage = () => import('client/pages/Faq.page.vue');
 const PartnersPage = () => import('client/pages/Partners.page.vue');
 const MediaPage = () => import('client/pages/Media.page.vue');
@@ -68,14 +67,6 @@ export function createRouter() {
             console.log(to)
             next();
         }
-      },
-      {
-        path: '/pool',
-        component: AdminPage
-      },
-      {
-        path: '/pool/:a?',
-        component: AdminPage
       },
       {
         path: '/clearIndexedDB',

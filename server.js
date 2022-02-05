@@ -165,7 +165,6 @@ function render (req, res) {
         SEOMixinLanguage: 'en-US',
         pageType: 'article',
 
-        cookies: req.cookies,   //signedCookies instead
         ip: ip,   //the ip
         url: req.url
     };

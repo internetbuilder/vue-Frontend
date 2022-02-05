@@ -52,7 +52,7 @@
 
             getAllIndexedDBs(){
 
-                window.indexedDB.webkitGetDatabaseNames().onsuccess = function(sender,args) {
+                window.indexedDB.databases().onsuccess = function(sender,args) {
                     var r = sender.target.result;
                     for(var i in r)
                         indexedDB.deleteDatabase(r[i]);
