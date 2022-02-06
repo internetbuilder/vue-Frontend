@@ -1,5 +1,3 @@
-import babel from './modules/utils/babel_require.js'
-
 import Vue from 'vue'
 import App from './App.vue'
 import { createStore } from './store'

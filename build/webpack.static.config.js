@@ -11,7 +11,7 @@ const { GenerateSW }          = require('workbox-webpack-plugin');
 const HtmlWebpackPlugin       = require('html-webpack-plugin');
 const CopyPlugin              = require('copy-webpack-plugin');
 const VueLoaderPlugin         = require('vue-loader/lib/plugin');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin      = require("css-minimizer-webpack-plugin");
 const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 const TerserPlugin            = require('terser-webpack-plugin');
 
@@ -55,7 +55,7 @@ const webpackConfig = {
             new TerserPlugin({
                 parallel: true,
             }),
-            new OptimizeCSSAssetsPlugin({})
+            new CssMinimizerPlugin({})
         ]
     },
     plugins: [
