@@ -18,12 +18,9 @@
 </template>
 
 <script>
-    import Vue from 'vue';
-    import Clipboard from 'v-clipboard';
+
     import PoolStatistics from '../pool/components/Pool-Statistics.vue';
     import WebDollarEmitter from '../../../../../utils/WebDollarEmitter';
-
-    Vue.use(Clipboard);
 
     export default {
 
@@ -86,10 +83,6 @@
         },
 
         methods: {
-
-            copyToClipboard() {
-                this.$clipboard(this.poolURLReferral);
-            },
 
             loadPoolData() {
 

@@ -51,14 +51,14 @@ function getSchemaMarkup (vm) {
             ? url.call(vm)
             : url;
 
-        if ((typeof imagesData === 'undefined')||(imagesData === null)||(imagesData.length === 0)) imagesData = [ {url: "http://webdollar.io/public/images/WebDollar-Landing-image.png", alt:"WebDollar Browser Blockchain Mining"}];
+        if ((typeof imagesData === 'undefined')||(imagesData === null)||(imagesData.length === 0)) imagesData = [ {url: "https://webdollar.io/public/images/WebDollar-Landing-image.png", alt:"WebDollar Browser Blockchain Mining"}];
         if ((typeof titleData === 'undefined')||(titleData === '')) titleData = '"WebDollar Currency of the Internet - Browser Blockchain Mining';
         if ((typeof descriptionData === 'undefined')||(descriptionData === '')) descriptionData = '"WebDollar - Currency of the Internet. WebDollar - Browser based Blockchain mining & ecosystem ';
         if ((typeof webPageTypeData === 'undefined')||(webPageTypeData === '')) webPageTypeData = 'website';
         if ((typeof keywordsData === 'undefined')||(keywordsData === null)||(keywordsData.length === 0)) keywordsData = ['webdollar, browser blockchain, browser mining, online mining'];
         if ((typeof dateCreationData === 'undefined')||(dateCreationData === '')) dateCreationData = '';
         if ((typeof dateLastActivityData === 'undefined')||(dateLastActivityData === '')) dateLastActivityData = '';
-        if ((typeof urlData === 'undefined')||(urlData==='')) urlData = "http://webdollar.io/";
+        if ((typeof urlData === 'undefined')||(urlData==='')) urlData = "https://webdollar.io/";
 
         console.log(imagesData);
 
@@ -72,7 +72,7 @@ function getSchemaMarkup (vm) {
                 mixinSchemas ={
                     "@context": "http://schema.org",
                     "@type": "WebSite",
-                    url: "http://webdollar.io/",
+                    url: "https://webdollar.io/",
                     name: titleData,
                     author: authorData,
                     description: descriptionData,
@@ -98,7 +98,7 @@ function getSchemaMarkup (vm) {
                         "@type":"Organization",
                         name:"WebDollar"
                     },
-                    url: "http://webdollar.io",
+                    url: "https://webdollar.io",
                     datePublished: dateCreationData.toString(),
                     dateCreated: dateCreationData.toString(),
                     dateModified: dateLastActivityData.toString(),

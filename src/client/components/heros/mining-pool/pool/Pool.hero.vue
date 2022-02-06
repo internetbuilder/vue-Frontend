@@ -5,36 +5,9 @@
 
         <div id="" class="createPoolSection">
 
-            <h1 class="alignCenter bigMarginBottom">POOL Staking</h1>
+            <h1 class="alignCenter">POOL Staking</h1>
 
             <div class="distributionContainer">
-
-                <div class="distributionGrid borderBottom">
-                    <h2 class="subtitle">Pool Quick Command</h2>
-                </div>
-                <div class="distributionGrid borderBottom">
-                    <h2 class="subtitle">Pool Statistics</h2>
-                </div>
-
-                <div class="distributionGrid">
-
-                    <div class="verticalAlignMiddle">
-
-                        <div class="twoButtons">
-
-                            <router-link to="/pool">
-                                <p class="copyPoolLink">Pool Dashboard</p>
-                            </router-link>
-
-                            <p class="copyPoolLink" v-show="this.poolURL !== ''" @click="copyToClipboard">
-                                Copy invite link
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
 
                 <pool-statistics ref="poolStatistics"
                                  :poolName="poolName" :poolWebsite="poolWebsite"
@@ -48,7 +21,7 @@
             </div>
 
 
-            <div class="dataStatisticsItem" v-for="(poolServer, index) in this.poolServers">
+            <div class="dataStatisticsItem" v-for="(poolServer, index) in this.poolServers" :key="index">
                 <span class="titlePool serverPool" >{{poolServer.name}}</span>
                 <span class="minerData serverPoolStatus" >{{poolServer.connected ? 'connected - '  + (poolServer.established ? 'established' : 'not established' )  : 'not connected'}} </span>
             </div>
@@ -61,12 +34,8 @@
 
 <script>
 
-    import Vue from 'vue';
-    import Clipboard from 'v-clipboard';
     import PoolStatistics from './components/Pool-Statistics.vue'
     import WebDollarEmitter from "../../../../../utils/WebDollarEmitter";
-
-    Vue.use(Clipboard);
 
     export default{
 
@@ -106,10 +75,6 @@
                 if (typeof WebDollar.Blockchain.PoolManagement !== 'undefined') {
                     await WebDollar.Blockchain.PoolManagement.poolSettings.setPoolFee(this.poolFee/100);
                 }
-            },
-
-            copyToClipboard(){
-                this.$clipboard(this.poolURL);
             },
 
             loadPoolData(){

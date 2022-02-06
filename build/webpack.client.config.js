@@ -1,8 +1,9 @@
 const webpack            = require('webpack')
-const merge              = require('webpack-merge')
+const { merge }          = require('webpack-merge')
 const base               = require('./webpack.base.config')
 const {GenerateSW}       = require('workbox-webpack-plugin');
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
+const VueLoaderPlugin    = require('vue-loader/lib/plugin')
 
 const config = merge(base, {
   entry: {
@@ -21,7 +22,7 @@ const config = merge(base, {
       'process.env.VUE_ENV': '"client"'
     }),
     // extract vendor chunks for better caching
-    new webpack.optimize.CommonsChunkPlugin({
+    new webpack.optimize.SplitChunksPlugin({
       name: 'vendor',
       minChunks: function (module) {
         // a module is extracted into the vendor chunk if...
@@ -35,10 +36,11 @@ const config = merge(base, {
     }),
     // extract webpack runtime & manifest to avoid vendor chunk hash changing
     // on every build.
-    new webpack.optimize.CommonsChunkPlugin({
+    new webpack.optimize.SplitChunksPlugin({
       name: 'manifest'
     }),
-    new VueSSRClientPlugin()
+    new VueSSRClientPlugin(),
+    new VueLoaderPlugin()
   ]
 })
 

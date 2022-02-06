@@ -11,16 +11,16 @@ module.exports = {
     },
     SEOMixinKeywords: 'cryptocurrency, blockchain, browser mining, bitcoin alternative, future of cryptocurrency, cryptocoin',
     SEOMixinImages:
-    '<meta property="og:image"  content="http://webdollar.io/public/assets/images/WebDollar-Landing-image.png"  /> ' +
+    '<meta property="og:image"  content="https://webdollar.io/public/assets/images/WebDollar-Landing-image.png"  /> ' +
     '<meta property="og:image:alt" content="WebDollar - Currency of Internet" />' +
-    '<meta property="twitter:image"  content="http://webdollar.io/public/assets/images/WebDollar-Landing-image.png" />'+
+    '<meta property="twitter:image"  content="https://webdollar.io/public/assets/images/WebDollar-Landing-image.png" />'+
     '<meta property="twitter:image:alt" content="WebDollar - Currency of the Internet"/>',
     SEOMixinSchemaMarkup: JSON.stringify({
         "@context": "http://schema.org",
         "@type": "WebSite",
         name: "WebDollar",
         alternateName: "WebDollar Currency of the Internet",
-        url: "http://webdollar.io/",
+        url: "https://webdollar.io/",
         potentialAction: {
             "@type": "SearchAction",
             // target: "http://skyhub.me/search/{query}",
@@ -36,7 +36,7 @@ module.exports = {
             item: {
                 "@id": "https://webolldar.io/",
                 name: "Home",
-                image: "http://webdollar.io/public/WebDollar-logo.jpg"
+                image: "https://webdollar.io/public/assets/images/WebDollar-logo-white.png"
             }
         }],
     }),

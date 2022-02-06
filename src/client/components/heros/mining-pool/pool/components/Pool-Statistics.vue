@@ -4,30 +4,6 @@
         <div class="distributionGrid borderBottom">
             <h2 class="subtitle">POOL STATISTICS</h2>
         </div>
-        <!-- <span class="oneLineText">
-          Your Role: <span class="normalSpan yellowColor"> {{statsType}} </span>
-          </span>
-
-          <span class="oneLineText">
-          Pool Status: <span class="normalSpan Uppercase" :class="this.selectStatusColor">{{ this.poolStatus }}</span>
-          </span>
-
-          <span class="oneLineText">
-          Online Hosts: <span class="normalSpan" :class="this.selectOnlineHostColor"> {{ this.onlineHosts }} </span>
-          </span>
-
-          <span class="oneLineText">
-          Pool Hash: <span class="normalSpan yellowColor"> {{this.getHashrate }} {{this.getHashrateSign}}</span>
-          </span>
-
-          <span class="oneLineText">
-          Pool Power: <span class="normalSpan yellowColor"> {{this.getPoolPower }}% </span>
-          </span>
-
-          <span class="oneLineText">
-          Time to next block: <span class="normalSpan" :class="this.isNotNullColor"> {{this.showPoolRemainingTime}} </span>
-          </span> -->
-
 
         <a :href="this.poolWebsite">
             <div class='stat-box-link'>
@@ -41,7 +17,7 @@
         <div class='stat-box'>
 
             <p class="stat-box-small">Pool Fee: </p>
-            <p class="normalSpan yellowColor" :class="this.isNotNullColor"> {{this.poolFee}}%</a></p>
+            <p class="normalSpan yellowColor" :class="this.isNotNullColor"> {{ this.poolFee }}</p>
 
         </div>
 
@@ -56,7 +32,6 @@
 
             <p class="stat-box-small">Blocks Paid: </p>
             <p class="normalSpan" :class="this.isNotNullColor"> {{this.poolBlocksConfirmedAndPaid}} </p>
-            <!--Being confirmed: <span class="normalSpan" :class="this.isNotNullColor"> {{this.poolBlocksBeingConfirmed}} </span> Unconfirmed <span class="normalSpan" :class="this.isNotNullColor"> {{this.poolBlocksUnconfirmed}} </span>-->
 
         </div>
 
@@ -67,8 +42,6 @@
 
         </div>
 
-        <!--<network ref="minerPool" :poolWebsite="poolWebsite"> </network>-->
-
     </div>
 </template>
 
@@ -76,11 +49,8 @@
     import Vue from 'vue';
     import Utils from 'src/utils/util-functions';
     import WebDollarEmitter from './../../../../../../utils/WebDollarEmitter';
-    import Network from "src/client/components/heros/Network.hero.vue"
 
     export default {
-
-        components: {Network},
 
         data: () => {
             return {

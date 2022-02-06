@@ -2,7 +2,6 @@ const fs = require('fs')
 const path = require('path')
 const LRU = require('lru-cache')
 const express = require('express')
-const favicon = require('serve-favicon')
 const compression = require('compression')
 const resolve = file => path.resolve(__dirname, file)
 const { createBundleRenderer } = require('vue-server-renderer')
@@ -61,10 +60,8 @@ const serve = (path, cache) => express.static(resolve(path), {
 })
 
 app.use(compression({ threshold: 0 }))
-app.use(favicon('./public/assets/images/logo-48.png'))
 app.use('/dist', serve('./dist', true))
 app.use('/public', serve('./public', true))
-app.use('/manifest.json', serve('./manifest.json', true))
 app.use('/.well-known/acme-challenge', serve('./certificates/well-known/acme-challenge', true) );
 app.use(cors({credentials: true,}));
 
@@ -134,16 +131,16 @@ function render (req, res) {
         },
         SEOMixinKeywords: 'cryptocurrency, blockchain, browser mining, bitcoin alternative, future of cryptocurrency, cryptocoin',
         SEOMixinImages:
-        '<meta property="og:image"  content="http://webdollar.io/public/assets/images/WebDollar-Landing-image.png"  /> ' +
+        '<meta property="og:image"  content="https://webdollar.io/public/assets/images/WebDollar-Landing-image.png"  /> ' +
         '<meta property="og:image:alt" content="WebDollar - Currency of Internet" />' +
-        '<meta property="twitter:image"  content="http://webdollar.io/public/assets/images/WebDollar-Landing-image.png" />'+
+        '<meta property="twitter:image"  content="https://webdollar.io/public/assets/images/WebDollar-Landing-image.png" />'+
         '<meta property="twitter:image:alt" content="WebDollar - Currency of the Internet"/>',
         SEOMixinSchemaMarkup:{
             "@context": "http://schema.org",
             "@type": "WebSite",
             name: "WebDollar",
             alternateName: "WebDollar Currency of the Internet",
-            url: "http://webdollar.io/",
+            url: "https://webdollar.io/",
             potentialAction: {
                 "@type": "SearchAction",
                 // target: "http://skyhub.me/search/{query}",
@@ -157,9 +154,9 @@ function render (req, res) {
                 "@type": "ListItem",
                 position: 1,
                 item: {
-                    "@id": "https://webolldar.io/",
+                    "@id": "https://webdollar.io/",
                     name: "Home",
-                    image: "http://webdollar.io/public/WebDollar-logo.jpg"
+                    image: "https://webdollar.io/public/assets/images/WebDollar-logo-white.png"
                 }
             }],
         },
@@ -168,7 +165,6 @@ function render (req, res) {
         SEOMixinLanguage: 'en-US',
         pageType: 'article',
 
-        cookies: req.cookies,   //signedCookies instead
         ip: ip,   //the ip
         url: req.url
     };

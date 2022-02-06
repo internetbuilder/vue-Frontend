@@ -15,7 +15,7 @@
 
                         <select id="poolConnectionSelect" v-model="poolsListSelected" class="poolSelect" @change="handleConnectionSelect">
                             <option class="poolSelectOption" >Consensus (No Pool)</option>
-                            <option v-for="(poolListElement, index) in this.poolsList" class="poolSelectOption"  >
+                            <option v-for="(poolListElement, index) in this.poolsList" class="poolSelectOption" :key="index">
                                 {{poolListElement.poolName}}
                             </option>
                         </select>
@@ -38,7 +38,6 @@
     import Vue from 'vue/dist/vue';
 
     import slider from '../UI/elements/Slider.vue';
-    import Clipboard from 'v-clipboard';
     import WebDollarEmitter from './../../../utils/WebDollarEmitter';
 
     export default{

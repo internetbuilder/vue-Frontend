@@ -12,14 +12,11 @@ import mutations from './Global-mutations'
 export default {
     state:  {
 
-
         screenHeight: 0,
         screenWidth:0,
 
         statusType: '',
         statusMessage: '',
-
-        bountyCountDownDateFetchingNewList: 0,
 
     },
     actions,
