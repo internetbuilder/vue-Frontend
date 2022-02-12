@@ -131,9 +131,12 @@ function render (req, res) {
         },
         SEOMixinKeywords: 'cryptocurrency, blockchain, browser mining, bitcoin alternative, future of cryptocurrency, cryptocoin',
         SEOMixinImages:
-        '<meta property="og:image"  content="https://webdollar.io/public/assets/images/WebDollar-Landing-image.png"  /> ' +
+        '<meta property="og:image" content="https://webdollar.io/public/assets/images/WebDollar-landing-og.jpg" /> ' +
+        '<meta property="og:image:type" content="image/jpeg" /> ' +
+        '<meta property="og:image:height" content="630" /> ' +
+        '<meta property="og:image:width" content="1200" /> ' +
         '<meta property="og:image:alt" content="WebDollar - Currency of Internet" />' +
-        '<meta property="twitter:image"  content="https://webdollar.io/public/assets/images/WebDollar-Landing-image.png" />'+
+        '<meta property="twitter:image" content="https://webdollar.io/public/assets/images/WebDollar-landing-twitter.jpg" />'+
         '<meta property="twitter:image:alt" content="WebDollar - Currency of the Internet"/>',
         SEOMixinSchemaMarkup:{
             "@context": "http://schema.org",

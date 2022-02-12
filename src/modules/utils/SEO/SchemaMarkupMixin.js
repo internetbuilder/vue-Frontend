@@ -51,7 +51,7 @@ function getSchemaMarkup (vm) {
             ? url.call(vm)
             : url;
 
-        if ((typeof imagesData === 'undefined')||(imagesData === null)||(imagesData.length === 0)) imagesData = [ {url: "https://webdollar.io/public/images/WebDollar-Landing-image.png", alt:"WebDollar Browser Blockchain Mining"}];
+        if ((typeof imagesData === 'undefined')||(imagesData === null)||(imagesData.length === 0)) imagesData = [ {url: "https://webdollar.io/public/images/WebDollar-landing-og.jpg", alt:"WebDollar Browser Blockchain Mining"}];
         if ((typeof titleData === 'undefined')||(titleData === '')) titleData = '"WebDollar Currency of the Internet - Browser Blockchain Mining';
         if ((typeof descriptionData === 'undefined')||(descriptionData === '')) descriptionData = '"WebDollar - Currency of the Internet. WebDollar - Browser based Blockchain mining & ecosystem ';
         if ((typeof webPageTypeData === 'undefined')||(webPageTypeData === '')) webPageTypeData = 'website';
