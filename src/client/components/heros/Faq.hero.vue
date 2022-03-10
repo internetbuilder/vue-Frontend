@@ -2,7 +2,7 @@
 
     <div id="faqSection">
 
-        <span class="alignCenter bigMarginTop pageTitle">Cryptocurrency explained</span>
+        <span class="alignCenter bigMarginTop pageTitle">{{ $i18n.t('heroes.faq.cryptocurrencyExplained') }}</span>
 
         <div class="faqContainer sectionCenteredWidth">
 
@@ -10,141 +10,145 @@
 
                 <collapse-faq :selected="false" ref="WhatIsWebDollar">
                     <div slot="collapse-header">
-                        What is WebDollar?
+                        {{ $i18n.t('heroes.faq.whatIsWebdollar') }}
                     </div>
                     <div slot="collapse-body">
-                        WebDollar is a browser based digital currency. The main advantages to it, are that WebDollars can be mined in your browser and you can transfer funds by storing the wallets locally, without using third parties.
+                        {{ $i18n.t('heroes.faq.whatIsWebdollarAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhatsItLikeUsingWebDollar">
                     <div slot="collapse-header">
-                        What's it like using WebDollar?
+                        {{ $i18n.t('heroes.faq.whatItsLikeUsingWebd') }}
                     </div>
                     <div slot="collapse-body">
-                        WebDollar is a peer to peer (p2p) currency which is native to the internet. The WebDollar protocol and blockchain were designed to be light and to work without the installation of any additional software or plugins for wallets or mining. A mini-blockchain is downloaded directly into your browser, while your wallet is securely stored and encrypted directly into your computer. Full consensus is achieved in a matter of seconds by using a novel PPoW - Proofs of Proof of Work algorithm to allow light nodes to check the balance and validate transactions in a matter of seconds. Being native to the internet, WebDollar is enabling miners to start mining with a click of a button.
+                        {{ $i18n.t('heroes.faq.whatItsLikeUsingWebdAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhatsValueOfWebDollarInFiatCurrency">
                     <div slot="collapse-header">
-                        What’s the value of WebDollar in FIAT (conventional) currency?
+                        {{ $i18n.t('heroes.faq.whatsValueOfWebDollarInFiatCurrency') }}
                     </div>
                     <div slot="collapse-body">
-                        The value is based on the demand and supply imposed by the market. The price was and is currently set by the market.                    </div>
+                        {{ $i18n.t('heroes.faq.whatsValueOfWebDollarInFiatCurrencyAnswer') }}
+                    </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhatAreRisksOfMiningWebDollarInBrowser">
                     <div slot="collapse-header">
-                        What are the risks of mining WebDollar in my browser?
+                        {{ $i18n.t('heroes.faq.whatAreRisksOfMiningWebDollarInBrowser') }}
                     </div>
                     <div slot="collapse-body">
-                        There is no risk involved in using WebDollar, We recommend using the level 1 of power bar since WebDollar migrated to 100 PoS on 22 July 2021.
+                        {{ $i18n.t('heroes.faq.whatAreRisksOfMiningWebDollarInBrowserAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="HowIsWebDollarDifferent">
                     <div slot="collapse-header">
-                        How is WebDollar different, when compared to other cryptocurrencies?
+                        {{ $i18n.t('heroes.faq.howIsWebDollarDifferent') }}
                     </div>
                     <div slot="collapse-body">
-                        WebDollar is the easiest and fastest way to use cryptocurrencies. You don’t need technical knowledge or dedicated hardware resources. WebDollar aims to make its usage available for every laptop and smartphone, which is why we migrated to POS 100% (Proof Of Stake). We want to give everyone the opportunity to mine and take part in the new world of cryptocurrency.</div>
+                        {{ $i18n.t('heroes.faq.howIsWebDollarDifferentAnswer') }}
+                    </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhereAreTheWalletsStored">
                     <div slot="collapse-header">
-                        Where are the wallets stored?
+                        {{ $i18n.t('heroes.faq.whereAreTheWalletsStored') }}
                     </div>
                     <div slot="collapse-body">
-                        The Wallets are stored and managed securely by the Browser, by using the Indexed DB API. The wallet's storage location varies from one browser to another. You can also download the wallet as a file and store it on another browser, disk drive, USB drive, cloud storage, cold storage, etc.                    </div>
+                        {{ $i18n.t('heroes.faq.whereAreTheWalletsStoredAnswer') }}
+                    </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="SupportSmartContracts">
                     <div slot="collapse-header">
-                        Does WebDollar support smart contracts?
+                        {{ $i18n.t('heroes.faq.supportSmartContracts') }}
                     </div>
                     <div slot="collapse-body">
-                        In the near future WebDollar will incorporate a native smart contract system.
+                        {{ $i18n.t('heroes.faq.supportSmartContractsAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="MyBalanceSwitchedToZero">
                     <div slot="collapse-header">
-                        Why did my balance switched to 0?
+                        {{ $i18n.t('heroes.faq.myBalanceSwitchedToZero') }}
                     </div>
                     <div slot="collapse-body">
-                        If you had no available balance before, this may be caused by the fact that you were connected to another pool and the potential balance from the previous pool is not displayed anymore. You will still receive the WEBD mined in the previous pool.                    </div>
+                        {{ $i18n.t('heroes.faq.myBalanceSwitchedToZeroAnswer') }}
+                    </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhatIsPotentialBalance">
                     <div slot="collapse-header">
-                        What is potential balance?
+                        {{ $i18n.t('heroes.faq.whatIsPotentialBalance') }}
                     </div>
                     <div slot="collapse-body">
-                        The potential balance is the approximation of your total balance at the next payout by the pool. This can vary greatly, because it's the proportion between your involved processing power and the total processing power of the network (which too, will vary).
+                        {{ $i18n.t('heroes.faq.whatIsPotentialBalanceAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="PoolMiningLinkChangeForTerminalMiners">
                     <div slot="collapse-header">
-                        Will the link to pool mining change for terminal miners?
+                        {{ $i18n.t('heroes.faq.poolMiningLinkChangeForTerminalMiners') }}
                     </div>
                     <div slot="collapse-body">
-                        It depends from one pool to another. However, it is not profitable for a pool to change their link.
+                        {{ $i18n.t('heroes.faq.poolMiningLinkChangeForTerminalMinersAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhatIsPoW">
                     <div slot="collapse-header">
-                        What is PoW?
+                        {{ $i18n.t('heroes.faq.whatIsPoW') }}
                     </div>
                     <div slot="collapse-body">
-                        Proof of Work is the way to mine new coins using your computer's CPU power. WebDollar migrated to 100% PoS on 22 July 2021.
+                        {{ $i18n.t('heroes.faq.whatIsPoWAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="HowWillPoSWorkOnConsensus">
                     <div slot="collapse-header">
-                        How will PoS work on consensus?
+                        {{ $i18n.t('heroes.faq.howWillPoSWorkOnConsensus') }}
                     </div>
                     <div slot="collapse-body">
-                        Proof of Stake rounds will work both for pool mining and consensus in browser and terminals.
+                        {{ $i18n.t('heroes.faq.howWillPoSWorkOnConsensusAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="MineInPoSFromScratchOrBuyInOrderToStake">
                     <div slot="collapse-header">
-                        Can I mine in PoS rounds from scratch or do I need to buy in order to stake?
+                        {{ $i18n.t('heroes.faq.mineInPoSFromScratchOrBuyInOrderToStake') }}
                     </div>
                     <div slot="collapse-body">
-                        If you're mining from scratch you won't be able to earn coins. You need to have an amount of WebDollars (100 WEBD) first to stake with, in the PoS rounds.
+                        {{ $i18n.t('heroes.faq.mineInPoSFromScratchOrBuyInOrderToStakeAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="IsWebDollarAToken">
                     <div slot="collapse-header">
-                        Is WebDollar a token?
+                        {{ $i18n.t('heroes.faq.isWebDollarAToken') }}
                     </div>
                     <div slot="collapse-body">
-                        WebDollar is not a token. WebDollar is working on its proprietary technology. EDUCATIONAL MOMENT: Unfortunately, cryptocurrency investors do tend to invest in tokens that have absolutely no backing other than a conceptual description. Over time, cryptocurrency investors unaware of this fact, have been investing huge amounts of money into these type of projects that have proven nothing else but good marketing skills. And therefore, the lack of technical developing skills of the teams behind those projects has lead to a dramatic price drop of the said coins or tokens which, in turn has left the investors high and dry, aka without their hard earned investment money.
+                        {{ $i18n.t('heroes.faq.isWebDollarATokenAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="CompatibleBrowsers">
                     <div slot="collapse-header">
-                        Which browsers are compatible with WebDollar?
+                        {{ $i18n.t('heroes.faq.compatibleBrowsers') }}
                     </div>
                     <div slot="collapse-body">
-                        Chrome, Firefox, Opera, Edge and others.
+                        {{ $i18n.t('heroes.faq.compatibleBrowsersAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="DoesItWorkOnIphoneIos">
                     <div slot="collapse-header">
-                        Does it work on Iphone (iOS)?
+                        {{ $i18n.t('heroes.faq.doesItWorkOnIphoneIos') }}
                     </div>
                     <div slot="collapse-body">
-                        Yes, it is working on IOS browser, but for the moment only in incognito mode. We also have an app for IOS, but it is not yet possible to add it on the store because the Apple politics regarding cryptocurrencies.
+                        {{ $i18n.t('heroes.faq.doesItWorkOnIphoneIosAnswer') }}
                     </div>
                 </collapse-faq>
 
@@ -154,144 +158,140 @@
 
                 <collapse-faq :selected="false" ref="HowAreWEBDsCreated">
                     <div slot="collapse-header">
-                        How are WEBD's created?
+                        {{ $i18n.t('heroes.faq.howAreWEBDsCreated') }}
                     </div>
                     <div slot="collapse-body">
-                        The coins are created by a mathematical algorithm basing on your already mined coins in POS (Proof Of Stake) rounds.
+                        {{ $i18n.t('heroes.faq.howAreWEBDsCreatedAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhatCanIDoWithWebDollars">
                     <div slot="collapse-header">
-                        What can I do with WebDollars?
+                        {{ $i18n.t('heroes.faq.whatCanIDoWithWebDollars') }}
                     </div>
                     <div slot="collapse-body">
-                        WebDollar is meant to be used as you would use just about any other currency: paying for products online, trading for goods, trading in for other currencies. In addition, WebDollar can be used for cross border payments with no currency exchange fees. The community around the open source project, WebDollar, is continuously building the ecosystem.                    </div>
+                        {{ $i18n.t('heroes.faq.whatCanIDoWithWebDollarsAnswer') }}
+                    </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="HowCanIGetWebDollars">
                     <div slot="collapse-header">
-                        How can I get WebDollars?
+                        {{ $i18n.t('heroes.faq.howCanIGetWebDollars') }}
                     </div>
-                    <div slot="collapse-body">
-                        1. You can stake them directly in your browser (with at least 100 WEBD). 2. You can stake using <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> (with at least 1 WEBD). 3. You can buy from the exchanges. 4. You can get rewards from community members by contributing (Join the <a href="https://t.me/WebDollar" target="_blank">Telegram WebDollar group</a>).
-                    </div>
+                    <div slot="collapse-body" v-html="$i18n.t('heroes.faq.howCanIGetWebDollarsAnswer')" />
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="HowMuchWebdEarnIn24HoursMining">
                     <div slot="collapse-header">
-                        How much WebDollars (WEBD) can I earn in 24 hours of staking?
+                        {{ $i18n.t('heroes.faq.howMuchWebdEarnIn24HoursMining') }}
                     </div>
                     <div slot="collapse-body">
-                        The amount of WEBD's that you can mine in 24 hours is solely based on your mined coins stake and it is directly proportional to the stake of the entire network.
+                        {{ $i18n.t('heroes.faq.howMuchWebdEarnIn24HoursMiningAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="HowAreWalletsSecured">
                     <div slot="collapse-header">
-                        How are the wallets secured?
+                        {{ $i18n.t('heroes.faq.howAreWalletsSecured') }}
                     </div>
                     <div slot="collapse-body">
-                        The wallets are stored directly into your browser, avoiding third parties. Your browser is the only one that is storing your wallet. NOTE: Like with any other coin or token, if you lose your wallet's recovery password, your WebDollars will be locked for ever.                     </div>
+                        {{ $i18n.t('heroes.faq.howAreWalletsSecuredAnswer') }}
+                    </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="UseOtherWallets">
                     <div slot="collapse-header">
-                        Can I use other wallets to store WEBD, for example Ledger Nano S, Trezor, Keep Key, etc?
+                        {{ $i18n.t('heroes.faq.useOtherWallets') }}
                     </div>
                     <div slot="collapse-body">
-                        Yes! Now, you can download your wallet and store it on an external device and when you want to make a transaction, you can import the transaction or sign it online/offline with the wallet from the stored device. In the near future, WebDollar will also be integrated to use dedicated crypto devices (Ledger Nano S, Trezor,etc).
+                        {{ $i18n.t('heroes.faq.useOtherWalletsAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="ImportWalletBrowser">
                     <div slot="collapse-header">
-                        Can I import an existing wallet into my browser?
+                        {{ $i18n.t('heroes.faq.importWalletBrowser') }}
                     </div>
                     <div slot="collapse-body">
-                        Yes, you will be able to import and export your wallet from one browser to another one. The wallet is managed by your browser, not by the WebDollar Protocol or other third parties.                    </div>
+                        {{ $i18n.t('heroes.faq.importWalletBrowserAnswer') }}
+                    </div>
                 </collapse-faq>
 
-                <collapse-faq :selected="false" ref="WhatIsAvaiableBalance">
+                <collapse-faq :selected="false" ref="WhatIsAvailableBalance">
                     <div slot="collapse-header">
-                        What is available balance?
+                        {{ $i18n.t('heroes.faq.whatIsAvailableBalance') }}
                     </div>
                     <div slot="collapse-body">
-                        It is the balance stored into the blockchain by the whole network, which can only be changed by means of transactions.
+                        {{ $i18n.t('heroes.faq.whatIsAvailableBalanceAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="PotentialBalanceUpAndDown">
                     <div slot="collapse-header">
-                        Why does the potential balance keep going up and down?
+                        {{ $i18n.t('heroes.faq.potentialBalanceUpAndDown') }}
                     </div>
                     <div slot="collapse-body">
-                        Because the potential balance is just an estimate given by the pool that you are mining into.
+                        {{ $i18n.t('heroes.faq.potentialBalanceUpAndDownAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhatIsPoS">
                     <div slot="collapse-header">
-                        What is PoS?
+                        {{ $i18n.t('heroes.faq.whatIsPoS') }}
                     </div>
                     <div slot="collapse-body">
-                        Proof of Stake is the way to mine new coins using your already mined coin stack, instead of your CPU power, like you would do when mining with PoW.
+                        {{ $i18n.t('heroes.faq.whatIsPoSAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhenMiningInPoSKeepAllOfStakeInOneWallet">
                     <div slot="collapse-header">
-                        When mining in PoS rounds, do I have to keep all of my stake in one wallet?
+                        {{ $i18n.t('heroes.faq.whenMiningInPoSKeepAllOfStakeInOneWallet') }}
                     </div>
                     <div slot="collapse-body">
-                        The chances are equal, even when you have many small wallets instead of a single, big one.
+                        {{ $i18n.t('heroes.faq.whenMiningInPoSKeepAllOfStakeInOneWalletAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="StakingMyCoinsWithPOSRequiresCertainTypeOfDevice">
                     <div slot="collapse-header">
-                        Is staking my coins with POS, requiring a certain type of device?
+                        {{ $i18n.t('heroes.faq.stakingMyCoinsWithPOSRequiresCertainTypeOfDevice') }}
                     </div>
                     <div slot="collapse-body">
-                        Every compatible browser will suffice, regardless of the device (PC, laptop, tablet, smartphone, etc).
+                        {{ $i18n.t('heroes.faq.stakingMyCoinsWithPOSRequiresCertainTypeOfDeviceAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="HelpTheProjectWhomDoIContact">
                     <div slot="collapse-header">
-                        I want to help the project. Whom do I contact?
+                        {{ $i18n.t('heroes.faq.helpTheProjectWhomDoIContact') }}
                     </div>
                     <div slot="collapse-body">
-                        WebDollar is an open source project and anyone can join and help. You can contact our general manager and after talking with him, we will come to a conclusion as to which is the best way that you can help our project.
-
+                        {{ $i18n.t('heroes.faq.helpTheProjectWhomDoIContactAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="ImplementWEBDAsAPaymentOption">
                     <div slot="collapse-header">
-                        I have a business and would like to implement WEBD as a payment option. Is this possible? If so, whom should I contact?
+                        {{ $i18n.t('heroes.faq.implementWEBDAsAPaymentOption') }}
                     </div>
-                    <div slot="collapse-body">
-                        Yes, it is possible. You have to get in touch with a member of our community. See the links in the <a href="/#community">community</a> section.
-                    </div>
+                    <div slot="collapse-body" v-html="$i18n.t('heroes.faq.implementWEBDAsAPaymentOptionAnswer')" />
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="DoesItWorkOnAndroidPhones">
                     <div slot="collapse-header">
-                        Does it work on Android phones?
+                        {{ $i18n.t('heroes.faq.doesItWorkOnAndroidPhones') }}
                     </div>
                     <div slot="collapse-body">
-                        Yes, it is working for Android browsers and we even have an app in Google Play Store for WebDollar.
+                        {{ $i18n.t('heroes.faq.doesItWorkOnAndroidPhonesAnswer') }}
                     </div>
                 </collapse-faq>
 
                 <collapse-faq :selected="false" ref="WhereCanISeeTheSourceCode">
                     <div slot="collapse-header">
-                        Where can I see the source code?
+                        {{ $i18n.t('heroes.faq.whereCanISeeTheSourceCode') }}
                     </div>
-                    <div slot="collapse-body">
-                        Because we like to be transparent all of our codebase is open source on our <a href="https://github.com/WebDollar" target="_blank">GitHub</a> . Anyone can see the code, contribute to it and verify if everything is working well.
-                    </div>
+                    <div slot="collapse-body" v-html="$i18n.t('heroes.faq.whereCanISeeTheSourceCodeAnswer')" />
                 </collapse-faq>
 
             </div>
@@ -299,7 +299,7 @@
         </div>
 
         <Center>
-            <h2 style="margin-top: 40px; letter-spacing: 1px;">Do you still have questions? <a href="https://t.me/WebDollar" target="_blank">Ask us on Telegram!</a></h2>
+            <h2 style="margin-top: 40px; letter-spacing: 1px;" v-html="$i18n.t('heroes.faq.stillHaveQuestionsTelegram')" />
         </Center>
 
     </div>

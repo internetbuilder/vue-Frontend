@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import i18n from './utils/languages/i18n'
 import 'es6-promise/auto'
 import { createApp } from './app'
 
@@ -47,6 +48,7 @@ const { app, router, store } = createApp()
 // the state is determined during SSR and inlined in the page markup.
 if (window.__INITIAL_STATE__) {
   store.replaceState(window.__INITIAL_STATE__)
+  i18n.i18n.locale = "fr";
 }
 
 //send the store and dispatch to the FetchService (SocketClient needs store.socketStatus

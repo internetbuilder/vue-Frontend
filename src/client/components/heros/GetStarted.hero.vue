@@ -5,28 +5,28 @@
         <div id="getStartedSection" class="fullSection backgroundSection">
             <div class="textContainer">
 
-                <h1 class="pageTitle bigMarginTop"> <center>Get Started</center></h1>
+                <h1 class="pageTitle bigMarginTop"><center>{{ $i18n.t('heroes.getStarted.getStarted') }}</center></h1>
 
                 <div id="getStartedContainer">
                     <div>
-                        <img class="lazy" data-src="/public/assets/images/WebDollar-wallet.png" alt="WebDollar Wallet" title="WebDollar Wallet">
-                        <h4>Get and backup your Wallet</h4>
-                        <p>A WebDollar wallet is automatically created in your Browser.</p>
-                        <p>Export it and keep it in a safe place.</p>
-                        <p>You can use <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> and connect it to your wallet.</p>
+                        <img class="lazy" data-src="/public/assets/images/WebDollar-wallet.png" :alt="$i18n.t('heroes.getStarted.getAndBackupWallet')" :title="$i18n.t('heroes.getStarted.getAndBackupWallet')">
+                        <h4>{{ $i18n.t('heroes.getStarted.getAndBackupWallet') }}</h4>
+                        <p>{{ $i18n.t('heroes.getStarted.walletAutomaticallyCreated') }}</p>
+                        <p>{{ $i18n.t('heroes.getStarted.exportInSafePlace') }}</p>
+                        <p v-html="$i18n.t('heroes.getStarted.useTGTipBotAndConnectWallet')" />
                     </div>
                     <div>
-                        <img class="lazy" data-src="/public/assets/images/logo-coin.png" alt="Get WebDollar" title="Get WebDollar">
-                        <h4>Get WebDollars</h4>
-                        <p>Buy WebDollars from an <a href="/partners/exchanges">exchange</a>.</p>
-                        <p>Or use <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> top up feature.</p>
-                        <p>Get tips and rewards from the <a href="/#community">Community</a> with <a href="https://t.me/WebDollar">Telegram</a>.</p>
+                        <img class="lazy" data-src="/public/assets/images/logo-coin.png" :alt="$i18n.t('heroes.getStarted.getWebdollars')" :title="$i18n.t('heroes.getStarted.getWebdollars')">
+                        <h4>{{ $i18n.t('heroes.getStarted.getWebdollars') }}</h4>
+                        <p v-html="$i18n.t('heroes.getStarted.buyFromExchanges')" />
+                        <p v-html="$i18n.t('heroes.getStarted.useTipBotTopUp')" />
+                        <p v-html="$i18n.t('heroes.getStarted.getTipsAndRewards')" />
                     </div>
                     <div>
-                        <img class="lazy" data-src="/public/assets/images/WebDollar-ming.png" alt="WebDollar Staking" title="WebDollar Staking">
-                        <h4>Stake WebDollars</h4>
-                        <p>Stake from your browser with your wallet (from 100 WEBD).</p>
-                        <p>Stake using <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> (from 1 WEBD).</p>
+                        <img class="lazy" data-src="/public/assets/images/WebDollar-ming.png" :alt="$i18n.t('heroes.getStarted.stakeWebdollar')" :title="$i18n.t('heroes.getStarted.stakeWebdollar')">
+                        <h4>{{ $i18n.t('heroes.getStarted.stakeWebdollar') }}</h4>
+                        <p>{{ $i18n.t('heroes.getStarted.stakeWebdollarFromBrowser') }}</p>
+                        <p v-html="$i18n.t('heroes.getStarted.stakeWebdollarUsingTGTipBot')" />
                     </div>
                 </div>
             </div>

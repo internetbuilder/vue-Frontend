@@ -315,20 +315,6 @@ a:hover{
   border-bottom: solid 1px;
 }
 
-#menu ul li{
-  cursor: pointer;
-  display: inline-block;
-  margin-left: 30px;
-  font-family: avenir;
-  color: var(--menu-text-color);
-  transition: all 0.6s ease;
-}
-
-#menu ul li:hover{
-  color: var(--menu-text-color-hover);
-  transition: all 0.6s ease;
-}
-
 #logo{
   width: 30px;
   transition: all .5s linear;
@@ -769,7 +755,6 @@ background-color:#ff2200}
 }
 
 .topnav {
-  overflow: hidden;
   background: var(--topnav-bg-color);
   opacity: var(--topnav-bg-opacity);
   border-bottom: solid 1px #212121;
@@ -784,6 +769,10 @@ background-color:#ff2200}
   text-decoration: none;
   font-size: 14px;
   transition: all .3s linear;
+}
+
+.topnav a#language {
+  padding-bottom: 13px !important;
 }
 
 .topnav a:hover {

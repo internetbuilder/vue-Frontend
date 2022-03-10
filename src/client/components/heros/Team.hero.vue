@@ -6,36 +6,24 @@
 
             <div class="">
 
-                <h1 class="pageTitle bigMarginTop"> <center>Community</center></h1>
+                <h1 class="pageTitle bigMarginTop"> <center>{{ $i18n.t('heroes.team.community') }}</center></h1>
 
-                <h4>
-                    <center>
-                        There is <strong>NO OFFICIAL team</strong>. Just like Bitcoin, WebDollar was launched with no ICO (Initial Coin Offering)-FCO (Free Coin Offering).
-                    </center>
-                </h4>
-                <h4>
-                    <center>
-                        Thank you for considering contributing to WebDollar, a decentralized and open source project.
-                    </center>
-                </h4>
-                <h4>
-                    <center>
-                        Just follow instructions bellow to get started and contribute.
-                    </center>
-                </h4>
+                <h4><center v-html="$i18n.t('heroes.team.noOfficialTeam')" /></h4>
+                <h4><center>{{ $i18n.t('heroes.team.thankYouForConsideringContributing') }}</center></h4>
+                <h4><center>{{ $i18n.t('heroes.team.justFollowInstructions') }}</center></h4>
 
                 <div class="communityWrapper twoTeamColums">
                     <div class="communityItem">
                         <a href="https://t.me/WebDollar" rel="noopener" target="_blank">
                             <img data-src="/public/assets/images/SocialMedia/telegram_yellow.png" alt="Telegram WebDollar" title="Telegram WebDollar" class="communityImg lazy">
                         </a>
-                        <span>Join the WebDollar community on <a href="https://t.me/WebDollar" rel="noopener" target="_blank">Telegram</a>, ask for help, get involved in WebDollar discussions and help make WebDollar known to the World.</span>
+                        <span v-html="$i18n.t('heroes.team.joinTheCommunityTelegram')" />
                     </div>
                     <div class="communityItem">
                         <a href="https://github.com/webdollar" rel="noopener" target="_blank">
                             <img data-src="/public/assets/images/SocialMedia/github_yellow.png" alt="GitHub WebDollar" title="GitHub WebDollar" class="communityImg lazy">
                         </a>
-                        <span>WebDollar is open source. If you want to report bugs, contribute to the development of WebDollar, check <a href="https://github.com/webdollar" rel="noopener" target="_blank">GitHub</a> repositories.</span>
+                        <span v-html="$i18n.t('heroes.team.webdollarOpenSourceGithub')" />
                     </div>
                 </div>
                 <div class="communityWrapper twoTeamColums">
@@ -43,17 +31,17 @@
                         <a href="https://twitter.com/webdollar_io" rel="noopener" target="_blank">
                             <img data-src="/public/assets/images/SocialMedia/twitter_yellow.png" alt="Twitter WebDollar" title="Twitter WebDollar" class="communityImg lazy">
                         </a>
-                        <span>Follow <a href="https://twitter.com/webdollar_io" rel="noopener" target="_blank">us</a> to keep updated, communicate and share about WebDollar on Twitter.</span>
+                        <span v-html="$i18n.t('heroes.team.followUsTwitter')" />
                     </div>
                     <div class="communityItem">
                         <a href="https://www.reddit.com/r/webdollar/" rel="noopener" target="_blank">
                             <img data-src="/public/assets/images/SocialMedia/reddit_yellow.png" alt="Reddit WebDollar" title="Reddit WebDollar" class="communityImg lazy">
                         </a>
-                        <span>Share and get involved with the discussions about WebDollar on <a href="https://www.reddit.com/r/webdollar/" rel="noopener" target="_blank">Reddit</a> forum.</span>
+                        <span v-html="$i18n.t('heroes.team.shareAndGetInvolvedReddit')" />
                     </div>
                 </div>
 
-                <h1 class="pageTitle bigMarginTopOnly"> <center>Creators</center></h1>
+                <h1 class="pageTitle bigMarginTopOnly"> <center>{{ $i18n.t('heroes.team.creators') }}</center></h1>
 
                 <div class="teamWrapper twoTeamColums">
 
@@ -74,10 +62,8 @@
                         </div>
 
                         <span class="teamName">Alexandru Ionut Budisteanu</span>
-                        <span class="teamRole">Founder & Protocol Dev.</span>
-                        <p class="description">
-                            Alexandru is a Forbes Europe 30 under 30 nominee in industry category. In 2013, he was nominated by Time Magazine as one of the most influential teens of the world. MIT named an asteroid with his name.
-                        </p>
+                        <span class="teamRole">{{ $i18n.t('heroes.team.founderAndProtocolDev') }}</span>
+                        <p class="description">{{ $i18n.t('heroes.team.creatorBudisteanuDescription') }}</p>
                     </div>
 
                     <div class="our-team panait">
@@ -93,8 +79,8 @@
                             </div>
                         </div>
                         <span class="teamName">Alexandru Ionut Panait</span>
-                        <span class="teamRole">General Manager & Platform Dev.</span>
-                        <p>Alexandru is a young entrepreneur interested in technology and business. Founder of a digitization movement in Romania, called <a href="https://e-primariata.ro/auth/login-page">E-PrimariaTa.ro</a></p>
+                        <span class="teamRole">{{ $i18n.t('heroes.team.generalManagerAndPlatformDev') }}</span>
+                        <p v-html="$i18n.t('heroes.team.creatorPanaitDescription')" />
                     </div>
 
                 </div>
@@ -103,15 +89,10 @@
         </div>
 
         <div class="contributorsSection">
-
-            <span class="pageTitle alignCenter bigMarginTopOnly" >Contributors</span>
-
-            <span class="contributorsItem"><a href="https://github.com/WebDollar/Node-WebDollar/graphs/contributors" rel="noopener" target="_blank">WebDollar protocol/blockchain</a> contributors</span>
-
-            <span class="contributorsItem"><a href="https://github.com/WebDollar/vue-Frontend/graphs/contributors" rel="noopener" target="_blank">WebDollar.io website</a> contributors</span>
-
-            <span class="contributorsItem">And more contributors...</span>
-
+            <span class="pageTitle alignCenter bigMarginTopOnly" >{{ $i18n.t('heroes.team.contributors') }}</span>
+            <span class="contributorsItem" v-html="$i18n.t('heroes.team.webdollarProtocolContributors')" />
+            <span class="contributorsItem" v-html="$i18n.t('heroes.team.webdollarWebsiteContributors')" />
+            <span class="contributorsItem">{{ $i18n.t('heroes.team.moreContributors') }}</span>
         </div>
 
     </div>

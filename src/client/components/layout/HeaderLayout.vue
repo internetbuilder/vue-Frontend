@@ -4,46 +4,52 @@
   <div class="topnav" id="menu">
 
     <router-link to="/#mainSection" id="logoBox" class="logoMenu" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <img v-on:click="this.collapseMenuBack" src="/public/assets/images/WebDollar-logo-white.png" class="darkTheme" alt="Cryptocurrency of the future" id="logo" title="Cryptocurrency of the future" />
-      <img v-on:click="this.collapseMenuBack" src="/public/assets/images/WebDollar-logo-black.png" class="lightTheme" alt="Cryptocurrency of the future" id="logo" title="Cryptocurrency of the future" />
+      <img v-on:click="this.collapseMenuBack" src="/public/assets/images/WebDollar-logo-white.png" class="darkTheme" :alt="$i18n.t('global.currencyOfTheInternet')" id="logo" :title="$i18n.t('global.currencyOfTheInternet')" />
+      <img v-on:click="this.collapseMenuBack" src="/public/assets/images/WebDollar-logo-black.png" class="lightTheme" :alt="$i18n.t('global.currencyOfTheInternet')" id="logo" :title="$i18n.t('global.currencyOfTheInternet')" />
     </router-link>
 
-    <a v-on:click="this.handleToggleDark" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' "><div><span :class="`fas fa-${$store.state.settings.dark ?'sun':'moon'} nav-item-icon `" title="Switch theme" /></div></a>
+    <a href="javascript:void(0);" v-on:click="this.handleToggleDark" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <div><span :class="`fas fa-${$store.state.settings.dark ?'sun':'moon'} nav-item-icon `" :title="$i18n.t('layout.navbar.switchTheme')" /></div>
+    </a>
+
+    <a href="javascript:void(0);" id="language" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
+      <language-select class="nav-link"/>
+    </a>
 
     <a href="https://webdollar.network/" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' " rel="noopener" target="_blank">
-      <div v-on:click="this.collapseMenuBack">Explorer</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.explorer') }}</div>
     </a>
 
     <router-link to="/partners/businesses" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Partners</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.partners') }}</div>
     </router-link>
 
     <router-link to="/partners/exchanges" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Exchanges</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.exchanges') }}</div>
     </router-link>
 
     <router-link to="/faq" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">FAQ</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.faq') }}</div>
     </router-link>
 
     <router-link to="/media" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Media</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.media') }}</div>
     </router-link>
 
     <router-link to="/#community" :class="this.mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Community</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.community') }}</div>
     </router-link>
 
     <router-link to="/#coinDistributionSection" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Network</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.network') }}</div>
     </router-link>
 
     <router-link to="/#get-started" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">Get Started</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.getStarted') }}</div>
     </router-link>
 
     <router-link to="/#what-is-WebDollar" :class="mobileMenuOpened && this.isMobile ? 'openedMenuLink' : '' ">
-      <div v-on:click="this.collapseMenuBack">About</div>
+      <div v-on:click="this.collapseMenuBack">{{ $i18n.t('layout.navbar.about') }}</div>
     </router-link>
 
     <a href="javascript:void(0);" style="font-size:15px;" :style="{display: (mobileMenuOpened || isMobile==false) ? 'none':'block'}" class="icon showMenu" @click="this.showMobileMenu" :class="mobileMenuOpened ? 'openedMenuLink' : '' ">&#9776;</a>
@@ -54,11 +60,13 @@
 </template>
 
 <script>
+import LanguageSelect from "../UI/elements/language-select.vue"
+
 export default {
 
   name: "HeaderLayout",
 
-  components: {},
+  components: {LanguageSelect},
 
   data() {
     return {

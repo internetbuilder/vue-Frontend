@@ -2,7 +2,7 @@
 
     <div id="papers" class="">
 
-        <span class="pageTitle alignCenter">Papers</span>
+        <span class="pageTitle alignCenter">{{ $i18n.t('heroes.papers.papers') }}</span>
 
         <div class="twoColums specialMarginTop">
 
@@ -10,22 +10,22 @@
                 <a href="/public/doc/WebDollar-Black-Paper.pdf" rel="noopener" target="_blank" class="paperItem paperItemColor1 whitePaper">
                     <div class="paperItem2 paperItemColor2">
                         <div class="paperItem2 paperItemColor3">
-                            <img class="paperImg lazy" alt="Black Paper" data-src="/public/assets/images/black_paper.png">
-                            <h2>Black Paper</h2>
+                            <img class="paperImg lazy" :alt="$i18n.t('heroes.papers.blackPaper')" data-src="/public/assets/images/black_paper.png">
+                            <h2>{{ $i18n.t('heroes.papers.blackPaper') }}</h2>
                         </div>
                     </div>
                 </a>
-                <span>Short overview of the project</span>
+                <span>{{ $i18n.t('heroes.papers.blackPaperDescription') }}</span>
             </div>
 
             <a href="/public/doc/WebDollar-White-Paper.pdf" rel="noopener" target="_blank" class="paperItem paperItemColor1 whitePaper">
                 <div class="paperItem2 paperItemColor2">
                     <div class="paperItem2 paperItemColor3">
-                        <img class="paperImg lazy" alt="White Paper" data-src="/public/assets/images/white_paper.png">
-                        <h2>White Paper</h2>
+                        <img class="paperImg lazy" :alt="$i18n.t('heroes.papers.whitePaper')" data-src="/public/assets/images/white_paper.png">
+                        <h2>{{ $i18n.t('heroes.papers.whitePaper') }}</h2>
                     </div>
                 </div>
-                <span>Technical presentation of the project</span>
+                <span>{{ $i18n.t('heroes.papers.whitePaperDescription') }}</span>
             </a>
 
         </div>

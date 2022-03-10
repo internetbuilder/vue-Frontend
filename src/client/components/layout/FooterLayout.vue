@@ -6,7 +6,7 @@
 
       <div class="footerContainer">
         <div>
-          <h2>Follow us</h2>
+          <h2>{{ $i18n.t('layout.footer.followUs') }}</h2>
 
           <div class="footerItem followUsLinks">
               <a href="https://facebook.com/webdollar.io" rel="noopener" target="_blank" class="linkIconSocial">
@@ -37,7 +37,7 @@
 
         </div>
         <div>
-          <h2>Powered by</h2>
+          <h2>{{ $i18n.t('layout.footer.poweredBy') }}</h2>
 
           <div class="footerItem">
             <a href="http://bit-technologies.net" rel="noopener" target="_blank">
@@ -55,7 +55,7 @@
 
         </div>
       </div>
-      <div class="newCryptoText">Copyright © 2022 WebDollar.io - All rights reserved.</div>
+      <div class="newCryptoText">{{ $i18n.t('layout.footer.footer') }}</div>
     </div>
   </div>
 </div>

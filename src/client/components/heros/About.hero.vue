@@ -5,22 +5,22 @@
         <div id="aboutSection" class="fullSection backgroundSection">
             <div class="verticalAlignMiddle sectionCenteredWidth">
 
-                <span class="pageTitle alignCenter titleMarginBottom removeBackground aboutTitle">What is WebDollar?</span>
+                <span class="pageTitle alignCenter titleMarginBottom removeBackground aboutTitle">{{ $i18n.t('heroes.about.whatIsWebdollar') }}</span>
                 <div id="whatContainer">
                     <div>
-                        <img class="lazy" data-src="/public/assets/images/WebDollar-ming.png" alt="Browser Hybrid Mining" title="Browser Hybrid Mining">
-                        <h4>Start Staking in seconds</h4>
-                        <p>You can start staking WEBD immediately with the first blockchain running directly in your Browser, on any device</p>
+                        <img class="lazy" data-src="/public/assets/images/WebDollar-ming.png" :alt="$i18n.t('heroes.about.startStakingInSecondsTitle')" :title="$i18n.t('heroes.about.startStakingInSecondsTitle')">
+                        <h4>{{ $i18n.t('heroes.about.startStakingInSecondsTitle') }}</h4>
+                        <p>{{ $i18n.t('heroes.about.startStakingInSecondsDetails') }}</p>
                     </div>
                     <div>
-                        <img class="lazy" data-src="/public/assets/images/WebDollar-Security.png" alt="Secure Blockchain" title="Secure Blockchain">
-                        <h4>Secure and Private</h4>
-                        <p>Built on the most advanced blockchain technology, your information will be secure and anonymous</p>
+                        <img class="lazy" data-src="/public/assets/images/WebDollar-Security.png" :alt="$i18n.t('heroes.about.secureAndPrivateTitle')" :title="$i18n.t('heroes.about.secureAndPrivateTitle')">
+                        <h4>{{ $i18n.t('heroes.about.secureAndPrivateTitle') }}</h4>
+                        <p>{{ $i18n.t('heroes.about.secureAndPrivateDetails') }}</p>
                     </div>
                     <div>
-                        <img class="lazy" data-src="/public/assets/images/WebDollar-wallet.png" alt="Easy Integration" title="Easy Integration">
-                        <h4>Simple Web Payments</h4>
-                        <p>With easy browser integrated blockchain for peer-to-peer transactions, allowing cross-border blockchain payments</p>
+                        <img class="lazy" data-src="/public/assets/images/WebDollar-wallet.png" :alt="$i18n.t('heroes.about.simpleWebPaymentsTitle')" :title="$i18n.t('heroes.about.simpleWebPaymentsTitle')">
+                        <h4>{{ $i18n.t('heroes.about.simpleWebPaymentsTitle') }}</h4>
+                        <p>{{ $i18n.t('heroes.about.simpleWebPaymentsDetails') }}</p>
                     </div>
                 </div>
 

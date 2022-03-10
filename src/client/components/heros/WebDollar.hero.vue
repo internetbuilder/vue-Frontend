@@ -2,20 +2,19 @@
     <div id="mainSection" class="fullSection">
         <div class="verticalAlignMiddle alignCenter modifyTop verticalAlignMiddleMobileFix webSiteVerticalMiddle" @scroll="this.scrollPassByLogo()">
 
-            <img src="/public/assets/images/WebDollar-logo-white.png" alt="Cryptocurrency of the future" title="Cryptocurrency of the future" id="WebDollarLogo" class="mainLogo fadeIn darkTheme">
-            <img src="/public/assets/images/WebDollar-logo-black.png" alt="Cryptocurrency of the future" title="Cryptocurrency of the future" id="WebDollarLogo" class="mainLogo fadeIn lightTheme">
+            <img src="/public/assets/images/WebDollar-logo-white.png" :alt="$i18n.t('global.currencyOfTheInternet')" :title="$i18n.t('global.currencyOfTheInternet')" id="WebDollarLogo" class="mainLogo fadeIn darkTheme">
+            <img src="/public/assets/images/WebDollar-logo-black.png" :alt="$i18n.t('global.currencyOfTheInternet')" :title="$i18n.t('global.currencyOfTheInternet')" id="WebDollarLogo" class="mainLogo fadeIn lightTheme">
 
-            <h1 class="fadeIn fadeIn2 noTransform titleWebSite"> WebDollar</h1>
-            <!--<h2 class="fadeIn fadeIn2" :class="this.maintenance ? '' : 'hide'"><b class="testnet">EXPERIMENTAL</b></h2>-->
-            <h3 class="fadeIn fadeIn3 mottoWebSite">Currency of the Internet</h3>
+            <h1 class="fadeIn fadeIn2 noTransform titleWebSite">WebDollar</h1>
+            <h3 class="fadeIn fadeIn3 mottoWebSite">{{ $i18n.t('global.currencyOfTheInternet') }}</h3>
 
             <div>
 
                 <h5 class="fadeIn fadeIn4 statusMining" :class="this.loaded? 'hide' : ''">{{this.status}}</h5>
 
                 <div :class="this.loaded? '' : 'hide'" class='btn-cont btnPosition fadeIn fadeIn2'>
-                    <a class='btn' href="#p2p-network" title="Browser mining cryptocurrency real-time network">
-                        See your Network
+                    <a class='btn' href="#p2p-network" :title="$i18n.t('heroes.webdollar.browserMiningNetworkText')">
+                        {{ $i18n.t('heroes.webdollar.seeYourNetwork') }}
                         <span class='line-1'></span>
                         <span class='line-2'></span>
                         <span class='line-3'></span>
