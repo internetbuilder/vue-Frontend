@@ -101,6 +101,7 @@ export default {
             buyFromExchanges: `Cumpărați WebDollars de la o <a href="/partners/exchanges">bursă de schimb</a>.`,
             useTipBotTopUp: `Utilizați <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> funcția de reîncărcare.`,
             getTipsAndRewards: `Primește recompense de la <a href="/#community">Comunitate</a> cu <a href="https://t.me/WebDollar" rel="noopener" target="_blank">Telegram (engleză)</a> sau <a href="https://t.me/WebDollarRomania" rel="noopener" target="_blank">Telegram (română)</a>.`,
+            playGames: `Joacă jocuri și câștigă WebDollars: <a href="https://t.me/hauntedtower">Haunted Tower pe Telegram</a> și <a href="https://run.webdmine.io/">CubeRun</a>.`,
 
             stakeWebdollar: `Miza WebDollar`,
             stakeWebdollarFromBrowser: `Pariați din browserul dvs. cu portofelul dvs. (de la 100 WEBD).`,

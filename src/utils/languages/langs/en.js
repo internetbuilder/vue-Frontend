@@ -101,6 +101,7 @@ export default {
             buyFromExchanges: `Buy WebDollars from an <a href="/partners/exchanges">exchange</a>.`,
             useTipBotTopUp: `Use <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> top up feature.`,
             getTipsAndRewards: `Get tips and rewards from the <a href="/#community">Community</a> with <a href="https://t.me/WebDollar">Telegram</a>.`,
+            playGames: `Play games and win WebDollars: <a href="https://t.me/hauntedtower">Haunted Tower on Telegram</a> and <a href="https://run.webdmine.io/">CubeRun</a>.`,
 
             stakeWebdollar: `Stake WebDollar`,
             stakeWebdollarFromBrowser: `Stake from your browser with your wallet (from 100 WEBD).`,

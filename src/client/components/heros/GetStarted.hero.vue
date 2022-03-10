@@ -21,6 +21,7 @@
                         <p v-html="$i18n.t('heroes.getStarted.buyFromExchanges')" />
                         <p v-html="$i18n.t('heroes.getStarted.useTipBotTopUp')" />
                         <p v-html="$i18n.t('heroes.getStarted.getTipsAndRewards')" />
+                        <p v-html="$i18n.t('heroes.getStarted.playGames')" />
                     </div>
                     <div>
                         <img class="lazy" data-src="/public/assets/images/WebDollar-ming.png" :alt="$i18n.t('heroes.getStarted.stakeWebdollar')" :title="$i18n.t('heroes.getStarted.stakeWebdollar')">
