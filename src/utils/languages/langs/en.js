@@ -196,6 +196,11 @@ export default {
             compatibleBrowsersAnswer: `Chrome, Firefox, Opera, Edge and others.`,
             doesItWorkOnIphoneIos: `Does it work on iPhone (iOS)?`,
             doesItWorkOnIphoneIosAnswer: `Yes, it is working on iOS browser, but for the moment only in incognito mode. We also have an app for iOS, but it is not yet possible to add it on the store because the Apple politics regarding cryptocurrencies.`,
+            howDoIBackupWebdWallet: `How do I backup my WebDollar wallet?`,
+            howDoIBackupWebdWalletAnswer: `Open the wallet in the bottom bar, download the wallet file or encrypt the wallet with a password, save and download the 12-word password file and then save the encrypted wallet. Then, backup the files (on a USB key or another external safe drive). It needs to be decrypted for staking.`,
+            howCanIUseTGTipBot: `How can I use Telegram Tip Bot?`,
+            howCanIUseTGTipBotAnswer: `After <a href="/faq/HowDoIBackupWebdWallet">having a wallet</a> and a WebDollar address, connect to <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a>, use /start for info or /set wallet &lt;webd address&gt;. You can now get WebDollars thanks to rewards from the community, by playing games or with staking (daily).`,
+
             howAreWEBDsCreated: `How are WEBD created?`,
             howAreWEBDsCreatedAnswer: `The coins are created by a mathematical algorithm basing on your already mined coins in POS (Proof Of Stake) rounds.`,
             whatCanIDoWithWebDollars: `What can I do with WebDollars?`,

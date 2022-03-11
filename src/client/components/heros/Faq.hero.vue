@@ -152,6 +152,20 @@
                     </div>
                 </collapse-faq>
 
+                <collapse-faq :selected="false" ref="HowDoIBackupWebdWallet">
+                    <div slot="collapse-header">
+                        {{ $i18n.t('heroes.faq.howDoIBackupWebdWallet') }}
+                    </div>
+                    <div slot="collapse-body" v-html="$i18n.t('heroes.faq.howDoIBackupWebdWalletAnswer')" />
+                </collapse-faq>
+
+                <collapse-faq :selected="false" ref="HowCanIUseTGTipBot">
+                    <div slot="collapse-header">
+                        {{ $i18n.t('heroes.faq.howCanIUseTGTipBot') }}
+                    </div>
+                    <div slot="collapse-body" v-html="$i18n.t('heroes.faq.howCanIUseTGTipBotAnswer')" />
+                </collapse-faq>
+
             </div>
 
             <div class="faqSection">

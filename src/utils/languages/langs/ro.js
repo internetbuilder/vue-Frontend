@@ -196,6 +196,11 @@ export default {
             compatibleBrowsersAnswer: `Chrome, Firefox, Opera, Edge și altele.`,
             doesItWorkOnIphoneIos: `Funcționează pe iPhone (iOS)?`,
             doesItWorkOnIphoneIosAnswer: `Da, funcționează pe browserul iOS, dar deocamdată doar în modul incognito. Avem, de asemenea, o aplicație pentru iOS, dar nu este încă posibil să o adăugăm în magazin din cauza politicii Apple privind criptomonedele.`,
+            howDoIBackupWebdWallet: `Cum pot face o copie de rezervă a portofelului meu WebDollar?`,
+            howDoIBackupWebdWalletAnswer: `Deschideți portofelul din bara de jos, descărcați fișierul portofelului sau criptați portofelul cu o parolă, salvați și descărcați fișierul cu parola de 12 cuvinte și apoi salvați portofelul criptat. Apoi, faceți o copie de rezervă a fișierelor (pe o cheie USB sau pe o altă unitate externă sigură). Trebuie să fie decriptat pentru staking.`,
+            howCanIUseTGTipBot: `Cum pot folosi Telegram Tip Bot?`,
+            howCanIUseTGTipBotAnswer: `După ce <a href="/faq/HowDoIBackupWebdWallet">aveți un portofel</a> și o adresă WebDollar, conectați-vă la <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a>, utilizați /start pentru informații sau /set wallet &lt;webd address&gt;. Acum puteți obține WebDollars datorită recompenselor din partea comunității, jucând jocuri sau cu staking (zilnic).`,
+
             howAreWEBDsCreated: `Cum se creează WEBD?`,
             howAreWEBDsCreatedAnswer: `Monedele sunt create de un algoritm matematic bazat pe monedele deja minate în rundele POS (Proof Of Stake).`,
             whatCanIDoWithWebDollars: `Ce pot face cu WebDollars?`,
