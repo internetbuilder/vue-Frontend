@@ -15,7 +15,7 @@
                         <div class="timeline-content">
                             <h5 class="title">WHITE PAPER DRAFT</h5>
                             <p class="description">
-                                An initial white paper was realized to describe the WebDollar protocol
+                                An initial white paper was realized to describe the WebDollar protocol.
                             </p>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                         <div class="timeline-content">
                             <h5 class="title">TECH HUB JS HACKATHON</h5>
                             <p class="description">
-                                An initial team was formed during the JSHacks Blockchain Hackaton to bootstrap and implement the vision behind WebDollar
+                                An initial team was formed during the JSHacks Blockchain Hackaton to bootstrap and implement the vision behind WebDollar.
                             </p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                         <div class="timeline-content">
                             <h5 class="title">P2P AND MINI-BLOCKCHAIN</h5>
                             <p class="description">
-                                Our community started to develop and finalize P2P connections through Websockets and WebRTC. Implementation of Mini-blockchain
+                                Our community started to develop and finalize P2P connections through Websockets and WebRTC. Implementation of Mini-blockchain.
                             </p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                         <div class="timeline-content">
                             <h5 class="title">BUILT IN BOUNTY PROGRAM</h5>
                             <p class="description">
-                                Development of a bounty program that helped evangelists to spread the word of Webdollar worldwide.
+                                Development of a bounty program that helped evangelists to spread the word of Webdollar Worldwide.
                             </p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                         <div class="timeline-content">
                             <h5 class="title">SECURITY & LAUNCH MAIN NET</h5>
                             <p class="description">
-                                Non-Interactive Proofs of Proof-of-Work, Improving the Security and launching a Main Net
+                                Non-Interactive Proofs of Proof-of-Work, improving the Security and launching a Main Net.
                             </p>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                         <div class="timeline-content">
                             <h5 class="title">MINING POOLS & REFERRAL SYSTEM</h5>
                             <p class="description">
-                                Developing a easy way to mine with your friends in social mining. Also, creation of the Mining Pools Referral System.
+                                Developing an easy way to mine with your friends in social mining. Also, creation of the Mining Pools Referral System.
                             </p>
                         </div>
                     </div>
@@ -83,9 +83,9 @@
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
                         <span class="year">Q3 2018</span>
                         <div class="timeline-content">
-                            <h5 class="title">Offline Transactions</h5>
+                            <h5 class="title">OFFLINE TRANSACTIONS</h5>
                             <p class="description">
-                                Allowing users add a new optional security layer by signing offline transactions using their wallets on desktop or mobile app.
+                                Allowing users to add a new optional security layer by signing offline transactions using their wallets on desktop or mobile app.
                             </p>
                         </div>
                     </div>
@@ -93,19 +93,19 @@
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
                         <span class="year">Q1 2019</span>
                         <div class="timeline-content">
-                            <h5 class="title">Hybrid Mining</h5>
+                            <h5 class="title">HYBRID MINING</h5>
                             <p class="description">
-                                Releasing the first hybrid mining in browser using Proof of Stake 66.(6)% and Proof of Work 33.(3)%
+                                Releasing the first hybrid mining in browser using Proof of Stake 66.(6)% and Proof of Work 33.(3)%.
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
-                        <div class="timeline-icon"><i class="fa fa-gift"></i></div>
+                        <div class="timeline-icon"><i class="fa fa-coin-dollar"></i></div>
                         <span class="year">Q1 2019</span>
                         <div class="timeline-content">
                             <h5 class="title">EXCHANGE LISTING</h5>
                             <p class="description">
-                                Developing the first Exchange for the WebDollar Ecosystem and creating easy to integrate API for other Exchanges
+                                Developing the first Exchange for the WebDollar Ecosystem and creating easy to integrate API for other Exchanges.
                             </p>
                         </div>
                     </div>
@@ -113,9 +113,9 @@
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
                         <span class="year">Q3 2020</span>
                         <div class="timeline-content">
-                            <h5 class="title">Hybrid Mining</h5>
+                            <h5 class="title">HYBRID MINING</h5>
                             <p class="description">
-                                Move to hybrid mining in browser using Proof of Stake 90% and Proof of Work 10%
+                                Moving to hybrid mining in browser using Proof of Stake 90% and Proof of Work 10%.
                             </p>
                         </div>
                     </div>
@@ -123,9 +123,9 @@
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
                         <span class="year">Q3 2021</span>
                         <div class="timeline-content">
-                            <h5 class="title">100% Proof of Stake (PoS)</h5>
+                            <h5 class="title">100% PROOF OF STAKE (POS)</h5>
                             <p class="description">
-                                Releasing the first 100% Proof of Stake browser cryptocurrency
+                                Releasing the first 100% Proof of Stake browser cryptocurrency.
                             </p>
                         </div>
                     </div>
@@ -136,17 +136,27 @@
                         <div class="timeline-content">
                             <h5 class="title">EVANGELISM & MARKETING</h5>
                             <p class="description">
-                                Growing the community, running bounties programs & attend to cryptocurrency conferences.
+                                Growing the community, attend to cryptocurrency conferences.
                             </p>
                         </div>
                     </div>
                     <div class="timeline timelineUnfinishedMilestones">
                         <div class="timeline-icon"><i class="fa fa-code"></i></div>
-                        <span class="year">ONGOING</span>
+                        <span class="year">PLANNED</span>
                         <div class="timeline-content">
                             <h5 class="title">WEBDOLLAR 2.0</h5>
                             <p class="description">
-                                Source code rewrite along with other features.
+                                Full rewrite, new features (delegate staking, increased number of transactions per second, improved user interface and easier integration).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline timelineUnfinishedMilestones">
+                        <div class="timeline-icon"><i class="fa fa-coin-dollar"></i></div>
+                        <span class="year">PLANNED</span>
+                        <div class="timeline-content">
+                            <h5 class="title">INTEGRATION WITH PANDORAPAY</h5>
+                            <p class="description">
+                                Integrating PandoraPay, a multi-asset and currency anonymous Exchange, secure, private and easy to use.
                             </p>
                         </div>
                     </div>
