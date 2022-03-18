@@ -260,6 +260,7 @@
 
             lastUpdatedCoinGecko() {
               const lastUpdatedAt = new Date(this.coinGecko.lastUpdatedAt * 1000);
+              moment.locale(this.$store.state.settings.language)
               // date and time w/ seconds in current browser locale.
               return moment(lastUpdatedAt).format('L LTS');
             },
