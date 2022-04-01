@@ -67,7 +67,7 @@ export default {
             launchTestNet: `LAUNCH TEST NET`,
             launchTestNetDescription: `Developing consensus of the Proof of Work and blockchain launching.`,
             buildInBountyProgram: `BUILT IN BOUNTY PROGRAM`,
-            buildInBountyProgramDescription: `Development of a bounty program that helped evangelists to spread the word of Webdollar Worldwide.`,
+            buildInBountyProgramDescription: `Development of a bounty program that helped evangelists to spread the word of WebDollar Worldwide.`,
             securityAndLanchMainNet: `SECURITY & LAUNCH MAIN NET`,
             securityAndLanchMainNetDescription: `Non-Interactive Proofs of Proof-of-Work, improving the Security and launching a Main Net.`,
             miningPoolsAndReferralSystem: `MINING POOLS & REFERRAL SYSTEM`,
@@ -95,17 +95,17 @@ export default {
             getAndBackupWallet: `Get and backup your Wallet`,
             walletAutomaticallyCreated: `A WebDollar wallet is automatically created in your Browser.`,
             exportInSafePlace: `Export it and keep it in a safe place.`,
-            useTGTipBotAndConnectWallet: `You can use <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> and connect it to your wallet.`,
+            useTGTipBotAndConnectWallet: `You can use <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> and connect it to your wallet.`,
 
             getWebdollars: `Get WebDollars`,
             buyFromExchanges: `Buy WebDollars from an <a href="/partners/exchanges">exchange</a>.`,
-            useTipBotTopUp: `Use <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> top up feature.`,
-            getTipsAndRewards: `Get tips and rewards from the <a href="/#community">Community</a> with <a href="https://t.me/WebDollar">Telegram</a>.`,
-            playGames: `Play games and win WebDollars: <a href="https://t.me/hauntedtower">Haunted Tower on Telegram</a> and <a href="https://run.webdmine.io/">CubeRun</a>.`,
+            useTipBotTopUp: `Use <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> top up feature.`,
+            getTipsAndRewards: `Get tips and rewards from the <a href="/#community">Community</a> with <a href="https://t.me/WebDollar" target="_blank">Telegram</a>.`,
+            playGames: `Play games and win WebDollars: <a href="https://t.me/hauntedtower" target="_blank">Haunted Tower on Telegram</a> and <a href="https://run.webdmine.io" target="_blank">CubeRun</a>.`,
 
             stakeWebdollar: `Stake WebDollar`,
             stakeWebdollarFromBrowser: `Stake from your browser with your wallet (from 100 WEBD).`,
-            stakeWebdollarUsingTGTipBot: `Stake using <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> (from 1 WEBD).`,
+            stakeWebdollarUsingTGTipBot: `Stake using <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> (from 1 WEBD).`,
         },
 
         blockchainDistribution:{
@@ -167,7 +167,7 @@ export default {
             whatIsWebdollar: `What is WebDollar?`,
             whatIsWebdollarAnswer: `WebDollar is a browser based digital currency. The main advantages to it, are that WebDollars can be mined in your browser and you can transfer funds by storing the wallets locally, without using third parties.`,
             whatItsLikeUsingWebd: `What's it like using WebDollar?`,
-            whatItsLikeUsingWebdAnswer: `WebDollar is a peer to peer (p2p) currency which is native to the internet. The WebDollar protocol and blockchain were designed to be light and to work without the installation of any additional software or plugins for wallets or mining. A mini-blockchain is downloaded directly into your browser, while your wallet is securely stored and encrypted directly into your computer. Full consensus is achieved in a matter of seconds by using a novel PPoW - Proofs of Proof of Work algorithm to allow light nodes to check the balance and validate transactions in a matter of seconds. Being native to the internet, WebDollar is enabling miners to start mining with a click of a button.`,
+            whatItsLikeUsingWebdAnswer: `WebDollar is a peer to peer (p2p) currency which is native to the internet. The WebDollar protocol and blockchain were designed to be light and to work without the installation of any additional software or plugins for wallets or mining. A mini-blockchain is downloaded directly into your browser, while your wallet is securely stored and encrypted directly into your computer. Full consensus is achieved in a matter of seconds by using a PoS - Proof of Stake algorithm to allow light nodes to check the balance and validate transactions in a matter of seconds. Being native to the internet, WebDollar is enabling miners to start mining with a click of a button.`,
             whatsValueOfWebDollarInFiatCurrency: `What’s the value of WebDollar in FIAT (conventional) currency?`,
             whatsValueOfWebDollarInFiatCurrencyAnswer: `The value is based on the demand and supply imposed by the market. The price was and is currently set by the market.`,
             whatAreRisksOfMiningWebDollarInBrowser: `What are the risks of mining WebDollar in my browser?`,
@@ -181,7 +181,7 @@ export default {
             myBalanceSwitchedToZero: `Why did my balance switched to 0?`,
             myBalanceSwitchedToZeroAnswer: `If you had no available balance before, this may be caused by the fact that you were connected to another pool and the potential balance from the previous pool is not displayed anymore. You will still receive the WEBD mined in the previous pool.`,
             whatIsPotentialBalance: `What is potential balance?`,
-            whatIsPotentialBalanceAnswer: `The potential balance is the approximation of your total balance at the next payout by the pool. This can vary greatly, because it's the proportion between your involved processing power and the total processing power of the network (which too, will vary).`,
+            whatIsPotentialBalanceAnswer: `The potential balance is the approximation of your total balance at the next payout by the pool. This can vary greatly, because it's the proportion between your involved staking amount and the total staking amount of the network (which too, will vary).`,
             poolMiningLinkChangeForTerminalMiners: `Will the link to pool mining change for terminal miners?`,
             poolMiningLinkChangeForTerminalMinersAnswer: `It depends from one pool to another. However, it is not profitable for a pool to change their link.`,
             whatIsPoW: `What is PoW?`,
@@ -206,7 +206,10 @@ export default {
             whatCanIDoWithWebDollars: `What can I do with WebDollars?`,
             whatCanIDoWithWebDollarsAnswer: `WebDollar is meant to be used as you would use just about any other currency: paying for products online, trading for goods, trading in for other currencies. In addition, WebDollar can be used for cross border payments with no currency exchange fees. The community around the open source project, WebDollar, is continuously building the ecosystem.`,
             howCanIGetWebDollars: `How can I get WebDollars?`,
-            howCanIGetWebDollarsAnswer: `1. You can stake them directly in your browser (with at least 100 WEBD). 2. You can stake using <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> (with at least 1 WEBD). 3. You can buy from the exchanges. 4. You can get rewards from community members by contributing (Join the <a href="https://t.me/WebDollar" target="_blank">Telegram WebDollar group</a>).`,
+            howCanIGetWebDollarsAnswer: `1. You can stake them directly in your browser (with at least 100 WEBD).<br/>
+                2. You can stake using <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> (with at least 1 WEBD).<br/>
+                3. You can buy from the exchanges.<br/>
+                4. You can get rewards from community members by contributing (Join the <a href="https://t.me/WebDollar" target="_blank">Telegram WebDollar group</a>).`,
             howMuchWebdEarnIn24HoursMining: `How much WebDollars (WEBD) can I earn in 24 hours of staking?`,
             howMuchWebdEarnIn24HoursMiningAnswer: `The amount of WEBDs that you can mine in 24 hours is solely based on your mined coins stake and it is directly proportional to the stake of the entire network.`,
             howAreWalletsSecured: `How are the wallets secured?`,

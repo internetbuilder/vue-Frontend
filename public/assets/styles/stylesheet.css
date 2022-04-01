@@ -57,7 +57,7 @@
   --yellow-color: #9c8343;
   --green-color: #3b6b18;
 
-  --header-bg-color: #1f1f1f;
+  --header-bg-color: #edf2f9;
   --menu-text-color: #D5D5D5;
   --menu-text-color-hover: #fcd26c;
   --topnav-bg-color: #edf2f9;
@@ -312,7 +312,7 @@ a:hover{
   top:0;
   background-color: var(--header-bg-color);
   z-index: 10;
-  border-bottom: solid 1px;
+  border-bottom: solid 2px;
 }
 
 #logo{

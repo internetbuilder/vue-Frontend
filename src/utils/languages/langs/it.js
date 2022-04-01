@@ -1,7 +1,7 @@
 export default {
 
     global:{
-        currencyOfTheInternet: `Moneta di Internet`,
+        currencyOfTheInternet: `Valuta di Internet`,
     },
 
     heroes:{
@@ -13,12 +13,12 @@ export default {
 
         about:{
             whatIsWebdollar: `Cos'è WebDollar?`,
-            startStakingInSecondsTitle: `Iniziare a puntare in pochi secondi`,
-            startStakingInSecondsDetails: `Puoi iniziare a puntare WEBD immediatamente con la prima blockchain in esecuzione direttamente nel tuo Browser, su qualsiasi dispositivo`,
+            startStakingInSecondsTitle: `Iniziare lo Staking in pochi secondi`,
+            startStakingInSecondsDetails: `Puoi iniziare subito lo staking di WEBD con la prima blockchain in esecuzione direttamente nel tuo Browser, su qualsiasi dispositivo`,
             secureAndPrivateTitle: `Sicuro e privato`,
             secureAndPrivateDetails: `Costruito sulla più avanzata tecnologia blockchain, le tue informazioni saranno sicure e anonime`,
             simpleWebPaymentsTitle: `Pagamenti web semplici`,
-            simpleWebPaymentsDetails: `Con il browser facile blockchain integrato per le transazioni peer-to-peer, permettendo pagamenti transfrontalieri blockchain`,
+            simpleWebPaymentsDetails: `Con la semplice blockchain integrata su browser per le transazioni peer-to-peer, permette pagamenti su blockchain transfrontalieri`,
         },
 
         features:{
@@ -28,7 +28,7 @@ export default {
             generatingWalletInBrowser: `Generazione di portafogli direttamente nel tuo browser`,
             hundredPercentPos: `100% Proof of Stake (PoS)`,
             ecosystemExchangeAndListings: `Ecosistema di scambio e aggiunte agli scambi`,
-            stakingInBrowser: `Picchettare direttamente nel browser`,
+            stakingInBrowser: `Staking direttamente nel browser`,
             offlineTransactions: `Transazioni offline`,
             easyTransactionsInBrowser: `Transazioni facili direttamente nel browser`,
             future: `Futuro`,
@@ -39,9 +39,9 @@ export default {
         papers:{
             papers: `Libri`,
             blackPaper: `Libro nero`,
-            blackPaperDescription: `Breve panoramica del progetto (en)`,
+            blackPaperDescription: `Breve panoramica del progetto (in inglese)`,
             whitePaper: `Libro bianco`,
-            whitePaperDescription: `Presentazione tecnica del progetto (en)`,
+            whitePaperDescription: `Presentazione tecnica del progetto (in inglese)`,
         },
 
         timeline:{
@@ -67,11 +67,11 @@ export default {
             launchTestNet: `LANCIO DELLA RETE DI TEST`,
             launchTestNetDescription: `Sviluppo del consenso Proof of Work e lancio della blockchain.`,
             buildInBountyProgram: `PROGRAMMA DI BONUS INTEGRATO`,
-            buildInBountyProgramDescription: `Sviluppo di un programma di bonus che ha aiutato gli evangelisti a diffondere la parola su Webdollar in tutto il mondo.`,
+            buildInBountyProgramDescription: `Sviluppo di un programma di bonus che ha aiutato gli evangelisti a diffondere la parola su WebDollar in tutto il mondo.`,
             securityAndLanchMainNet: `SICUREZZA E LANCIO DELLA RETE PRINCIPALE`,
             securityAndLanchMainNetDescription: `Prove non interattive di Proof-of-Work, migliorando la sicurezza e lanciando una rete principale.`,
             miningPoolsAndReferralSystem: `POOL DI ESTRAZIONE E SISTEMA DI RIFERIMENTO`,
-            miningPoolsAndReferralSystemDescription: `Sviluppo di un modo semplice per minare con i tuoi amici nel contesto del social mining. Ha anche creato il sistema di riferimento del pool minerario.`,
+            miningPoolsAndReferralSystemDescription: `Sviluppo di un modo semplice per minare con i tuoi amici nel contesto del social mining. Ha anche creato il sistema di riferimento della pool mineraria.`,
             offlineTransactions: `TRANSAZIONI OFFLINE`,
             offlineTransactionsDescription: `Consentendo agli utenti di aggiungere un nuovo livello di sicurezza opzionale firmando le transazioni offline utilizzando i loro portafogli su desktop o app mobile.`,
             hybridMining: `MINIERA IBRIDA`,
@@ -95,24 +95,24 @@ export default {
             getAndBackupWallet: `Ottieni e salva il tuo portafoglio`,
             walletAutomaticallyCreated: `Un portafoglio WebDollar viene creato automaticamente nel tuo browser.`,
             exportInSafePlace: `Esportalo e tienilo in un posto sicuro.`,
-            useTGTipBotAndConnectWallet: `Puoi usare <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> e collegarlo al tuo portafoglio.`,
+            useTGTipBotAndConnectWallet: `Puoi usare <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> e collegarlo al tuo portafoglio.`,
 
             getWebdollars: `Ottieni WebDollari`,
             buyFromExchanges: `Compra WebDollars da un <a href="/partners/exchanges">scambio</a>.`,
-            useTipBotTopUp: `Usa <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> funzione di ricarica.`,
-            getTipsAndRewards: `Ottieni ricompense dalla <a href="/#community">Comunità</a> con <a href="https://t.me/WebDollar">Telegram</a>.`,
-            playGames: `Gioca e vinci WebDollars: <a href="https://t.me/hauntedtower">Haunted Tower su Telegram</a> e <a href="https://run.webdmine.io/">CubeRun</a>.`,
+            useTipBotTopUp: `Usa <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> funzione di ricarica.`,
+            getTipsAndRewards: `Ottieni ricompense dalla <a href="/#community">Comunità</a> con <a href="https://t.me/WebDollar" target="_blank">Telegram (in inglese)</a>.`,
+            playGames: `Gioca e vinci WebDollars: <a href="https://t.me/hauntedtower" target="_blank">Haunted Tower su Telegram</a> e <a href="https://run.webdmine.io/" target="_blank">CubeRun</a>.`,
 
-            stakeWebdollar: `Puntata WebDollar`,
-            stakeWebdollarFromBrowser: `Puntata dal tuo browser con il tuo portafoglio (a partire da 100 WEBD).`,
-            stakeWebdollarUsingTGTipBot: `Puntata con <a href="https://t.me/webdollar_tip_bot">Telegram Tip Bot</a> (da 1 WEBD).`,
+            stakeWebdollar: `Staking di WebDollar`,
+            stakeWebdollarFromBrowser: `Staking dal tuo browser con il tuo portafoglio (a partire da 100 WEBD).`,
+            stakeWebdollarUsingTGTipBot: `Staking con <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> (da 1 WEBD).`,
         },
 
         blockchainDistribution:{
             coinSupply: `Offerta in circolazione`,
             currentDistribution: `Distribuzione corrente`,
             minedBlocks: `Blocchi minati`,
-            stakingCoins: `Monete puntate`,
+            stakingCoins: `Monete nel staking`,
             currentPrice: `Prezzo corrente`,
             change24hr: `Cambio (24h)`,
             volume24hr: `Volume (24h)`,
@@ -125,17 +125,17 @@ export default {
 
         peerToPeer:{
             peerToPeerNetwork: `Rete Peer-to-Peer`,
-            seeYouStakingGroup: `Visualizza le connessioni del tuo gruppo di scommesse in tempo reale`,
+            seeYouStakingGroup: `Visualizza le connessioni del tuo gruppo di staking in tempo reale`,
             connessione: `Connessione:`,
             consensusNoPool: `Consenso (No Pool)`,
         },
 
         pool:{
-            poolStaking: `Staking in piscina`,
-            poolStatistics: `STATISTICHE DELLA PISCINA`,
+            poolStaking: `Staking in Pool`,
+            poolStatistics: `STATISTICHE DELLA POOL`,
             stakingIn: `Staking in:`,
-            poolFee: `Tassa per la piscina:`,
-            validatorsInPool: `Validatori in piscina:`,
+            poolFee: `Tassa per pool:`,
+            validatorsInPool: `Validatori in pool:`,
             blocksPaid: `Blocchi pagati:`,
             blocksPending: `Blocchi in sospeso:`,
         },
@@ -145,7 +145,7 @@ export default {
             noOfficialTeam: `Non c'è <strong>NESSUN team UFFICIALE</strong>. Proprio come Bitcoin, WebDollar è stato lanciato senza ICO (Initial Coin Offering)-FCO (Free Coin Offering).`,
             thankYouForConsideringContributing: `Grazie per aver considerato di contribuire a WebDollar, un progetto decentralizzato e open source.`,
             justFollowInstructions: `Basta seguire le istruzioni qui sotto per iniziare e contribuire.`,
-            joinTheCommunityTelegram: `Unisciti alla comunità di WebDollar su <a href="https://t.me/WebDollar" rel="noopener" target="_blank">Telegram</a>, chiedi aiuto, partecipa alle discussioni su WebDollar e aiuta a far conoscere WebDollar al mondo.`,
+            joinTheCommunityTelegram: `Unisciti alla comunità di WebDollar su <a href="https://t.me/WebDollar" rel="noopener" target="_blank">Telegram (in inglese)</a>, chiedi aiuto, partecipa alle discussioni su WebDollar e aiuta a far conoscere WebDollar al mondo.`,
             webdollarOpenSourceGithub: `WebDollar è open source. Se vuoi segnalare bug, contribuire allo sviluppo di WebDollar, controlla i repository <a href="https://github.com/webdollar" rel="noopener" target="_blank">GitHub</a>.`,
             followUsTwitter: `Seguiteci su <a href="https://twitter.com/webdollar_io" rel="noopener" target="_blank">Twitter</a> per rimanere aggiornati, comunicare e condividere su WebDollar.`,
             shareAndGetInvolvedReddit: `Condividi e partecipa alle discussioni su WebDollar sul forum <a href="https://www.reddit.com/r/webdollar/" rel="noopener" target="_blank">Reddit</a>.`,
@@ -167,7 +167,7 @@ export default {
             whatIsWebdollar: `Cos'è WebDollar?`,
             whatIsWebdollarAnswer: `WebDollar è una valuta digitale basata su browser. I principali vantaggi sono che i WebDollar possono essere minati nel tuo browser e puoi trasferire fondi memorizzando i portafogli localmente, senza usare terze parti.`,
             whatItsLikeUsingWebd: `Com'è usare WebDollar?`,
-            whatItsLikeUsingWebdAnswer: `WebDollar è una valuta peer to peer (p2p) che è nativa per internet. Il protocollo e la blockchain di WebDollar sono stati progettati per essere leggeri e per funzionare senza l'installazione di alcun software aggiuntivo o plugin per portafogli o mining. Una mini-blockchain viene scaricata direttamente nel tuo browser, mentre il tuo portafoglio è memorizzato in modo sicuro e criptato direttamente nel tuo computer. Il pieno consenso è raggiunto in pochi secondi utilizzando un nuovo algoritmo PPoW - Proofs of Proof of Work che permette ai nodi leggeri di controllare il bilancio e convalidare le transazioni in pochi secondi. Essendo nativo per internet, WebDollar permette ai minatori di iniziare il mining con un clic di un pulsante.`,
+            whatItsLikeUsingWebdAnswer: `WebDollar è una valuta peer to peer (p2p) che è nativa per internet. Il protocollo e la blockchain di WebDollar sono stati progettati per essere leggeri e per funzionare senza l'installazione di alcun software aggiuntivo o plugin per portafogli o mining. Una mini-blockchain viene scaricata direttamente nel tuo browser, mentre il tuo portafoglio è memorizzato in modo sicuro e criptato direttamente nel tuo computer. Il pieno consenso è raggiunto in pochi secondi utilizzando un algoritmo PoS - Proof of Stake che permette ai nodi leggeri di controllare il bilancio e convalidare le transazioni in pochi secondi. Essendo nativo per internet, WebDollar permette ai minatori di iniziare il mining con un clic di un pulsante.`,
             whatsValueOfWebDollarInFiatCurrency: `Qual è il valore di WebDollar in valuta FIAT (convenzionale)?`,
             whatsValueOfWebDollarInFiatCurrencyAnswer: `Il valore si basa sulla domanda e sull'offerta imposte dal mercato. Il prezzo era ed è attualmente stabilito dal mercato.`,
             whatAreRisksOfMiningWebDollarInBrowser: `Quali sono i rischi di estrarre WebDollar nel mio browser?`,
@@ -179,15 +179,15 @@ export default {
             supportSmartContracts: `WebDollar supporta i contratti intelligenti?`,
             supportSmartContractsAnswer: `Nel prossimo futuro WebDollar incorporerà un sistema nativo di contratti intelligenti.`,
             myBalanceSwitchedToZero: `Perché il mio saldo è passato a 0?`,
-            myBalanceSwitchedToZeroAnswer: `Se prima non avevi alcun saldo disponibile, questo può essere causato dal fatto che eri connesso ad un altro pool e il saldo potenziale del pool precedente non viene più visualizzato. Riceverai comunque il WEBD estratto nel pool precedente.`,
+            myBalanceSwitchedToZeroAnswer: `Se prima non avevi alcun saldo disponibile, questo può essere causato dal fatto che eri connesso ad una altra pool e il saldo potenziale della pool precedente non viene più visualizzato. Riceverai comunque il WEBD estratto nella pool precedente.`,
             whatIsPotentialBalance: `Cos'è l'equilibrio potenziale?`,
-            whatIsPotentialBalanceAnswer: `Il saldo potenziale è l'approssimazione del tuo saldo totale al prossimo pagamento da parte del pool. Questo può variare molto, perché è la proporzione tra la tua potenza di elaborazione coinvolta e la potenza di elaborazione totale della rete (che varia anch'essa).`,
+            whatIsPotentialBalanceAnswer: `Il saldo potenziale è l'approssimazione del tuo saldo totale al prossimo pagamento da parte della pool. Questo può variare molto, perché è la proporzione tra il tuo volume di staking coinvolta rispetto al volume totale di staking della rete (che varia anch'esso).`,
             poolMiningLinkChangeForTerminalMiners: `Il collegamento al pool mining cambierà per i minatori terminali?`,
-            poolMiningLinkChangeForTerminalMinersAnswer: `Dipende da un pool all'altro. Tuttavia, non è redditizio per un pool cambiare il proprio link.`,
+            poolMiningLinkChangeForTerminalMinersAnswer: `Dipende da una pool all'altra. Tuttavia, non è redditizio per una pool cambiare il proprio link.`,
             whatIsPoW: `Cos'è il PoW?`,
             whatIsPoWAnswer: `Proof of Work è il modo per estrarre nuove monete usando la potenza della CPU del tuo computer. WebDollar è migrato al 100% PoS il 22 luglio 2021.`,
             howWillPoSWorkOnConsensus: `Come funzionerà il PoS sul consenso?`,
-            howWillPoSWorkOnConsensusAnswer: `I round di Proof of Stake funzioneranno sia per il pool mining che per il consenso nel browser e nei terminali.`,
+            howWillPoSWorkOnConsensusAnswer: `I round di Proof of Stake funzioneranno sia per la pool mining che per il consenso nel browser e nei terminali.`,
             mineInPoSFromScratchOrBuyInOrderToStake: `Posso minare nei giri di PoS da zero o devo comprare per puntare?`,
             mineInPoSFromScratchOrBuyInOrderToStakeAnswer: `Se stai facendo mining da zero non sarai in grado di guadagnare monete. È necessario avere una quantità di WebDollari (100 WEBD) prima di puntare con, nei giri PoS.`,
             isWebDollarAToken: `WebDollar è un token?`,
@@ -206,7 +206,10 @@ export default {
             whatCanIDoWithWebDollars: `Cosa posso fare con i WebDollari?`,
             whatCanIDoWithWebDollarsAnswer: `WebDollar è pensato per essere usato come si userebbe qualsiasi altra valuta: pagando prodotti online, scambiando merci, scambiando con altre valute. Inoltre, WebDollar può essere usato per pagamenti transfrontalieri senza commissioni di cambio valuta. La comunità intorno al progetto open source, WebDollar, sta continuamente costruendo l'ecosistema.`,
             howCanIGetWebDollars: `Come posso ottenere WebDollars?`,
-            howCanIGetWebDollarsAnswer: `1. Puoi puntarli direttamente nel tuo browser (con almeno 100 WEBD). 2. Puoi puntare usando <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> (con almeno 1 WEBD). 3. Si può comprare dagli scambi. 4. Puoi ottenere ricompense dai membri della comunità contribuendo (Unisciti al <a href="https://t.me/WebDollar" target="_blank">gruppo Telegram WebDollar</a>).`,
+            howCanIGetWebDollarsAnswer: `1. Puoi puntarli direttamente nel tuo browser (con almeno 100 WEBD).<br/>
+                2. Puoi puntare usando <a href="https://t.me/webdollar_tip_bot" target="_blank">Telegram Tip Bot</a> (con almeno 1 WEBD).<br/>
+                3. Si può comprare dagli scambi.<br/>
+                4. Puoi ottenere ricompense dai membri della comunità contribuendo (Unisciti al <a href="https://t.me/WebDollar" target="_blank">gruppo Telegram WebDollar (in inglese)</a>).`,
             howMuchWebdEarnIn24HoursMining: `Quanti WebDollari (WEBD) posso guadagnare in 24 ore di puntata?`,
             howMuchWebdEarnIn24HoursMiningAnswer: `La quantità di WEBD che puoi estrarre in 24 ore si basa esclusivamente sulla tua quota di monete estratte ed è direttamente proporzionale alla quota dell'intera rete.`,
             howAreWalletsSecured: `Come sono protetti i portafogli?`,
@@ -218,12 +221,12 @@ export default {
             whatIsAvailableBalance: `Cos'è il saldo disponibile?`,
             whatIsAvailableBalanceAnswer: `È l'equilibrio memorizzato nella blockchain da tutta la rete, che può essere cambiato solo attraverso le transazioni.`,
             potentialBalanceUpAndDown: `Perché l'equilibrio potenziale continua ad andare su e giù?`,
-            potentialBalanceUpAndDownAnswer: `Perché il bilancio potenziale è solo una stima data dal pool in cui si sta estraendo.`,
+            potentialBalanceUpAndDownAnswer: `Perché il bilancio potenziale è solo una stima data dalla pool in cui si sta estraendo.`,
             whatIsPoS: `Cos'è il PoS?`,
             whatIsPoSAnswer: `Proof of Stake è il modo di estrarre nuove monete usando il tuo stack di monete già estratte, invece della tua potenza di CPU, come faresti quando estrai con PoW.`,
             whenMiningInPoSKeepAllOfStakeInOneWallet: `Quando si fa mining nei giri PoS, devo tenere tutta la mia partecipazione in un portafoglio?`,
             whenMiningInPoSKeepAllOfStakeInOneWalletAnswer: `Le possibilità sono uguali, anche quando si hanno molti piccoli portafogli invece di uno solo, grande.`,
-            stakingMyCoinsWithPOSRequiresCertainTypeOfDevice: `Il picchettamento delle mie monete con il POS richiede un certo tipo di dispositivo?`,
+            stakingMyCoinsWithPOSRequiresCertainTypeOfDevice: `Lo staking delle mie monete con il POS richiede un certo tipo di dispositivo?`,
             stakingMyCoinsWithPOSRequiresCertainTypeOfDeviceAnswer: `Ogni browser compatibile sarà sufficiente, indipendentemente dal dispositivo (PC, laptop, tablet, smartphone, ecc.).`,
             helpTheProjectWhomDoIContact: `Voglio aiutare il progetto. Chi devo contattare?`,
             helpTheProjectWhomDoIContactAnswer: `WebDollar è un progetto open source e chiunque può unirsi e aiutare. Puoi contattare il nostro direttore generale e dopo aver parlato con lui, arriveremo ad una conclusione su quale sia il modo migliore per aiutare il nostro progetto.`,
@@ -234,7 +237,7 @@ export default {
             whereCanISeeTheSourceCode: `Dove posso vedere il codice sorgente?`,
             whereCanISeeTheSourceCodeAnswer: `Poiché ci piace essere trasparenti tutto il nostro codice base è open source sul nostro <a href="https://github.com/WebDollar" target="_blank">GitHub</a>. Chiunque può vedere il codice, contribuire ad esso e verificare se tutto funziona bene.`,
 
-            stillHaveQuestionsTelegram: `Hai ancora domande? <a href="https://t.me/WebDollar" target="_blank">Chiedici su Telegram!</a>`,
+            stillHaveQuestionsTelegram: `Hai ancora domande? <a href="https://t.me/WebDollar" target="_blank">Chiedici su Telegram (in inglese)!</a>`,
         },
 
         media:{
@@ -268,8 +271,8 @@ export default {
             firstWebDollarCommunityMeetup: `Primo incontro della comunità WebDollar`,
             romaniaBucharest: `Romania, Bucarest`,
             videoTechnicalPresentation: `Presentazione tecnica video`,
-            poolMining: `Miniere in piscina`,
-            getReadyForThePoolParty: `Preparati per la festa in piscina!`,
+            poolMining: `Pool Mining`,
+            getReadyForThePoolParty: `Preparati per la Pool Party!`,
             alexandruPanaitAppearanceOnTVAntena3: `Alexandru Panait apparizione in TV (Antena 3)`,
             firstRomanianCryptocurrency: `La prima criptovaluta rumena`,
             romanianDigitization: `Digitalizzazione rumena`,

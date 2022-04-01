@@ -494,7 +494,7 @@
   <center>
     <h2 class="bottom-message">
       {{ $i18n.t('heroes.partners.wantToBecomePartner') }} <br>
-      <a href="https://t.me/WebDollar">{{ $i18n.t('heroes.partners.talkToUsOnTelegram') }}</a>
+      <a href="https://t.me/WebDollar" target="_blank">{{ $i18n.t('heroes.partners.talkToUsOnTelegram') }}</a>
     </h2>
   </center>
 
