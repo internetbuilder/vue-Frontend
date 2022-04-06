@@ -5,7 +5,7 @@
 
         <div id="" class="createPoolSection">
 
-            <h1 class="alignCenter">POOL Staking</h1>
+            <h1 class="alignCenter">{{ $i18n.t('heroes.pool.poolStaking') }}</h1>
 
             <div class="distributionContainer">
 
@@ -17,10 +17,7 @@
                                  :poolHashes="poolHashes" :poolMinersOnline="poolMinersOnline"
                                  :poolBlocksConfirmed="poolBlocksConfirmed" :poolBlocksConfirmedAnPaid="poolBlocksConfirmedAndPaid" :poolBlocksUnconfirmed="poolBlocksUnconfirmed"
                                  :poolTimeRemaining="poolTimeRemaining" :poolBlocksBeingConfirmed="poolBlocksBeingConfirmed"> </pool-statistics>
-
             </div>
-
-
             <div class="dataStatisticsItem" v-for="(poolServer, index) in this.poolServers" :key="index">
                 <span class="titlePool serverPool" >{{poolServer.name}}</span>
                 <span class="minerData serverPoolStatus" >{{poolServer.connected ? 'connected - '  + (poolServer.established ? 'established' : 'not established' )  : 'not connected'}} </span>

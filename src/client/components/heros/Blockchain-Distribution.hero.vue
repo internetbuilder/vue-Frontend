@@ -4,7 +4,7 @@
 
         <div class="verticalAlignMiddle">
 
-            <span class="pageTitle alignCenter bigMarginBottom">Coin Supply</span>
+            <span class="pageTitle alignCenter bigMarginBottom">{{ $i18n.t('heroes.blockchainDistribution.coinSupply') }}</span>
 
             <div class="distributionContainer maxWidthSection">
 
@@ -24,7 +24,7 @@
                                 {{this.distributionAmount}}
                                 <span class='networkDifficulty'>{{this.getNumberSign(this.totalAmountCoins)}}</span>
                             </span>
-                            <span class="description">Current Distribution</span>
+                            <span class="description">{{ $i18n.t('heroes.blockchainDistribution.currentDistribution') }}</span>
                         </div>
                         <div>
                             <span v-show="!this.loaded" class="value">
@@ -33,7 +33,7 @@
                             <span v-show="this.loaded" class="value">
                                 {{this.distributionBlocks}}
                             </span>
-                            <span class="description">Mined blocks</span>
+                            <span class="description">{{ $i18n.t('heroes.blockchainDistribution.minedBlocks') }}</span>
                         </div>
                         <div>
                             <span v-show="!this.loaded" class="value">
@@ -41,9 +41,9 @@
                             </span>
                             <span v-show="this.loaded" class="value">
                                 ~{{this.getNetworkHashrate}}
-                                <span class='networkDifficulty'>{{this.getNetworkHashrateSign}}{{ this.changeRound ? '' : 'h/s'}}</span>
+                                <span class='networkDifficulty'>{{this.getNetworkHashrateSign}}</span>
                             </span>
-                            <span class="description">{{ this.changeRound ? 'Staking coins' : 'Global Hash rate' }}</span>
+                            <span class="description">{{ $i18n.t('heroes.blockchainDistribution.stakingCoins') }}</span>
                         </div>
                     </div>
 
@@ -60,30 +60,30 @@
                   <div class="footer" v-show="this.currentPriceLoaded">
                     <div>
                       <span class="value">{{currentPriceSymbol}} {{currentPrice}}</span>
-                      <span class="description">Current Price</span>
+                      <span class="description">{{ $i18n.t('heroes.blockchainDistribution.currentPrice') }}</span>
                     </div>
                     <div>
                       <span class="value">{{change24hrSign}}{{change24hr}} %</span>
-                      <span class="description">24hr change</span>
+                      <span class="description">{{ $i18n.t('heroes.blockchainDistribution.change24hr') }}</span>
                     </div>
                     <div class="hideOnMobile">
                       <span class="value">{{volume24hr}}</span>
-                      <span class="description">24hr volume</span>
+                      <span class="description">{{ $i18n.t('heroes.blockchainDistribution.volume24hr') }}</span>
                     </div>
                     <div class="hideOnMobile">
                       <span class="value">{{marketCap}}</span>
-                      <span class="description">Market Cap</span>
+                      <span class="description">{{ $i18n.t('heroes.blockchainDistribution.marketCap') }}</span>
                     </div>
                     <div class="bottom-gutter">
                       <div>
-                      <span class="description">All prices shown in
+                      <span class="description">{{ $i18n.t('heroes.blockchainDistribution.allPricesShownIn') }}
                         <select v-model="coinGecko.currency" class="poolSelect">
-                          <option disabled value="">Please select one</option>
-                          <option v-for="currency in coinGecko.availableCurrencies">{{ currency }}</option>
+                          <option disabled value="">{{ $i18n.t('heroes.blockchainDistribution.pleaseSelectOne') }}</option>
+                          <option v-for="(currency, index) in coinGecko.availableCurrencies" :key="index">{{ currency }}</option>
                         </select>
                       </span>
-                      <span class="description-smaller"><sup>*</sup>Powered by CoinGecko API</span>
-                      <span class="description-smaller">Last Updated At {{this.lastUpdatedCoinGecko}}</span>
+                      <span class="description-smaller"><sup>*</sup>{{ $i18n.t('heroes.blockchainDistribution.poweredCoinGecko') }}</span>
+                      <span class="description-smaller">{{ $i18n.t('heroes.blockchainDistribution.lastUpdatedAt') }} {{this.lastUpdatedCoinGecko}}</span>
                       </div>
                     </div>
                   </div>
@@ -260,6 +260,7 @@
 
             lastUpdatedCoinGecko() {
               const lastUpdatedAt = new Date(this.coinGecko.lastUpdatedAt * 1000);
+              moment.locale(this.$store.state.settings.language)
               // date and time w/ seconds in current browser locale.
               return moment(lastUpdatedAt).format('L LTS');
             },

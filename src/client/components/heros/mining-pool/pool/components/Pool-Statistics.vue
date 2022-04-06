@@ -2,13 +2,13 @@
     <div class="distributionGrid poolDescription">
 
         <div class="distributionGrid borderBottom">
-            <h2 class="subtitle">POOL STATISTICS</h2>
+            <h2 class="subtitle">{{ $i18n.t('heroes.pool.poolStatistics') }}</h2>
         </div>
 
         <a :href="this.poolWebsite">
             <div class='stat-box-link'>
 
-                <p class="stat-box-small">Staking in:</p>
+                <p class="stat-box-small">{{ $i18n.t('heroes.pool.stakingIn') }}</p>
                 <p class="normalSpan yellowColor"> {{this.poolName}}</p>
 
             </div>
@@ -16,28 +16,28 @@
 
         <div class='stat-box'>
 
-            <p class="stat-box-small">Pool Fee: </p>
+            <p class="stat-box-small">{{ $i18n.t('heroes.pool.poolFee') }}</p>
             <p class="normalSpan yellowColor" :class="this.isNotNullColor"> {{ this.poolFee }}</p>
 
         </div>
 
         <div class='stat-box'>
 
-            <p class="stat-box-small">Validators in Pool: </p>
+            <p class="stat-box-small">{{ $i18n.t('heroes.pool.validatorsInPool') }}</p>
             <p class="normalSpan" :class="this.isNotNullColor"> {{ this.poolMinersOnline}} </p>
 
         </div>
 
         <div class='stat-box'>
 
-            <p class="stat-box-small">Blocks Paid: </p>
+            <p class="stat-box-small">{{ $i18n.t('heroes.pool.blocksPaid') }}</p>
             <p class="normalSpan" :class="this.isNotNullColor"> {{this.poolBlocksConfirmedAndPaid}} </p>
 
         </div>
 
         <div class='stat-box'>
 
-            <p class="stat-box-small">Blocks Pending: </p>
+            <p class="stat-box-small">{{ $i18n.t('heroes.pool.blocksPending') }}</p>
             <p class="normalSpan" :class="this.isNotNullColor"> {{this.poolBlocksConfirmed}} </p>
 
         </div>

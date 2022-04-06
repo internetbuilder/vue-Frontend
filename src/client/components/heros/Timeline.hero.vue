@@ -3,160 +3,160 @@
 
     <div id="timelineSection" >
 
-        <span class='alignCenter pageTitle'>Roadmap</span>
-        <h3>Fastest Development of a Browser-Based Cryptocurrency</h3>
+        <span class='alignCenter pageTitle'>{{ $i18n.t('heroes.timeline.roadmap') }}</span>
+        <h3>{{ $i18n.t('heroes.timeline.fastestDevelopmentOfBrowserBasedCrypto') }}</h3>
 
         <div id="timeline" class="backgroundSection">
             <div class="sectionCenteredWidth">
                 <div class="main-timeline">
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-file-text2"></i></div>
-                        <span class="year">Q4 2017</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q42017') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">WHITE PAPER DRAFT</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.whitePaperDraft') }}</h5>
                             <p class="description">
-                                An initial white paper was realized to describe the WebDollar protocol.
+                                {{ $i18n.t('heroes.timeline.whitePaperDraftDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-trophy"></i></div>
-                        <span class="year">Q4 2017</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q42017') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">TECH HUB JS HACKATHON</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.techHubJSHackathon') }}</h5>
                             <p class="description">
-                                An initial team was formed during the JSHacks Blockchain Hackaton to bootstrap and implement the vision behind WebDollar.
+                                {{ $i18n.t('heroes.timeline.techHubJSHackathonDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-earth"></i></div>
-                        <span class="year">Q4 2017</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q42017') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">P2P AND MINI-BLOCKCHAIN</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.p2pAndMiniBlockchain') }}</h5>
                             <p class="description">
-                                Our community started to develop and finalize P2P connections through Websockets and WebRTC. Implementation of Mini-blockchain.
+                                {{ $i18n.t('heroes.timeline.p2pAndMiniBlockchainDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-flask"></i></div>
-                        <span class="year">Q1 2018</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q12018') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">LAUNCH TEST NET</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.launchTestNet') }}</h5>
                             <p class="description">
-                                Developing consensus of the Proof of Work and blockchain launching.
+                                {{ $i18n.t('heroes.timeline.launchTestNetDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fas fa-trophy"></i></div>
-                        <span class="year">Q1 2018</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q12018') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">BUILT IN BOUNTY PROGRAM</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.buildInBountyProgram') }}</h5>
                             <p class="description">
-                                Development of a bounty program that helped evangelists to spread the word of Webdollar Worldwide.
+                                {{ $i18n.t('heroes.timeline.buildInBountyProgramDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <span class="year">Q2 2018</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q22018') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">SECURITY & LAUNCH MAIN NET</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.securityAndLanchMainNet') }}</h5>
                             <p class="description">
-                                Non-Interactive Proofs of Proof-of-Work, improving the Security and launching a Main Net.
+                                {{ $i18n.t('heroes.timeline.securityAndLanchMainNetDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fas fa-hammer"></i></div>
-                        <span class="year">Q3 2018</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q32018') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">MINING POOLS & REFERRAL SYSTEM</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.miningPoolsAndReferralSystem') }}</h5>
                             <p class="description">
-                                Developing an easy way to mine with your friends in social mining. Also, creation of the Mining Pools Referral System.
+                                {{ $i18n.t('heroes.timeline.miningPoolsAndReferralSystemDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <span class="year">Q3 2018</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q32018') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">OFFLINE TRANSACTIONS</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.offlineTransactions') }}</h5>
                             <p class="description">
-                                Allowing users to add a new optional security layer by signing offline transactions using their wallets on desktop or mobile app.
+                                {{ $i18n.t('heroes.timeline.offlineTransactionsDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <span class="year">Q1 2019</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q12019') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">HYBRID MINING</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.hybridMining') }}</h5>
                             <p class="description">
-                                Releasing the first hybrid mining in browser using Proof of Stake 66.(6)% and Proof of Work 33.(3)%.
+                                {{ $i18n.t('heroes.timeline.hybridMining6633') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-coin-dollar"></i></div>
-                        <span class="year">Q1 2019</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q12019') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">EXCHANGE LISTING</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.exchangeListing') }}</h5>
                             <p class="description">
-                                Developing the first Exchange for the WebDollar Ecosystem and creating easy to integrate API for other Exchanges.
+                                {{ $i18n.t('heroes.timeline.exchangeListingDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <span class="year">Q3 2020</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q32020') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">HYBRID MINING</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.hybridMining') }}</h5>
                             <p class="description">
-                                Moving to hybrid mining in browser using Proof of Stake 90% and Proof of Work 10%.
+                                {{ $i18n.t('heroes.timeline.hybridMining9010') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                        <span class="year">Q3 2021</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.q32021') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">100% PROOF OF STAKE (POS)</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.pos100') }}</h5>
                             <p class="description">
-                                Releasing the first 100% Proof of Stake browser cryptocurrency.
+                                {{ $i18n.t('heroes.timeline.pos100Description') }}
                             </p>
                         </div>
                     </div>
 
                     <div class="timeline timelineUnfinishedMilestones">
                         <div class="timeline-icon"><i class="fa fa-gift"></i></div>
-                        <span class="year">ONGOING</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.ongoing') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">EVANGELISM & MARKETING</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.evangelismAndMarketing') }}</h5>
                             <p class="description">
-                                Growing the community, attend to cryptocurrency conferences.
+                                {{ $i18n.t('heroes.timeline.evangelismAndMarketingDescription') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline timelineUnfinishedMilestones">
                         <div class="timeline-icon"><i class="fa fa-code"></i></div>
-                        <span class="year">PLANNED</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.planned') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">WEBDOLLAR 2.0</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.webdollar20') }}</h5>
                             <p class="description">
-                                Full rewrite, new features (delegate staking, increased number of transactions per second, improved user interface and easier integration).
+                                {{ $i18n.t('heroes.timeline.webdollar20Description') }}
                             </p>
                         </div>
                     </div>
                     <div class="timeline timelineUnfinishedMilestones">
                         <div class="timeline-icon"><i class="fa fa-coin-dollar"></i></div>
-                        <span class="year">PLANNED</span>
+                        <span class="year">{{ $i18n.t('heroes.timeline.planned') }}</span>
                         <div class="timeline-content">
-                            <h5 class="title">INTEGRATION WITH PANDORAPAY</h5>
+                            <h5 class="title">{{ $i18n.t('heroes.timeline.integrationWithPandoraPay') }}</h5>
                             <p class="description">
-                                Integrating PandoraPay, a multi-asset and currency anonymous Exchange, secure, private and easy to use.
+                                {{ $i18n.t('heroes.timeline.integrationWithPandoraPayDescription') }}
                             </p>
                         </div>
                     </div>

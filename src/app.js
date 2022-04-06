@@ -3,6 +3,8 @@ import App from './App.vue'
 import { createStore } from './store'
 import { createRouter } from './router'
 
+import VueI18n from 'vue-i18n'
+import i18n from './utils/languages/i18n'
 
 //USED for SEO SSR and Client
 import TitleMixin from './modules/utils/SEO/TitleMixin';
@@ -23,6 +25,9 @@ Vue.mixin(SchemaMarkupMixin);
 Vue.mixin(BreadcrumbsSchemaMarkupMixin);
 Vue.mixin(WebPageTypeMixin);
 
+Vue.use(VueI18n);
+i18n.i18nInit();
+
 // Expose a factory function that creates a fresh set of store, router,
 // app instances on each call (which is called for each SSR request)
 export function createApp () {
@@ -34,6 +39,7 @@ export function createApp () {
   // here we inject the router, store and ssr context to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = new Vue({
+    i18n: i18n.i18n,
     router,
     store,
     render: h => h(App)

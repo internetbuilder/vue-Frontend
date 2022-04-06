@@ -1,7 +1,7 @@
 <template>
 <div id="faqSection">
 
-  <span class="alignCenter bigMarginTop pageTitle">PARTNERS</span>
+  <span class="alignCenter bigMarginTop pageTitle">{{ $i18n.t('heroes.partners.partners') }}</span>
 
   <div class="partnerContainer sectionCenteredWidth">
 
@@ -9,7 +9,7 @@
 
       <collapse-faq :selected="false" ref="exchanges" id="exchanges">
         <div slot="collapse-header">
-          EXCHANGES
+          {{ $i18n.t('heroes.partners.exchanges') }}
         </div>
         <div slot="collapse-body">
 
@@ -26,10 +26,8 @@
                 </div>
               </div>
               <span class="teamName">P2PB2B</span>
-              <span class="teamRole">Crypto Exchange</span>
-              <p class="description">
-                p2pb2b‌ is an advanced cryptocurrency exchange that works for the benefit of its users. In order to make your trading even more convenient and safe, the platform has all the necessary features and tools.
-              </p>
+              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
+              <p class="description">{{ $i18n.t('heroes.partners.p2pb2bDescription') }}</p>
             </div>
 
             <div>
@@ -43,10 +41,8 @@
                 </div>
               </div>
               <span class="teamName">WebD Timi</span>
-              <span class="teamRole">Crypto Exchange</span>
-              <p class="description">
-                Our mission is to deliver a 24/7 service for buying and selling WebD in the easiest way possible, with ins and outs via the most common fiat currencies among the WebDollar community members.
-              </p>
+              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
+              <p class="description">{{ $i18n.t('heroes.partners.webdTimiDescription') }}</p>
             </div>
 
             <div>
@@ -60,10 +56,8 @@
                 </div>
               </div>
               <span class="teamName">IndoEx</span>
-              <span class="teamRole">Crypto Exchange</span>
-              <p class="description">
-                IndoEx Exchange is a platform offering its clients trading services of cryptocurrency and cryptocurrency derivatives on the market anytime, anywhere with top level of security, liquidity and experience.
-              </p>
+              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
+              <p class="description">{{ $i18n.t('heroes.partners.indoexDescription') }}</p>
             </div>
 
           </div>
@@ -81,10 +75,8 @@
                 </div>
               </div>
               <span class="teamName">VinDAX</span>
-              <span class="teamRole">Crypto Exchange</span>
-              <p class="description">
-                VinDAX provides an innovative live trading platform where you can instantly buy or sale cryptocurrencies like Bitcoin, WebDollar, Bitcoin Cash, Litecoin and Zcash at best prices, in a secure easy to use eco-system.
-              </p>
+              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
+              <p class="description">{{ $i18n.t('heroes.partners.vindaxDescription') }}</p>
             </div>
 
             <div>
@@ -98,10 +90,8 @@
                 </div>
               </div>
               <span class="teamName">BankCEX</span>
-              <span class="teamRole">Crypto Exchange</span>
-              <p class="description">
-                 BankCEX is built and run as robust and reliable exchange platform from the ground up with security, efficiency, speed and scalability.
-              </p>
+              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
+              <p class="description">{{ $i18n.t('heroes.partners.bankcexDescription') }}</p>
             </div>
 
             <div>
@@ -115,10 +105,8 @@
                 </div>
               </div>
               <span class="teamName">WebDollar Tip Bot</span>
-              <span class="teamRole">Telegram bot for making tips, buying, and staking</span>
-              <p class="description">
-                 Buy WEBD with your card or PayPal directly from your Telegram account. The amount you purchase is going to be credited instantly to your bot balance after you complete the payment.
-              </p>
+              <span class="teamRole">{{ $i18n.t('heroes.partners.telegramBotForMakingTips') }}</span>
+              <p class="description">{{ $i18n.t('heroes.partners.webdollarTipBotDescription') }}</p>
             </div>
 
           </div>
@@ -128,7 +116,7 @@
 
       <collapse-faq :selected="false" ref="trackers" id="trackers">
         <div slot="collapse-header">
-          TRACKERS
+          {{ $i18n.t('heroes.partners.trackers') }}
         </div>
         <div slot="collapse-body">
 
@@ -401,7 +389,7 @@
 
       <collapse-faq :selected="false" ref="businesses" id="businesses">
         <div slot="collapse-header">
-          BUSINESSES
+          {{ $i18n.t('heroes.partners.businesses') }}
         </div>
         <div slot="collapse-body">
 
@@ -504,7 +492,10 @@
   </div>
 
   <center>
-    <h2 class="bottom-message">Want to become our partner? <br><a href="https://t.me/WebDollar">Talk to us on Telegram!</a></h2>
+    <h2 class="bottom-message">
+      {{ $i18n.t('heroes.partners.wantToBecomePartner') }} <br>
+      <a href="https://t.me/WebDollar" target="_blank">{{ $i18n.t('heroes.partners.talkToUsOnTelegram') }}</a>
+    </h2>
   </center>
 
 </div>

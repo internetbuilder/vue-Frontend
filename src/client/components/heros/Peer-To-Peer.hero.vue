@@ -5,16 +5,16 @@
         <div id="networkSection">
             <div>
 
-                <h1 class="alignCenter">Peer-to-Peer Network</h1>
-                <h3 >See your Staking Group Connections in Real-Time </h3>
+                <h1 class="alignCenter">{{ $i18n.t('heroes.peerToPeer.peerToPeerNetwork') }}</h1>
+                <h3>{{ $i18n.t('heroes.peerToPeer.seeYouStakingGroup') }}</h3>
 
                 <div class="networkConnection">
                     <div class="connectionType">
 
-                        <label for="poolConnectionSelect">Connection:</label>
+                        <label for="poolConnectionSelect">{{ $i18n.t('heroes.peerToPeer.connection') }}</label>
 
                         <select id="poolConnectionSelect" v-model="poolsListSelected" class="poolSelect" @change="handleConnectionSelect">
-                            <option class="poolSelectOption" >Consensus (No Pool)</option>
+                            <option class="poolSelectOption">{{ $i18n.t('heroes.peerToPeer.consensusNoPool') }}</option>
                             <option v-for="(poolListElement, index) in this.poolsList" class="poolSelectOption" :key="index">
                                 {{poolListElement.poolName}}
                             </option>
