@@ -17,17 +17,32 @@
 
             <div>
               <div class="team-pic">
-                <a href="https://p2pb2b.io/trade/WEBD_ETH" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/P2PB2B.png" alt="P2PB2B" title="P2PB2B.io"></a>
+                <a href="https://international.indoex.io/trade/WEBD_ETH" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/IndoEx.png" alt="INDOEX" title="IndoEx"></a>
                 <div class="partners-box">
                   <ul class="partner-list">
-                    <li><a href="https://p2pb2b.io/trade/WEBD_ETH" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
-                    <li><a href="https://twitter.com/p2pb2b" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
+                    <li><a href="https://international.indoex.io/trade/WEBD_ETH" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
+                    <li><a href="https://twitter.com/Indoex_LTD" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
                   </ul>
                 </div>
               </div>
-              <span class="teamName">P2PB2B</span>
+              <span class="teamName">IndoEx</span>
               <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
-              <p class="description">{{ $i18n.t('heroes.partners.p2pb2bDescription') }}</p>
+              <p class="description">{{ $i18n.t('heroes.partners.indoexDescription') }}</p>
+            </div>
+
+            <div>
+              <div class="team-pic">
+                <a href="https://vindax.com/exchange-base.html?symbol=WEBD_ETH/" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/VinDAX.jpeg" alt="VinDAX" title="VinDAX"></a>
+                <div class="partners-box">
+                  <ul class="partner-list">
+                    <li><a href="https://vindax.com/exchange-base.html?symbol=WEBD_ETH/" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
+                    <li><a href="https://twitter.com/BitMahavi" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <span class="teamName">VinDAX</span>
+              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
+              <p class="description">{{ $i18n.t('heroes.partners.vindaxDescription') }}</p>
             </div>
 
             <div>
@@ -43,70 +58,6 @@
               <span class="teamName">WebD Timi</span>
               <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
               <p class="description">{{ $i18n.t('heroes.partners.webdTimiDescription') }}</p>
-            </div>
-
-            <div>
-              <div class="team-pic">
-                <a href="https://bitrabbit.com/markets/webd_eth" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/IndoEx.png" alt="INDOEX" title="IndoEx"></a>
-                <div class="partners-box">
-                  <ul class="partner-list">
-                    <li><a href="https://international.indoex.io/trade/WEBD_ETH" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
-                    <li><a href="https://twitter.com/Indoex_LTD" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
-                  </ul>
-                </div>
-              </div>
-              <span class="teamName">IndoEx</span>
-              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
-              <p class="description">{{ $i18n.t('heroes.partners.indoexDescription') }}</p>
-            </div>
-
-          </div>
-
-          <div class="partnerWrapper threeTeamColums">
-
-            <div>
-              <div class="team-pic">
-                <a href="https://vindax.com/" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/VinDAX.jpeg" alt="VinDAX" title="VinDAX"></a>
-                <div class="partners-box">
-                  <ul class="partner-list">
-                    <li><a href="https://vindax.com/exchange-base.html?symbol=WEBD_ETH/" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
-                    <li><a href="https://twitter.com/BitMahavi" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
-                  </ul>
-                </div>
-              </div>
-              <span class="teamName">VinDAX</span>
-              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
-              <p class="description">{{ $i18n.t('heroes.partners.vindaxDescription') }}</p>
-            </div>
-
-            <div>
-              <div class="team-pic">
-                <a href="https://bankcex.com/" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/BankCEX.png" alt="BankCEX" title="BankCEX"></a>
-                <div class="partners-box">
-                  <ul class="partner-list">
-                    <li><a href="https://bankcex.com/exchange-base.html?symbol=WEBD_BTC" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
-                    <li><a href="https://twitter.com/BankCoin2018" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
-                  </ul>
-                </div>
-              </div>
-              <span class="teamName">BankCEX</span>
-              <span class="teamRole">{{ $i18n.t('heroes.partners.cryptoExchange') }}</span>
-              <p class="description">{{ $i18n.t('heroes.partners.bankcexDescription') }}</p>
-            </div>
-
-            <div>
-              <div class="team-pic">
-                <a href="https://t.me/webdollar_tip_bot" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/Tipbot.png" alt="WebDollarTipBot" title="WebDollar Tip Bot"></a>
-                <div class="partners-box">
-                  <ul class="partner-list">
-                    <li><a href="https://pay.hostero.eu/tipbot" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
-                    <li><a href="https://twitter.com/hosteroeu" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
-                  </ul>
-                </div>
-              </div>
-              <span class="teamName">WebDollar Tip Bot</span>
-              <span class="teamRole">{{ $i18n.t('heroes.partners.telegramBotForMakingTips') }}</span>
-              <p class="description">{{ $i18n.t('heroes.partners.webdollarTipBotDescription') }}</p>
             </div>
 
           </div>
@@ -143,25 +94,12 @@
 
             <div>
               <div class="team-pic">
-                <a href="https://play.google.com/store/apps/details?id=com.blockfolio.blockfolio&hl=en_US" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/BlockFolio.png" alt="Blockfolio" title="Blockfolio"></a>
-                <div class="partners-box">
-                </div>
-              </div>
-              <span class="teamName">Blockfolio</span>
-            </div>
-
-            <div>
-              <div class="team-pic">
                 <a href="https://play.google.com/store/apps/details?id=io.getdelta.android" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/Delta.png" alt="Delta" title="Delta"></a>
                 <div class="partners-box">
                 </div>
               </div>
               <span class="teamName">Delta</span>
             </div>
-
-          </div>
-
-          <div class="partnerWrapper fourTeamColums">
 
             <div>
               <div class="team-pic">
@@ -171,6 +109,10 @@
               </div>
               <span class="teamName">CoinPaprika</span>
             </div>
+
+          </div>
+
+          <div class="partnerWrapper fourTeamColums">
 
             <div>
               <div class="team-pic">
@@ -192,19 +134,6 @@
 
             <div>
               <div class="team-pic">
-                <a href="https://walletinvestor.com/forecast/webdollar-prediction" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/WalletInvestor.png" alt="Wallet Investor" title="Wallet Investor"></a>
-                <div class="partners-box">
-                </div>
-              </div>
-              <span class="teamName">Wallet Investor</span>
-            </div>
-
-          </div>
-
-          <div class="partnerWrapper fourTeamColums">
-
-            <div>
-              <div class="team-pic">
                 <a href="https://coinmarketcal.com/en/coin/webdollar" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/CoinMarketCal.png" alt="CoinMarketCal" title="CoinMarketCal"></a>
                 <div class="partners-box">
                 </div>
@@ -221,6 +150,10 @@
               </div>
               <span class="teamName">Coinranking</span>
             </div>
+
+          </div>
+
+          <div class="partnerWrapper fourTeamColums">
 
             <div>
               <div class="team-pic">
@@ -240,10 +173,6 @@
               <span class="teamName">Coincodex</span>
             </div>
 
-          </div>
-
-          <div class="partnerWrapper fourTeamColums">
-
             <div>
               <div class="team-pic">
                 <a href="https://neironix.io/cryptocurrency/webd" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/Neironix.png" alt="Neironix" title="Neironix"></a>
@@ -262,27 +191,9 @@
               <span class="teamName">Coingolive</span>
             </div>
 
-            <div>
-              <div class="team-pic">
-                <a href="https://cointobuy.io/webdollar" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/CoinToBuy.png" alt="CoinToBuy" title="CoinToBuy"></a>
-                <div class="partners-box">
-                </div>
-              </div>
-              <span class="teamName">CoinToBuy</span>
-            </div>
-
-            <div>
-              <div class="team-pic">
-                <a href="https://coinutil.net/currencies/webdollar?hl=en" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/CoinUtil.png" alt="CoinUtil" title="CoinUtil"></a>
-                <div class="partners-box">
-                </div>
-              </div>
-              <span class="teamName">CoinUtil</span>
-            </div>
           </div>
 
           <div class="partnerWrapper fourTeamColums">
-
 
             <div>
               <div class="team-pic">
@@ -313,28 +224,6 @@
 
             <div>
               <div class="team-pic">
-                <a href="https://cryptocoinworld.io/webdollar-price/" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/CryptoCoinWorld.png" alt="CryptoCoinWorld" title="CryptoCoinWorld"></a>
-                <div class="partners-box">
-                </div>
-              </div>
-              <span class="teamName">CryptoCoinWorld</span>
-            </div>
-
-          </div>
-
-          <div class="partnerWrapper fourTeamColums">
-
-            <div>
-              <div class="team-pic">
-                <a href="https://coinexpressway.com/Coin/webdollar" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/CoinExpressWay.png" alt="CoinExpressWay" title="CoinExpressWay"></a>
-                <div class="partners-box">
-                </div>
-              </div>
-              <span class="teamName">CoinExpressWay</span>
-            </div>
-
-            <div>
-              <div class="team-pic">
                 <a href="https://coinkurs.com/webdollar-kurs-dollar.html" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/CoinKurs.png" alt="CoinKurs" title="CoinKurs"></a>
                 <div class="partners-box">
                 </div>
@@ -342,14 +231,9 @@
               <span class="teamName">CoinKurs</span>
             </div>
 
-            <div>
-              <div class="team-pic">
-                <a href="https://www.marketbeat.com/cryptocurrencies/webdollar/" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/MarketBeat.png" alt="MarketBeat" title="MarketBeat"></a>
-                <div class="partners-box">
-                </div>
-              </div>
-              <span class="teamName">MarketBeat</span>
-            </div>
+          </div>
+
+          <div class="partnerWrapper fourTeamColums">
 
             <div>
               <div class="team-pic">
@@ -358,19 +242,6 @@
                 </div>
               </div>
               <span class="teamName">WallMine</span>
-            </div>
-
-          </div>
-
-          <div class="partnerWrapper fourTeamColums">
-
-            <div>
-              <div class="team-pic">
-                <a href="https://www.coinmarkets.net/currencies/webdollar/" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/CoinMarkets.png" alt="CoinMarkets" title="CoinMarkets"></a>
-                <div class="partners-box">
-                </div>
-              </div>
-              <span class="teamName">CoinMarkets</span>
             </div>
 
             <div>
