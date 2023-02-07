@@ -19,7 +19,6 @@
                         <img class="lazy" data-src="/public/assets/images/logo-coin.png" :alt="$i18n.t('heroes.getStarted.getWebdollars')" :title="$i18n.t('heroes.getStarted.getWebdollars')">
                         <h4>{{ $i18n.t('heroes.getStarted.getWebdollars') }}</h4>
                         <p v-html="$i18n.t('heroes.getStarted.buyFromExchanges')" />
-                        <p v-html="$i18n.t('heroes.getStarted.useTipBotTopUp')" />
                         <p v-html="$i18n.t('heroes.getStarted.getTipsAndRewards')" />
                         <p v-html="$i18n.t('heroes.getStarted.playGames')" />
                     </div>
