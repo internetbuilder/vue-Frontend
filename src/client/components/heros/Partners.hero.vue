@@ -17,10 +17,10 @@
 
             <div>
               <div class="team-pic">
-                <a href="https://international.indoex.io/trade/WEBD_ETH" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/IndoEx.png" alt="INDOEX" title="IndoEx"></a>
+                <a href="https://www.indoex.io/trade/WEBD_ETH" target="_blank"> <img class="partner-logo" src="/public/assets/images/partners/IndoEx.png" alt="INDOEX" title="IndoEx"></a>
                 <div class="partners-box">
                   <ul class="partner-list">
-                    <li><a href="https://international.indoex.io/trade/WEBD_ETH" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
+                    <li><a href="https://www.indoex.io/trade/WEBD_ETH" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
                     <li><a href="https://twitter.com/Indoex_LTD" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
                   </ul>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="partners-box">
                   <ul class="partner-list">
                     <li><a href="https://vindax.com/exchange-base.html?symbol=WEBD_ETH/" class="fa fa-earth" rel="noopener" target="_blank" aria-label="website"></a></li>
-                    <li><a href="https://twitter.com/BitMahavi" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
+                    <li><a href="https://twitter.com/VinDAXOfficial" class="fa fa-twitter" rel="noopener" target="_blank" aria-label="twitter"></a></li>
                   </ul>
                 </div>
               </div>
