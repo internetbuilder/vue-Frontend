@@ -119,7 +119,7 @@ export default {
             marketCap: `Capitalizarea de piață`,
             allPricesShownIn: `Toate prețurile în`,
             pleaseSelectOne: `Vă rugăm să alegeți unul`,
-            poweredCoinGecko: `Susținut de CoinGecko API`,
+            poweredCoinAPI: `Susținut de webdollar.network (cu CoinMarketCap API)`,
             lastUpdatedAt: `Ultima actualizare la`,
         },
 

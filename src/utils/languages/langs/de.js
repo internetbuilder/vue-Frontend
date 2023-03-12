@@ -119,7 +119,7 @@ export default {
             marketCap: `Marktkapitalisierung`,
             allPricesShownIn: `Alle Preise angezeigt in`,
             pleaseSelectOne: `Bitte wähle eine aus`,
-            poweredCoinGecko: `Unterstützt von der CoinGecko-API`,
+            poweredCoinAPI: `Unterstützt von webdollar.network (unter Verwendung der CoinMarketCap-API)`,
             lastUpdatedAt: `Zuletzt aktualisiert:`,
         },
 
