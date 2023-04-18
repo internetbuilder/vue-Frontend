@@ -382,9 +382,11 @@
 
             retrievePriceFromAPI() {
 
+                console.log("retrievePriceFromAPI")
                 // Manage cached data to avoid API call for coin info update
                 const coinInfoExpirationTimestamp = localStorage.getItem("coinInfoExpirationTimestamp") || 0
-                if (Date.now >= coinInfoExpirationTimestamp) {
+
+                if (Date.now() <= coinInfoExpirationTimestamp) {
                     const webdollar = localStorage.getItem("coinInfoApiResponse") || "{}"
                     if (this.updateCoinInfoDataFromAPIResponse(JSON.parse(webdollar))) {
                         return
