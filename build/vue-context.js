@@ -23,12 +23,7 @@ module.exports = {
         "@type": "WebSite",
         name: "WebDollar",
         alternateName: "WebDollar Currency of the Internet",
-        url: "https://webdollar.io/",
-        potentialAction: {
-            "@type": "SearchAction",
-            // target: "http://skyhub.me/search/{query}",
-            "query-input": "required"
-        }
+        url: "https://webdollar.io/"
     }),
     SEOMixinBreadcrumbsSchemaMarkup: JSON.stringify({
         "@context": "http://schema.org",

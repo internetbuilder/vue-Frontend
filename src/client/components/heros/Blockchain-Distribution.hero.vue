@@ -76,14 +76,9 @@
                     </div>
                     <div class="bottom-gutter">
                       <div>
-                      <span class="description">{{ $i18n.t('heroes.blockchainDistribution.allPricesShownIn') }}
-                        <select v-model="coinGecko.currency" class="poolSelect">
-                          <option disabled value="">{{ $i18n.t('heroes.blockchainDistribution.pleaseSelectOne') }}</option>
-                          <option v-for="(currency, index) in coinGecko.availableCurrencies" :key="index">{{ currency }}</option>
-                        </select>
-                      </span>
-                      <span class="description-smaller"><sup>*</sup>{{ $i18n.t('heroes.blockchainDistribution.poweredCoinGecko') }}</span>
-                      <span class="description-smaller">{{ $i18n.t('heroes.blockchainDistribution.lastUpdatedAt') }} {{this.lastUpdatedCoinGecko}}</span>
+                      <span class="description">{{ $i18n.t('heroes.blockchainDistribution.allPricesShownIn') }} USD</span>
+                      <span class="description-smaller"><sup>*</sup>{{ $i18n.t('heroes.blockchainDistribution.poweredCoinAPI') }}</span>
+                      <span class="description-smaller">{{ $i18n.t('heroes.blockchainDistribution.lastUpdatedAt') }} {{lastUpdatedCoinAPI}}</span>
                       </div>
                     </div>
                   </div>
@@ -129,8 +124,8 @@
 
                 networkHashRate: 0,
                 connected: false,
-                // price will be pulled by coin gecko.
-                coinGecko: {
+                // price will be pulled by Coinmarketcap.
+                coinInfo: {
                   price: 0,
                   currency: "usd",
                   symbol: "$",
@@ -143,60 +138,8 @@
                   availableCurrencies: [],
                 },
                 // For symbols with a textual representation, map here. Otherwise use the ticker.
-                // All tickers come from Coin Gecko.
                 symbols: {
-                  btc: '₿',
-                  eth: 'Ξ',
-                  ltc: 'Ł',
-                  bch: 'Ƀ',
-                  eos: 'ε',
-                  xrp: '✕',
                   usd: '$',
-                  aed: 'د.إ',
-                  ars: '$',
-                  aud: 'A$',
-                  bdt: '৳',
-                  bhd: '.د.ب',
-                  bmd: '$',
-                  brl: 'R$',
-                  cad: 'C$',
-                  chf: 'Fr.',
-                  clp: '$',
-                  cny: '¥',
-                  czk: 'Kč',
-                  dkk: 'Kr.',
-                  eur: '€',
-                  gbp: '£',
-                  hkd: 'HK$',
-                  huf: 'ft',
-                  idr: 'Rp',
-                  ils: '₪',
-                  inr: '₹',
-                  jpy: '¥',
-                  krw: '₩',
-                  kwd: 'د.ك',
-                  lkr: 'Rs',
-                  mmk: 'K',
-                  mxn: '$',
-                  myr: 'RM',
-                  ngn: '₦',
-                  nok: 'kr',
-                  nzd: '$',
-                  php: '₱',
-                  pkr: '₨',
-                  pln: 'zł',
-                  rub: '₽',
-                  sar: 'ر.س',
-                  sek: 'kr',
-                  sgd: '$',
-                  thb: '฿',
-                  try: '₺',
-                  twd: '$',
-                  uah: '₴',
-                  vef: 'Bs',
-                  vnd: '₫',
-                  zar: 'R',
-                  sats: 'S',
                 }
             }
         },
@@ -226,43 +169,42 @@
             },
 
             selectedCurrency() {
-              return this.coinGecko.currency;
+              return this.coinInfo.currency;
             },
 
             currentPriceLoaded() {
-              return this.coinGecko.loaded;
+              return this.coinInfo.loaded;
             },
 
             currentPriceSymbol() {
-              return this.coinGecko.symbol;
+              return this.coinInfo.symbol;
             },
 
             currentPrice() {
-              return this.coinGecko.price;
+              return this.coinInfo.price;
             },
 
             volume24hr() {
-              return this.coinGecko.volume24h ? Math.round(this.coinGecko.volume24h).toLocaleString() : 0;
+              return this.coinInfo.volume24h ? Math.round(this.coinInfo.volume24h).toLocaleString() : 0;
             },
 
             change24hr() {
-              return this.coinGecko.change24h ? this.coinGecko.change24h.toFixed(2).toLocaleString() : 0;
+              return this.coinInfo.change24h ? this.coinInfo.change24h.toFixed(2).toLocaleString() : 0;
             },
 
             change24hrSign() {
-              // if it's down, coin gecko adds a '-', so when it's up, insert a '+' for clarity.
+              // if it's down, coinmarketcap adds a '-', so when it's up, insert a '+' for clarity.
               return this.change24hr > 0 ? '+' : '';
             },
 
             marketCap() {
-              return this.coinGecko.marketCap.toLocaleString();
+              return this.coinInfo.marketCap.toLocaleString();
             },
 
-            lastUpdatedCoinGecko() {
-              const lastUpdatedAt = new Date(this.coinGecko.lastUpdatedAt * 1000);
+            lastUpdatedCoinAPI() {
               moment.locale(this.$store.state.settings.language)
               // date and time w/ seconds in current browser locale.
-              return moment(lastUpdatedAt).format('L LTS');
+              return moment(this.coinInfo.lastUpdatedAt).format('L LTS');
             },
 
             changeRound(){
@@ -286,8 +228,7 @@
         mounted() {
             const self = this;
 
-            this.retrieveSupportedCurrenciesFromCoinGecko();
-            this.retrievePriceFromCoinGecko();
+            this.retrievePriceFromAPI();
 
             this.$nextTick(() => {
                 if (WebDollar.Blockchain.synchronized) {
@@ -304,19 +245,19 @@
         },
 
         created() {
-          this.initiateCoinGeckoRefreshTimer();
+          this.initiateCoinAPIRefreshTimer();
         },
 
         destroyed() {
             WebDollarEmitter.off('blockchain/blocks-count-changed',  this._blockchainBlocksCountChanged);
             WebDollarEmitter.off('blockchain/new-network-hash-rate', this._blockchainNewNetworkHashRate);
 
-            this.clearCoinGeckoRefreshTimer();
+            this.clearCoinAPIRefreshTimer();
         },
 
         watch: {
               selectedCurrency() {
-                this.retrievePriceFromCoinGecko();
+                this.retrievePriceFromAPI();
               }
           },
 
@@ -418,36 +359,62 @@
                 return Utils.processHashesSignPoW(value);
             },
 
-            retrieveSupportedCurrenciesFromCoinGecko() {
-              return axios
-              .get(`https://api.coingecko.com/api/v3/simple/supported_vs_currencies`)
-              .then(response => this.coinGecko.availableCurrencies.push(...(response.data)));
+            updateCoinInfoDataFromAPIResponse(apiResponse){
+                try {
+                    const webdollarUSDInfoData = apiResponse.quote.USD
+                    const currency = "usd";
+
+                    this.coinInfo.loaded = true;
+
+                    this.coinInfo.currency = currency
+                    this.coinInfo.price = parseFloat(webdollarUSDInfoData.price.toFixed(8));
+                    this.coinInfo.marketCap = apiResponse.self_reported_market_cap;
+                    this.coinInfo.volume24h = webdollarUSDInfoData.volume_24h;
+                    this.coinInfo.change24h = webdollarUSDInfoData.percent_change_24h;
+                    this.coinInfo.lastUpdatedAt = new Date(webdollarUSDInfoData.last_updated).getTime();
+                    this.coinInfo.symbol = this.symbols[currency] || currency.toLocaleUpperCase();
+                } catch (error) {
+                    console.log(error)
+                    return false
+                }
+                return true
             },
 
-            retrievePriceFromCoinGecko() {
-              return axios
-                  .get(`https://api.coingecko.com/api/v3/simple/price?ids=webdollar&vs_currencies=${this.coinGecko.currency}&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true`)
+            retrievePriceFromAPI() {
+
+                console.log("retrievePriceFromAPI")
+                // Manage cached data to avoid API call for coin info update
+                const coinInfoExpirationTimestamp = localStorage.getItem("coinInfoExpirationTimestamp") || 0
+
+                if (Date.now() <= coinInfoExpirationTimestamp) {
+                    const webdollar = localStorage.getItem("coinInfoApiResponse") || "{}"
+                    if (this.updateCoinInfoDataFromAPIResponse(JSON.parse(webdollar))) {
+                        return
+                    }
+                }
+
+                return axios
+                  .get(`https://webdollar.network/api/coinmarketcap/quotes/latest`)
                   .then(response => {
-                    this.coinGecko.loaded = true;
+                    const webdollarData = response.data.data.WEBD;
+                    this.updateCoinInfoDataFromAPIResponse(webdollarData);
 
-                    const currency = this.coinGecko.currency;
-                    const webdollar = response.data.webdollar;
-
-                    this.coinGecko.price = webdollar[currency];
-                    this.coinGecko.marketCap = webdollar[`${currency}_market_cap`];
-                    this.coinGecko.volume24h = webdollar[`${currency}_24h_vol`];
-                    this.coinGecko.change24h = webdollar[`${currency}_24h_change`];
-                    this.coinGecko.lastUpdatedAt = webdollar['last_updated_at'];
-                    this.coinGecko.symbol = this.symbols[currency] || currency.toLocaleUpperCase();
+                    // Cache response and expiration in local storage using cache-control max age value and last update date
+                    const cacheControl = response.headers['cache-control'] || "";
+                    const cacheControlMaxAgeParse = cacheControl.match(/max-age=([0-9]*)/);
+                    const maxAge = cacheControlMaxAgeParse.length > 1 ? Number(cacheControlMaxAgeParse[1]) : 86400;
+                    const apiResponseExpiration = this.coinInfo.lastUpdatedAt + maxAge * 1000;
+                    localStorage.setItem("coinInfoExpirationTimestamp", apiResponseExpiration);
+                    localStorage.setItem("coinInfoApiResponse", JSON.stringify(webdollarData));
                   });
             },
 
-            initiateCoinGeckoRefreshTimer() {
-              this.coinGecko.timer = setInterval(this.retrievePriceFromCoinGecko, 90 * 1000 /* Refresh every 90 seconds */);
+            initiateCoinAPIRefreshTimer() {
+              this.coinInfo.timer = setInterval(this.retrievePriceFromAPI, 3600 * 1000 /* Refresh every hour */);
             },
 
-            clearCoinGeckoRefreshTimer() {
-              clearInterval(this.coinGecko.timer);
+            clearCoinAPIRefreshTimer() {
+              clearInterval(this.coinInfo.timer);
             },
 
         }
